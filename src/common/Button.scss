@@ -1,0 +1,15 @@
+.button {
+  background: var(--color-pink);
+  padding: 12px 24px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #fb00ca; /* Old browsers */
+  background: -moz-linear-gradient(left, #fb00ca 0%, #7c00fe 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #fb00ca 0%,#7c00fe 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #fb00ca 0%,#7c00fe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb00ca', endColorstr='#7c00fe',GradientType=1 ); /* IE6-9 */
+  letter-spacing: 1px;
+  font-weight: 100px;
+}

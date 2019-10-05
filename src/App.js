@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Button from './common/Button'
 import './App.scss'
 
 const App = () => {
@@ -39,7 +40,11 @@ const App = () => {
 }
 
 const Home = () => {
-  return <h2>Home</h2>
+  return (
+    <div>
+      <Button text="Book Private Class" link="#"></Button>
+    </div>
+  )
 }
 
 const Dance = ({ match }) => {
