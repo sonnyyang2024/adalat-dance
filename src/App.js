@@ -16,7 +16,7 @@ const App = () => {
               <Link to="/dance/bellydance">Bellydance</Link>
             </li>
             <li>
-              <Link to="/dance/bollywooddance">Bollywood</Link>
+              <Link to="/dance/bollywood-dance">Bollywood</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
