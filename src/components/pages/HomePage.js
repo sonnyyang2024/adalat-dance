@@ -2,6 +2,8 @@ import React from 'react';
 import Button from '../common/Button';
 import useLocalized from '../common/useLocalized';
 
+import { getImageUrl } from '../../utility';
+
 const translations = {
   en: {
     title: 'Hello, world!',
@@ -23,6 +25,12 @@ const HomePage = () => {
       <h1>{title}</h1>
       <p>{description}</p>
       <Button text={button} />
+      <img
+        src={getImageUrl('ada-white.jpg')}
+        alt="Ada in white bellydance costum"
+        width="500"
+        height="600"
+      />
     </div>
   );
 };
