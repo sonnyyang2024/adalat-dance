@@ -1,0 +1,17 @@
+.nav-bar {
+  width: 90%;
+}
+
+.nav-bar__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+  font-family: var(--font-header);
+  font-size: 20px;
+}
+
+.nav-bar__item {
+  display: inline-block;
+  padding: 4px;
+}

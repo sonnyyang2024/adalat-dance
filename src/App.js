@@ -2,19 +2,12 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
-import {
-  BOLLYWOOD_ID,
-  BELLYDANCE_ID,
-  UYGHUR_ID
-} from './constants';
 
 import './App.scss';
 
-// Common
-import LanguageSwitcher from './components/common/LanguageSwitcher';
+import Header from './components/Header';
 
 // Pages
 import HomePage from './components/pages/HomePage';
@@ -22,37 +15,13 @@ import DancePage from './components/pages/dance-page/DancePage';
 
 const App = () => (
   <div className="App">
-    <LanguageSwitcher />
     <Router>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to={`/dance/${BELLYDANCE_ID}`}>
-              Bellydance
-            </Link>
-          </li>
-          <li>
-            <Link to={`/dance/${BOLLYWOOD_ID}`}>
-              Bollywood
-            </Link>
-          </li>
-          <li>
-            <Link to={`/dance/${UYGHUR_ID}`}>
-              Uyghur
-            </Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-        </ul>
-      </nav>
-
+      <Header />
       <Switch>
-        <Route path="/" exact component={HomePage} />
-        <Route path="/dance/:danceId" component={DancePage} />
+        <div className="page__content">
+          <Route path="/" exact component={HomePage} />
+          <Route path="/dance/:danceId" component={DancePage} />
+        </div>
       </Switch>
     </Router>
   </div>
