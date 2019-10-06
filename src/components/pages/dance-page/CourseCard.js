@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// hooks
 import useLanguage from '../../common/useLanguage';
 
+// styles
 import './CourseCard.scss';
 
 const CourseCard = ({
