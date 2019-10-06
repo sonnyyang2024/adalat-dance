@@ -29,7 +29,7 @@ const DancePage = ({
       <Button text={dance.localized.button} />
       <div>
         {dance.courses.map((course) => (
-          <p>
+          <p key={course.id}>
             {course.time}, {course.name[language]}
           </p>
         ))}

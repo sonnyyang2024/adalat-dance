@@ -3,10 +3,12 @@ import {
   BELLYDANCE_ID,
   UYGHUR_ID
 } from '../../../constants';
+import { getUUID } from '../../../utility';
 
 export default {
   [BOLLYWOOD_ID]: [
     {
+      id: getUUID(),
       location: '1234 Alpha St',
       time: '9pm',
       name: {
@@ -17,6 +19,7 @@ export default {
   ],
   [BELLYDANCE_ID]: [
     {
+      id: getUUID(),
       location: '1234 Alpha St',
       time: '9pm',
       name: {
@@ -27,6 +30,7 @@ export default {
   ],
   [UYGHUR_ID]: [
     {
+      id: getUUID(),
       location: '1234 Alpha St',
       time: '9pm',
       name: {
