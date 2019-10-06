@@ -1,6 +1,8 @@
 :root {
   --color-pink: #FF00D4;
   --color-purple: #910DFF;
+  --color-grey-100: #eee;
+  --color-grey-500: #555;
   --font-sans-serif: 'Open Sans', sans-serif;
   --font-sans-serif-secondary: 'Montserrat', 'Open Sans', sans-serif;
   --font-serif: 'Arapey', serif;
@@ -8,4 +10,9 @@
   --font-header: var(--font-serif);
   --font-body: var(--font-sans-serif);
   --font-body-secondary: var(--font-sans-serif-secondary);
+
+  --breakpoint-xs: 350px;
+  --breakpoint-sm: 800px;
 }
+
+$breakpoint-sm: 800px;
