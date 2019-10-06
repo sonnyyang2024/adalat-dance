@@ -25,6 +25,8 @@ module.exports = {
     // js rules
     'comma-dangle': 0,
     'no-multiple-empty-lines': [2, { max: 1 }],
+    'brace-style': 0,
+    'padded-blocks': 0,
 
     // import rules
     'import/prefer-default-export': 0,
