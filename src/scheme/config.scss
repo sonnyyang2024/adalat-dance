@@ -1,8 +1,11 @@
 :root {
-  --color-pink: #FB00CA;
-  --color-purple: #7C00FE;
+  --color-pink: #FF00D4;
+  --color-purple: #910DFF;
   --font-sans-serif: 'Open Sans', sans-serif;
-  --font-serif: 'Times New Roman', serif;
+  --font-sans-serif-secondary: 'Montserrat', 'Open Sans', sans-serif;
+  --font-serif: 'Arapey', serif;
+
   --font-header: var(--font-serif);
   --font-body: var(--font-sans-serif);
+  --font-body-secondary: var(--font-sans-serif-secondary);
 }
