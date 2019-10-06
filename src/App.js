@@ -10,19 +10,19 @@ import './App.scss';
 import Header from './components/Header';
 
 // Pages
-import HomePage from './components/pages/HomePage';
+import HomePage from './components/pages/home-page/HomePage';
 import DancePage from './components/pages/dance-page/DancePage';
 
 const App = () => (
   <div className="App">
     <Router>
       <Header />
-      <Switch>
-        <div className="page__content">
+      <div className="page__content">
+        <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/dance/:danceId" component={DancePage} />
-        </div>
-      </Switch>
+        </Switch>
+      </div>
     </Router>
   </div>
 );
