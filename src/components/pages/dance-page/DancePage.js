@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import useLanguage from '../../common/useLanguage';
 
 // data
-import translations from './translations';
+import translationsByLanguage from './translationsByLanguage';
 import courses from './courses';
 
 // components
@@ -19,7 +19,7 @@ const DancePage = ({
   const language = useLanguage();
 
   const dance = {
-    localized: translations[language][danceId],
+    localized: translationsByLanguage[language][danceId],
     courses: courses[danceId]
   };
 

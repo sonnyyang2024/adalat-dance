@@ -5,9 +5,15 @@ import CourseCard from './CourseCard';
 
 const CourseList = ({ courses }) => (
   <div className="course-list">
-    <h1>Class List</h1>
     {
-      courses.map((course) => <CourseCard key={course.id} course />)
+      courses.map((course) => (
+        <CourseCard
+          key={course.id}
+          nameByLanguage={course.nameByLanguage}
+          location={course.location}
+          time={course.time}
+        />
+      ))
     }
   </div>
 );
