@@ -24,6 +24,7 @@ module.exports = {
   rules: {
     // js rules
     'comma-dangle': 0,
+    'no-multiple-empty-lines': [2, { max: 1 }],
 
     // import rules
     'import/prefer-default-export': 0,
