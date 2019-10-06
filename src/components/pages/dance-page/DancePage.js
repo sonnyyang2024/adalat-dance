@@ -10,6 +10,7 @@ import courses from './courses';
 
 // components
 import Button from '../../common/Button';
+import CourseList from './CourseList';
 
 const DancePage = ({
   match
@@ -27,13 +28,7 @@ const DancePage = ({
       <h1>{dance.localized.title}</h1>
       <p>{dance.localized.description}</p>
       <Button text={dance.localized.button} />
-      <div>
-        {dance.courses.map((course) => (
-          <p key={course.id}>
-            {course.time}, {course.name[language]}
-          </p>
-        ))}
-      </div>
+      <CourseList courses={dance.courses} />
     </div>
   );
 };
