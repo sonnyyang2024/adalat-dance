@@ -80,9 +80,7 @@ const classes = {
   ]
 };
 
-const useLanguage = () => {
-  return useSelector((state) => state.preferences.language);
-};
+const useLanguage = () => useSelector((state) => state.preferences.language);
 
 const DancePage = ({
   match
