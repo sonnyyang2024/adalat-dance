@@ -18,7 +18,7 @@ import LanguageSwitcher from './components/common/LanguageSwitcher';
 
 // Pages
 import HomePage from './components/pages/HomePage';
-import DancePage from './components/pages/DancePage';
+import DancePage from './components/pages/dance-page/DancePage';
 import TestPage from './components/pages/TestPage';
 
 const App = () => (
