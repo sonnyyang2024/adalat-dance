@@ -9,6 +9,7 @@ import './App.scss';
 
 // Pages
 import DancePage from './components/pages/DancePage';
+import TestPage from './components/pages/TestPage';
 
 const App = () => (
   <div className="App">
@@ -27,11 +28,15 @@ const App = () => (
           <li>
             <Link to="/about">About</Link>
           </li>
+          <li>
+            <Link to="/test">Test</Link>
+          </li>
         </ul>
       </nav>
 
       <Switch>
         <Route path="/dance/:danceId" component={DancePage} />
+        <Route path="/test" component={TestPage} />
       </Switch>
     </Router>
   </div>
