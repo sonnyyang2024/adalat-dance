@@ -43,5 +43,6 @@ module.exports = {
         ]
       }
     ],
+    'react/jsx-fragments': 0
   }
 };
