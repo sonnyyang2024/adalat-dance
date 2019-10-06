@@ -19,7 +19,6 @@ import LanguageSwitcher from './components/common/LanguageSwitcher';
 // Pages
 import HomePage from './components/pages/HomePage';
 import DancePage from './components/pages/dance-page/DancePage';
-import TestPage from './components/pages/TestPage';
 
 const App = () => (
   <div className="App">
@@ -48,16 +47,12 @@ const App = () => (
           <li>
             <Link to="/about">About</Link>
           </li>
-          <li>
-            <Link to="/test">Test</Link>
-          </li>
         </ul>
       </nav>
 
       <Switch>
         <Route path="/" exact component={HomePage} />
         <Route path="/dance/:danceId" component={DancePage} />
-        <Route path="/test" component={TestPage} />
       </Switch>
     </Router>
   </div>
