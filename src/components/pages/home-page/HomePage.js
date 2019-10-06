@@ -5,14 +5,14 @@ import { getImageUrl } from '../../../utility';
 import useLanguage from '../../common/useLanguage';
 
 // data
-import translations from './translations';
+import translationsByLanguage from './translationsByLanguage';
 
 // components
 import Button from '../../common/Button';
 
 const HomePage = () => {
   const language = useLanguage();
-  const { title, description, button } = translations[language];
+  const { title, description, button } = translationsByLanguage[language];
 
   return (
     <div>

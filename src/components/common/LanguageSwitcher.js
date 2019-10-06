@@ -10,7 +10,7 @@ import useLanguage from './useLanguage';
 // styles
 import './LanguageSwitcher.scss';
 
-const translations = {
+const translationsByLanguage = {
   ch: {
     languageSymbol: 'en'
   },
@@ -23,7 +23,7 @@ const LanguageSwitcher = () => {
   const dispatch = useDispatch();
 
   const language = useLanguage();
-  const { languageSymbol } = translations[language];
+  const { languageSymbol } = translationsByLanguage[language];
 
   const handleOnClick = () => {
     dispatch(
