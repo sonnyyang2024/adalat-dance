@@ -15,9 +15,35 @@
   letter-spacing: 1px;
   font-weight: 100px;
   display: inline-block;
+  position: relative;
   transition: .4s all ease;
 
   &:hover {
     cursor: pointer;
   }
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: .4s all ease-in-out;
+  z-index: 0;
+  opacity: 0;
+  background: var(--color-purple);
+}
+
+.button:hover:before {
+  width: 100%;
+  opacity: 1;
+  background: linear-gradient(to right, var(--color-pink) 100%,var(--color-purple) 40%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.button__text {
+  position: relative;
+  z-index: 1;
 }
