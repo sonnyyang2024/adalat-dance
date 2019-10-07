@@ -1,5 +1,4 @@
 import React from 'react';
-import { getImageUrl } from '../../../utility';
 
 // hooks
 import useLanguage from '../../common/useLanguage';
@@ -8,7 +7,6 @@ import useLanguage from '../../common/useLanguage';
 import translationsByLanguage from './translationsByLanguage';
 
 // components
-import Button from '../../common/Button';
 import Hero from '../../common/Hero';
 
 const HomePage = () => {
@@ -21,7 +19,7 @@ const HomePage = () => {
         title={title}
         paragraphTemplate={description}
         buttonText={button}
-        imageName="ada-white.jpg"
+        imageName="adalat-blue-transparent.png"
       />
     </div>
   );

@@ -1,9 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
+// utility
 import { getImageUrl } from '../../utility';
 
+// components
 import Button from './Button';
+
+// styles
+import './Hero.scss';
 
 const Hero = ({
   title,
@@ -13,14 +18,17 @@ const Hero = ({
 }) => (
   <div className="hero">
     <div className="hero__left">
-      <h1 className="hero__title">{title}</h1>
-      <Fragment>
+      <div className="hero__left__content">
+        <h1 className="hero__title">{title}</h1>
         {paragraphTemplate}
-      </Fragment>
-      <Button text={buttonText} />
+        <div className="hero__button-wrapper">
+          <Button text={buttonText} />
+        </div>
+      </div>
     </div>
     <div className="hero__right">
       <img
+        className="hero__image"
         src={getImageUrl(imageName)}
         alt={imageName}
         width="500"
@@ -32,7 +40,7 @@ const Hero = ({
 
 Hero.propTypes = {
   title: PropTypes.string.isRequired,
-  paragraphTemplate: PropTypes.string,
+  paragraphTemplate: PropTypes.object,
   buttonText: PropTypes.string,
   imageName: PropTypes.string.isRequired
 };
