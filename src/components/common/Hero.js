@@ -22,7 +22,7 @@ const Hero = ({
         <h1 className="hero__title">{title}</h1>
         {paragraphTemplate}
         <div className="hero__button-wrapper">
-          <Button text={buttonText} />
+          <Button text={buttonText} link="/" />
         </div>
       </div>
     </div>
