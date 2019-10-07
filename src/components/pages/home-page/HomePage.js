@@ -9,6 +9,7 @@ import translationsByLanguage from './translationsByLanguage';
 
 // components
 import Button from '../../common/Button';
+import Hero from '../../common/Hero';
 
 const HomePage = () => {
   const language = useLanguage();
@@ -16,14 +17,11 @@ const HomePage = () => {
 
   return (
     <div>
-      <h1>{title}</h1>
-      <p>{description}</p>
-      <Button text={button} />
-      <img
-        src={getImageUrl('ada-white.jpg')}
-        alt="Ada in white bellydance costum"
-        width="500"
-        height="600"
+      <Hero
+        title={title}
+        paragraphTemplate={description}
+        buttonText={button}
+        imageName="ada-white.jpg"
       />
     </div>
   );
