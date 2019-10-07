@@ -1,5 +1,5 @@
 .nav-bar {
-  width: 90%;
+  width: 50%;
 }
 
 .nav-bar__list {
@@ -8,10 +8,15 @@
   list-style: none;
   justify-content: space-around;
   font-family: var(--font-header);
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .nav-bar__item {
   display: inline-block;
   padding: 4px;
+}
+
+a.nav-bar__link {
+  text-decoration: none;
+  color: black;
 }
