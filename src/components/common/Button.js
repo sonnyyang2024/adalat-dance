@@ -1,9 +1,19 @@
-import React from 'react'
-import './Button.scss'
+import React from 'react';
+import PropTypes from 'prop-types';
+import './Button.scss';
 
 const Button = ({
   text,
   link
-}) => <a className="button" href={link}>{text}</a>
+}) => (
+  <a className="button" href={link}>
+    <span className="button__text">{text}</span>
+  </a>
+);
 
-export default Button
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
+};
+
+export default Button;
