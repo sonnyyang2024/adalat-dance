@@ -1,9 +1,11 @@
 .hero {
   display: flex;
+  height: 100vh;
+  min-height: 680px;
 }
 
 .hero__left {
-  padding-left: 80px;
+  padding-left: 40px;
   padding-right: 100px;
   display: flex;
   flex-direction: column;
