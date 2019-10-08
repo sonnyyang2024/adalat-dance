@@ -12,18 +12,28 @@ import './Hero.scss';
 
 const Hero = ({
   title,
-  paragraphTemplate,
-  buttonText,
+  information,
+  callToAction,
   imageName
 }) => (
   <div className="hero">
     <div className="hero__left">
       <div className="hero__left__content">
         <h1 className="hero__title">{title}</h1>
-        {paragraphTemplate}
-        <div className="hero__button-wrapper">
-          <Button text={buttonText} link="/" />
-        </div>
+        {
+          information && (
+            <div className="hero__description">
+              {information}
+            </div>
+          )
+        }
+        {
+          callToAction && (
+            <div className="hero__button-wrapper">
+              <Button text={callToAction} link="/" />
+            </div>
+          )
+        }
       </div>
     </div>
     <div className="hero__right">
@@ -40,14 +50,14 @@ const Hero = ({
 
 Hero.propTypes = {
   title: PropTypes.string.isRequired,
-  paragraphTemplate: PropTypes.object,
-  buttonText: PropTypes.string,
+  information: PropTypes.element,
+  callToAction: PropTypes.string,
   imageName: PropTypes.string.isRequired
 };
 
 Hero.defaultProps = {
-  paragraphTemplate: '',
-  buttonText: null
+  information: null,
+  callToAction: null
 };
 
 export default Hero;

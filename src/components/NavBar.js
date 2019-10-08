@@ -45,7 +45,9 @@ const NavBar = () => {
     <nav className="nav-bar">
       <ul className="nav-bar__list">
         <li className="nav-bar__item">
-          <NavLink className="nav-bar__link" exact to="/">{home}</NavLink>
+          <NavLink className="nav-bar__link" exact to="/">
+            {home}
+          </NavLink>
         </li>
         <li className="nav-bar__item">
           <NavLink className="nav-bar__link" to={`/dance/${BELLYDANCE_ID}`}>

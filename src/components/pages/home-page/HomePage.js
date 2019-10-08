@@ -11,14 +11,14 @@ import Hero from '../../common/Hero';
 
 const HomePage = () => {
   const language = useLanguage();
-  const { title, description, button } = translationsByLanguage[language];
+  const { title, information, callToAction } = translationsByLanguage[language];
 
   return (
     <div>
       <Hero
         title={title}
-        paragraphTemplate={description}
-        buttonText={button}
+        information={information}
+        callToAction={callToAction}
         imageName="adalat-blue-transparent.png"
       />
     </div>
