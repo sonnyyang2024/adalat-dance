@@ -8,10 +8,11 @@ import translationsByLanguage from './translationsByLanguage';
 
 // components
 import Hero from '../../common/Hero';
+import Banner from '../../common/Banner';
 
 const HomePage = () => {
   const language = useLanguage();
-  const { title, information, callToAction } = translationsByLanguage[language];
+  const { title, information, callToAction, banners } = translationsByLanguage[language];
 
   return (
     <div>
@@ -21,6 +22,11 @@ const HomePage = () => {
         callToAction={callToAction}
         imageName="adalat-blue-transparent.png"
       />
+      {
+        banners.map(((banner) => (
+          <Banner title={banner.title} list={banner.list} />
+        )))
+      }
     </div>
   );
 };

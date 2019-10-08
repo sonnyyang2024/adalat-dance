@@ -27,7 +27,7 @@ const DancePage = ({
     <div>
       <h1>{dance.localized.title}</h1>
       <p>{dance.localized.description}</p>
-      <Button text={dance.localized.button} />
+      <Button text={dance.localized.button} link="/bellydance/class" />
       <CourseList courses={dance.courses} />
     </div>
   );
