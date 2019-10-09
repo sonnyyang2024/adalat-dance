@@ -1,4 +1,9 @@
 import React, { Fragment } from 'react';
+import {
+  BOLLYWOOD_ID,
+  BELLYDANCE_ID,
+  UYGHUR_ID
+} from '../../../constants';
 
 export default {
   en: {
@@ -17,17 +22,20 @@ export default {
           {
             name: 'Bellydance',
             description: 'A renowned bellydance artisit, Ada is also an amazing teacher.',
-            imageName: 'adalat-students-bellydance.jpg'
+            imageName: 'adalat-students-bellydance.jpg',
+            linkTo: `/dance/${BELLYDANCE_ID}`
           },
           {
             name: 'Uyghur',
             description: 'Learn Uyghur Sanam dance with Ada.',
-            imageName: 'adalat-uyghur.jpg'
+            imageName: 'adalat-uyghur.jpg',
+            linkTo: `/dance/${UYGHUR_ID}`
           },
           {
             name: 'Bollywood',
             description: 'Experience fun bollywood dance with Ada.',
-            imageName: 'adalat-bollywood.jpg'
+            imageName: 'adalat-bollywood.jpg',
+            linkTo: `/dance/${BOLLYWOOD_ID}`
           }
         ]
       },
@@ -70,17 +78,20 @@ export default {
           {
             name: '肚皮舞',
             description: '作为一名知名的肚皮舞艺术家，Ada是一个有趣又有经验的老师。',
-            imageName: 'adalat-students-bellydance.jpg'
+            imageName: 'adalat-students-bellydance.jpg',
+            linkTo: `/dance/${BELLYDANCE_ID}`
           },
           {
             name: '维吾尔舞',
             description: '跟着Ada学习新疆维吾尔族舞蹈。',
-            imageName: 'adalat-uyghur.jpg'
+            imageName: 'adalat-uyghur.jpg',
+            linkTo: `/dance/${UYGHUR_ID}`
           },
           {
             name: '宝莱坞舞',
             description: '跟着Ada探索宝莱坞舞蹈。',
-            imageName: 'adalat-bollywood.jpg'
+            imageName: 'adalat-bollywood.jpg',
+            linkTo: `/dance/${BOLLYWOOD_ID}`
           }
         ]
       },

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 import { getImageUrl } from '../../utility';
@@ -6,9 +7,10 @@ import { getImageUrl } from '../../utility';
 const BannerItem = ({
   name,
   description,
-  imageName
+  imageName,
+  linkTo
 }) => (
-  <div className="banner-item">
+  <Link className="banner-item" to={linkTo}>
     <div className="banner-item__fg">
       <h2 className="banner-item__name">
         {name}
@@ -24,13 +26,14 @@ const BannerItem = ({
       width="300"
       height="300"
     />
-  </div>
+  </Link>
 );
 
 BannerItem.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  imageName: PropTypes.string.isRequired
+  imageName: PropTypes.string.isRequired,
+  linkTo: PropTypes.string.isRequired
 };
 
 export default BannerItem;

@@ -8,14 +8,21 @@ const Banner = ({
   title,
   list
 }) => (
-  <div className="container banner">
-    <h1 className="banner__title">{title}</h1>
-    <div className="banner__list">
-      {
-        list.map((item) => (
-          <BannerItem name={item.name} description={item.description} imageName={item.imageName} />
-        ))
-      }
+  <div className="banner">
+    <div className="container">
+      <h1 className="banner__title">{title}</h1>
+      <div className="banner__list">
+        {
+          list.map((item) => (
+            <BannerItem
+              name={item.name}
+              description={item.description}
+              imageName={item.imageName}
+              linkTo={item.linkTo}
+            />
+          ))
+        }
+      </div>
     </div>
   </div>
 );
