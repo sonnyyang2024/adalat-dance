@@ -45,22 +45,59 @@ export default {
           {
             name: 'Private Lessons',
             description: 'Learn dancing with Ada, get a choreograph tailored to your style and level.',
-            imageName: 'adalat-bellydance-pink.JPG'
+            imageName: 'adalat-bellydance-pink.JPG',
+            linkTo: '/about'
           },
           {
             name: 'Parties and Events',
             description: 'Weddings, birthday parties, celebrations... Ada will make your party shine even more!',
-            imageName: 'adalat-performance-candle.jpg'
+            imageName: 'adalat-performance-candle.jpg',
+            linkTo: '/about'
           },
           {
             name: 'Discounted Packages',
             description: 'Get a deal when you gather your friends and book group lessons with Ada.',
-            imageName: 'bellydance-group.jpg'
+            imageName: 'bellydance-group.jpg',
+             linkTo: '/about'
           }
         ]
       }
-    ]
-    
+    ],
+    scheduleBanner: {
+      title: 'Upcoming Shows',
+      list: [
+        {
+          date: '2019/10/31',
+          startTime: '9PM',
+          venue: 'Zeitoon Restaurant',
+          eventName: 'Halloween Drum Night'
+        },
+        {
+          date: '2019/11/08',
+          startTime: '11PM',
+          venue: 'Paradiz Hookah Lounge',
+          eventName: 'Persian Celebration'
+        },
+        {
+          date: '2019/10/31',
+          startTime: '9PM',
+          venue: 'Zeitoon Restaurant',
+          eventName: 'Halloween Drum Night'
+        },
+        {
+          date: '2019/11/08',
+          startTime: '11PM',
+          venue: 'Paradiz Hookah Lounge',
+          eventName: 'Persian Celebration'
+        },
+        {
+          date: '2019/10/31',
+          startTime: '9PM',
+          venue: 'Zeitoon Restaurant',
+          eventName: 'Halloween Drum Night'
+        }
+      ]
+    }
   },
   ch: {
     title: 'Adalat Omar',
@@ -101,20 +138,58 @@ export default {
           {
             name: '私人一对一课程',
             description: '让Ada设计专属于你的课程和编舞。',
-            imageName: 'adalat-bellydance-pink.JPG'
+            imageName: 'adalat-bellydance-pink.JPG',
+            linkTo: '/about'
           },
           {
             name: '聚会与活动',
             description: '婚礼、生日派对、重大庆祝，让Ada点亮你的派对，让你的客人赞不绝口',
-            imageName: 'adalat-performance-candle.jpg'
+            imageName: 'adalat-performance-candle.jpg',
+            linkTo: '/about'
           },
           {
             name: '组合优惠',
             description: '招呼你的朋友们一起预定Ada的课程，即可得到优惠。',
-            imageName: 'bellydance-group.jpg'
+            imageName: 'bellydance-group.jpg',
+            linkTo: '/about'
           }
         ]
       }
-    ]
+    ],
+    scheduleBanner: {
+      title: '近期演出',
+      list: [
+        {
+          date: '2019/10/31',
+          startTime: '9PM',
+          venue: 'Zeitoon Restaurant',
+          eventName: '万圣节鼓舞演出'
+        },
+        {
+          date: '2019/11/08',
+          startTime: '11PM',
+          venue: 'Paradiz Hookah Lounge',
+          eventName: '波斯庆祝夜'
+        },
+        {
+          date: '2019/10/31',
+          startTime: '9PM',
+          venue: 'Zeitoon Restaurant',
+          eventName: '万圣节鼓舞演出'
+        },
+        {
+          date: '2019/11/08',
+          startTime: '11PM',
+          venue: 'Paradiz Hookah Lounge',
+          eventName: '波斯庆祝夜'
+        },
+        {
+          date: '2019/11/08',
+          startTime: '11PM',
+          venue: 'Paradiz Hookah Lounge',
+          eventName: '波斯庆祝夜'
+        }
+      ]
+    }
   }
 };

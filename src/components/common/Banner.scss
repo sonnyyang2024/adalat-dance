@@ -1,10 +1,10 @@
 .banner {
   padding-top: 20px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 
 .banner:nth-child(odd) {
-  background: linear-gradient(to bottom, var(--color-grey-100) 0%,var(--color-grey-100) 70%,var(--color-grey-100) 70%,white 70%,white 100%); /* W3C */
+  background: linear-gradient(to bottom, var(--color-grey-100) 0%,var(--color-grey-100) 60%,var(--color-grey-100) 60%,white 60%,white 100%); /* W3C */
 }
 
 .banner__title {
@@ -15,7 +15,7 @@
 
 .banner__list {
   display: flex;
-  height: 350px;
+  height: 380px;
 }
 
 .banner-item {
@@ -23,7 +23,7 @@
   text-decoration: none;
   height: 100%;
   background-color: var(--color-purple-dark);
-  padding-top: 200px;
+  padding-top: 230px;
   flex: 1;
   position: relative;
   display: flex;
@@ -61,8 +61,21 @@
 .banner-item__name {
   font-size: 28px;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
 
+.banner-item__icon {
+  fill: white;
+  height: 100%;
+  opacity: 0;
+  transition: .5s all;
+}
+
+.banner-item:hover .banner-item__icon {
+  margin-left: 1rem;
+  opacity: 1;
+}
 
 .banner-item__image {
   object-fit: cover;
