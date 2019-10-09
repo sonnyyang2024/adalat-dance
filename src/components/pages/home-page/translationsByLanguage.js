@@ -9,7 +9,50 @@ export default {
         <p>Nulla vestibulum velit nunc, sed ultrices ex faucibus sit amet.</p>
       </Fragment>
     ),
-    callToAction: 'Contact Adalat'
+    callToAction: 'Contact Adalat',
+    banners: [
+      {
+        title: 'Classes',
+        list: [
+          {
+            name: 'Bellydance',
+            description: 'A renowned bellydance artisit, Ada is also an amazing teacher.',
+            imageName: 'adalat-students-bellydance.jpg'
+          },
+          {
+            name: 'Uyghur',
+            description: 'Learn Uyghur Sanam dance with Ada.',
+            imageName: 'adalat-uyghur.jpg'
+          },
+          {
+            name: 'Bollywood',
+            description: 'Experience fun bollywood dance with Ada.',
+            imageName: 'adalat-bollywood.jpg'
+          }
+        ]
+      },
+      {
+        title: 'Services',
+        list: [
+          {
+            name: 'Private Lessons',
+            description: 'Learn dancing with Ada, get a choreograph tailored to your style and level.',
+            imageName: 'adalat-bellydance-pink.JPG'
+          },
+          {
+            name: 'Parties and Events',
+            description: 'Weddings, birthday parties, celebrations... Ada will make your party shine even more!',
+            imageName: 'adalat-performance-candle.jpg'
+          },
+          {
+            name: 'Discounted Packages',
+            description: 'Get a deal when you gather your friends and book group lessons with Ada.',
+            imageName: 'bellydance-group.jpg'
+          }
+        ]
+      }
+    ]
+    
   },
   ch: {
     title: 'Adalat Omar',
@@ -19,6 +62,48 @@ export default {
         <p>云腾致雨露结，为霜金生丽玉出昆冈。</p>
       </Fragment>
     ),
-    callToAction: '联系Adalat'
+    callToAction: '联系Adalat',
+    banners: [
+      {
+        title: '课程',
+        list: [
+          {
+            name: '肚皮舞',
+            description: '作为一名知名的肚皮舞艺术家，Ada是一个有趣又有经验的老师。',
+            imageName: 'adalat-students-bellydance.jpg'
+          },
+          {
+            name: '维吾尔舞',
+            description: '跟着Ada学习新疆维吾尔族舞蹈。',
+            imageName: 'adalat-uyghur.jpg'
+          },
+          {
+            name: '宝莱坞舞',
+            description: '跟着Ada探索宝莱坞舞蹈。',
+            imageName: 'adalat-bollywood.jpg'
+          }
+        ]
+      },
+      {
+        title: '服务',
+        list: [
+          {
+            name: '私人一对一课程',
+            description: '让Ada设计专属于你的课程和编舞。',
+            imageName: 'adalat-bellydance-pink.JPG'
+          },
+          {
+            name: '聚会与活动',
+            description: '婚礼、生日派对、重大庆祝，让Ada点亮你的派对，让你的客人赞不绝口',
+            imageName: 'adalat-performance-candle.jpg'
+          },
+          {
+            name: '组合优惠',
+            description: '招呼你的朋友们一起预定Ada的课程，即可得到优惠。',
+            imageName: 'bellydance-group.jpg'
+          }
+        ]
+      }
+    ]
   }
 };
