@@ -1,14 +1,14 @@
 import React from 'react';
 
 // hooks
-import useLanguage from '../../common/useLanguage';
+import useLanguage from '../../../hooks/useLanguage';
 
 // data
 import translationsByLanguage from './translationsByLanguage';
 
 // components
-import Hero from '../../common/Hero';
-import Banner from '../../common/Banner';
+import Hero from './Hero';
+import Banner from '../../common/banner/Banner';
 
 const HomePage = () => {
   const language = useLanguage();

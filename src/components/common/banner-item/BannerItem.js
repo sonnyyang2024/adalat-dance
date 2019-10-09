@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { getImageUrl } from '../../utility';
+import { getImageUrl } from '../../../utility';
 
 const BannerItem = ({
   name,

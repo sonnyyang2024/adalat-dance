@@ -7,7 +7,7 @@ import {
 
 import './App.scss';
 
-import Header from './components/Header';
+import Header from './components/common/header/Header';
 
 // Pages
 import HomePage from './components/pages/home-page/HomePage';

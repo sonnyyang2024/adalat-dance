@@ -1,15 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import CourseCard from './CourseCard';
+// components
+import CourseCard from '../course-card/CourseCard';
 
-const CourseList = ({ courses }) => (
+const CourseList = ({
+  courses
+}) => (
   <div className="course-list">
     {
       courses.map((course) => (
         <CourseCard
           key={course.id}
-          nameByLanguage={course.nameByLanguage}
+          name={course.name}
           location={course.location}
           time={course.time}
         />

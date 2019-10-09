@@ -1,29 +1,29 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import { byLanguage } from '../../../utility';
 
 // actions
-import { changeLanguage } from '../../store/actions/preferences';
+import { changeLanguage } from '../../../store/actions/preferences';
 
 // hooks
-import useLanguage from './useLanguage';
+import useLanguage from '../../../hooks/useLanguage';
+import useDataByLanguage from '../../../hooks/useDataByLanguage';
 
 // styles
 import './LanguageSwitcher.scss';
 
-const translationsByLanguage = {
-  ch: {
-    languageSymbol: 'en'
-  },
-  en: {
-    languageSymbol: '文'
-  }
+const dataByLanguage = {
+  languageSymbol: byLanguage({
+    en: '文',
+    ch: 'eng'
+  })
 };
 
 const LanguageSwitcher = () => {
   const dispatch = useDispatch();
-
   const language = useLanguage();
-  const { languageSymbol } = translationsByLanguage[language];
+
+  const data = useDataByLanguage(dataByLanguage);
 
   const handleOnClick = () => {
     dispatch(
@@ -41,7 +41,7 @@ const LanguageSwitcher = () => {
       className="language-switcher"
       onClick={handleOnClick}
     >
-      {languageSymbol}
+      {data.languageSymbol}
     </button>
   );
 };

@@ -2,32 +2,31 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // hooks
-import useLanguage from '../../common/useLanguage';
+import useDataByLanguage from '../../../hooks/useDataByLanguage';
 
 // data
-import translationsByLanguage from './translationsByLanguage';
-import courses from './courses';
+import dataByLanguage from './dataByLanguage';
 
 // components
-import Button from '../../common/Button';
-import CourseList from './CourseList';
+import Button from '../../common/button/Button';
+import CourseList from './course-list/CourseList';
 
 const DancePage = ({
   match
 }) => {
-  const { danceId } = match.params;
-  const language = useLanguage();
+  const data = useDataByLanguage(dataByLanguage);
 
-  const dance = {
-    localized: translationsByLanguage[language][danceId],
-    courses: courses[danceId]
-  };
+  const { danceId } = match.params;
+  const dance = data[danceId];
 
   return (
     <div>
-      <h1>{dance.localized.title}</h1>
-      <p>{dance.localized.description}</p>
-      <Button text={dance.localized.button} link="/bellydance/class" />
+      <h1>{dance.title}</h1>
+      <p>{dance.description}</p>
+      <Button
+        text={dance.button}
+        link="/"
+      />
       <CourseList courses={dance.courses} />
     </div>
   );

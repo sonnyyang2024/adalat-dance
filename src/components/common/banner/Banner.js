@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BannerItem from './BannerItem';
+import BannerItem from '../banner-item/BannerItem';
 
 import './Banner.scss';
 
