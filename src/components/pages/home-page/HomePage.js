@@ -3,16 +3,20 @@ import React from 'react';
 // hooks
 import useLanguage from '../../common/useLanguage';
 
+// utility
+import { getUUID } from '../../../utility';
+
 // data
 import translationsByLanguage from './translationsByLanguage';
 
 // components
 import Hero from '../../common/Hero';
 import Banner from '../../common/Banner';
+import ScheduleBanner from '../../common/ScheduleBanner';
 
 const HomePage = () => {
   const language = useLanguage();
-  const { title, information, callToAction, banners } = translationsByLanguage[language];
+  const { title, information, callToAction, banners, scheduleBanner } = translationsByLanguage[language];
 
   return (
     <div>
@@ -24,9 +28,17 @@ const HomePage = () => {
       />
       {
         banners.map(((banner) => (
-          <Banner title={banner.title} list={banner.list} />
+          <Banner
+            key={getUUID()}
+            title={banner.title}
+            list={banner.list}
+          />
         )))
       }
+      <ScheduleBanner
+        title={scheduleBanner.title}
+        list={scheduleBanner.list}
+      />
     </div>
   );
 };

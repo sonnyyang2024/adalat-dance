@@ -8,6 +8,7 @@ import {
 import './App.scss';
 
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 // Pages
 import HomePage from './components/pages/home-page/HomePage';
@@ -24,6 +25,7 @@ const App = () => (
         </Switch>
       </div>
     </Router>
+    <Footer />
   </div>
 );
 
