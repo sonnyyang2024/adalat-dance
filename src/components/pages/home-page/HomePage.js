@@ -10,9 +10,9 @@ import { getUUID } from '../../../utility';
 import translationsByLanguage from './translationsByLanguage';
 
 // components
-import Hero from './Hero';
+import Hero from './hero/Hero';
 import Banner from '../../common/banner/Banner';
-import ScheduleBanner from '../../common/ScheduleBanner';
+import ScheduleBanner from '../../common/schedule-banner/ScheduleBanner';
 
 const HomePage = () => {
   const language = useLanguage();

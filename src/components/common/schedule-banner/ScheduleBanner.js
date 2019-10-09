@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // utility
-import { getUUID } from '../../utility';
+import { getUUID } from '../../../utility';
 
 // components
-import ScheduleRow from './ScheduleRow';
+import ScheduleRow from '../schedule-row/ScheduleRow';
 
 // styles
 import './ScheduleBanner.scss';

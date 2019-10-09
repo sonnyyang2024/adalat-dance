@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // utility
-import { getImageUrl } from '../../../utility';
+import { getImageUrl } from '../../../../utility';
 
 // components
-import Button from '../../common/button/Button';
+import Button from '../../../common/button/Button';
 
 // styles
 import './Hero.scss';

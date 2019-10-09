@@ -1,16 +1,18 @@
 import React from 'react';
+
+// styles
+import './App.scss';
+
+// components
 import {
   BrowserRouter as Router,
   Switch,
   Route
 } from 'react-router-dom';
-
-import './App.scss';
-
 import Header from './components/common/header/Header';
-import Footer from './components/Footer';
+import Footer from './components/common/footer/Footer';
 
-// Pages
+// pages
 import HomePage from './components/pages/home-page/HomePage';
 import DancePage from './components/pages/dance-page/DancePage';
 
@@ -20,8 +22,15 @@ const App = () => (
       <Header />
       <div className="page__content">
         <Switch>
-          <Route path="/" exact component={HomePage} />
-          <Route path="/dance/:danceId" component={DancePage} />
+          <Route
+            exact
+            path="/"
+            component={HomePage}
+          />
+          <Route
+            path="/dance/:danceId"
+            component={DancePage}
+          />
         </Switch>
       </div>
     </Router>
