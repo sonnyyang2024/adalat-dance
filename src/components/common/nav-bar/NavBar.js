@@ -2,14 +2,14 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 // hooks
-import useLanguage from './common/useLanguage';
+import useLanguage from '../../../hooks/useLanguage';
 
 // data
 import {
   BOLLYWOOD_ID,
   BELLYDANCE_ID,
   UYGHUR_ID
-} from '../constants';
+} from '../../../constants';
 
 // styles
 import './NavBar.scss';
