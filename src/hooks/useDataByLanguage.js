@@ -7,9 +7,10 @@ const resolveDataToSingleLanguage = (dataByLanguage, language) => {
   Object.keys(dataByLanguage).forEach((key) => {
     const value = dataByLanguage[key];
 
-    if (typeof value === 'object') {
+    if (value && typeof value === 'object') {
       if (value.id === 'byLanguage') {
         dataByLanguage[key] = value.getLanguage(language);
+        return;
       }
 
       dataByLanguage[key] = resolveDataToSingleLanguage(
