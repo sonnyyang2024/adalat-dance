@@ -15,7 +15,7 @@ import './LanguageSwitcher.scss';
 const dataByLanguage = {
   languageSymbol: byLanguage({
     en: '文',
-    ch: 'eng'
+    ch: 'en'
   })
 };
 

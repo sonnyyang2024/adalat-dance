@@ -1,13 +1,13 @@
 import React from 'react';
 
 // hooks
-import useLanguage from '../../../hooks/useLanguage';
+import useDataByLanguage from '../../../hooks/useDataByLanguage';
 
 // utility
 import { getUUID } from '../../../utility';
 
 // data
-import translationsByLanguage from './translationsByLanguage';
+import dataByLanguage from './dataByLanguage';
 
 // components
 import Hero from './hero/Hero';
@@ -15,14 +15,15 @@ import Banner from '../../common/banner/Banner';
 import ScheduleBanner from '../../common/schedule-banner/ScheduleBanner';
 
 const HomePage = () => {
-  const language = useLanguage();
+  const data = useDataByLanguage(dataByLanguage);
+
   const {
     title,
     information,
     callToAction,
     banners,
     scheduleBanner
-  } = translationsByLanguage[language];
+  } = data;
 
   return (
     <div>
