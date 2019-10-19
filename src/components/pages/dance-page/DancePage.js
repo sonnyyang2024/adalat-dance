@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Slider from "react-slick";
 
 // hooks
 import useDataByLanguage from '../../../hooks/useDataByLanguage';
@@ -11,16 +12,17 @@ import dataByLanguage from './dataByLanguage';
 import Button from '../../common/button/Button';
 import CourseList from './course-list/CourseList';
 
+// Styles
 import './DancePage.scss';
 
 const DancePage = ({
   match
 }) => {
-  // const data = useDataByLanguage(dataByLanguage);
+  const data = useDataByLanguage(dataByLanguage);
 
-  // const { danceId } = match.params;
-  // const dance = data[danceId];
-  // <h1>{dance.title}</h1>
+  const { danceId } = match.params;
+  const dance = data[danceId];
+  // 
   // <p>{dance.description}</p>
   // <Button
   //   text={dance.button}
@@ -30,7 +32,7 @@ const DancePage = ({
 
   return (
     <div className="dance-page">
-      <h1>See mockup</h1>
+      
     </div>
   );
 };
