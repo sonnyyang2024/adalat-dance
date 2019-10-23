@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Slider from "react-slick";
 
 // hooks
 import useDataByLanguage from '../../../hooks/useDataByLanguage';
@@ -9,12 +8,15 @@ import useDataByLanguage from '../../../hooks/useDataByLanguage';
 import dataByLanguage from './dataByLanguage';
 
 // components
-import Button from '../../common/button/Button';
 import CourseList from './course-list/CourseList';
 import Gallery from '../../common/gallery/Gallery';
+import ScheduleBanner from '../../common/schedule-banner/ScheduleBanner';
 
 // Styles
 import './DancePage.scss';
+
+// Utils
+import { getUUID } from '../../../utility';
 
 const DancePage = ({
   match
@@ -23,17 +25,25 @@ const DancePage = ({
 
   const { danceId } = match.params;
   const dance = data[danceId];
-  // 
-  // <p>{dance.description}</p>
-  // <Button
-  //   text={dance.button}
-  //   link="/"
-  // />
-  // <CourseList courses={dance.courses} />
+
+  const classColumns = [
+    { id: getUUID(), key: 'date', label: 'Date' },
+    { id: getUUID(), key: 'time', label: 'Time' },
+    { id: getUUID(), key: 'location', label: 'Location' },
+    { id: getUUID(), key: 'name', label: 'Class Name' }
+  ]
 
   return (
     <div className="dance-page">
-      <Gallery title={dance.title} />
+      <Gallery 
+        title={dance.title} 
+        description={dance.description}
+      />
+      <ScheduleBanner 
+        title={dance.coursesFor}
+        columns={classColumns}
+        rows={dance.courses}
+      />
     </div>
   );
 };

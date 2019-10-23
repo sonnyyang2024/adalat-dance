@@ -133,7 +133,27 @@ export default {
     list: [
       {
         id: getUUID(),
-        date: '2019/10/31',
+        date: '2019/10/24',
+        startTime: '9PM',
+        venue: 'Zeitoon Restaurant',
+        eventName: byLanguage({
+          en: 'Halloween Drum Night',
+          ch: '万圣节鼓舞演出'
+        })
+      },
+      {
+        id: getUUID(),
+        date: '2019/11/23',
+        startTime: '11PM',
+        venue: 'Paradiz Hookah Lounge',
+        eventName: byLanguage({
+          en: 'Persian Celebration',
+          ch: '波斯庆祝夜'
+        })
+      },
+      {
+        id: getUUID(),
+        date: '2019/10/22',
         startTime: '9PM',
         venue: 'Zeitoon Restaurant',
         eventName: byLanguage({
@@ -145,7 +165,7 @@ export default {
         id: getUUID(),
         date: '2019/11/08',
         startTime: '11PM',
-        venue: 'Paradiz Hookah Lounge',
+        venue: 'Cozba Middle Eastern Restaurant',
         eventName: byLanguage({
           en: 'Persian Celebration',
           ch: '波斯庆祝夜'
@@ -153,44 +173,14 @@ export default {
       },
       {
         id: getUUID(),
-        date: '2019/10/31',
+        date: '2020/2/24',
         startTime: '9PM',
         venue: 'Zeitoon Restaurant',
         eventName: byLanguage({
-          en: 'Halloween Drum Night',
+          en: 'Nowruz Persian New Year Party',
           ch: '万圣节鼓舞演出'
         })
-      },
-      {
-        id: getUUID(),
-        date: '2019/11/08',
-        startTime: '11PM',
-        venue: 'Paradiz Hookah Lounge',
-        eventName: byLanguage({
-          en: 'Persian Celebration',
-          ch: '波斯庆祝夜'
-        })
-      },
-      {
-        id: getUUID(),
-        date: '2019/10/31',
-        startTime: '9PM',
-        venue: 'Zeitoon Restaurant',
-        eventName: byLanguage({
-          en: 'Halloween Drum Night',
-          ch: '万圣节鼓舞演出'
-        })
-      },
-      {
-        id: getUUID(),
-        date: '2019/11/08',
-        startTime: '11PM',
-        venue: 'Paradiz Hookah Lounge',
-        eventName: byLanguage({
-          en: 'Persian Celebration',
-          ch: '波斯庆祝夜'
-        })
-      },
+      }
     ]
   }
 };
