@@ -1,7 +1,7 @@
 :root {
   --color-pink: #FF00D4;
   --color-purple: #910DFF;
-  --color-purple-dark: #6934BF;
+  --color-purple-dark: rgb(105, 52, 191);
   --color-grey-100: #eee;
   --color-grey-500: #555;
   --font-sans-serif: 'Open Sans', sans-serif;
@@ -17,6 +17,7 @@
 }
 
 @mixin gradient {
-  background: transparent linear-gradient(90deg, #6934BF 0%, #6934BF 0%, #ED06D154 80%, #FF00D400 100%) 0% 0% no-repeat padding-box;
-  opacity: 0.56;
+  background: transparent linear-gradient(90deg, rgba(105, 52, 191, .9) 0%, rgba(105, 52, 191, .56) 0%, #ED06D154 76%, #FF00D400 100%) 0% 0% no-repeat padding-box;
+  // background: transparent linear-gradient(90deg, rgba(105, 52, 191, .56) 0%, rgba(105, 52, 191, .56) 0%, rgba(237,6,209,.40) 80%, rgba(255,255,255,.56) 100%) 0% 0% no-repeat padding-box;
+  // opacity: 0.56;
 }

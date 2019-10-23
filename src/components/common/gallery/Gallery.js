@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 
-const Gallery = () => {
+import './Gallery.scss';
+
+const Gallery = ({
+  title
+}) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -12,6 +16,7 @@ const Gallery = () => {
   };
   return (
     <div className="gallery">
+      <h1 className="gallery__title">{title}</h1>
       <Slider {...settings}>
         <div>
           <h3>1</h3>
@@ -35,6 +40,10 @@ const Gallery = () => {
     </div>
   );
 };
+
+Gallery.propTypes = {
+  title: PropTypes.string.isRequired
+}
 
 export default Gallery;
 

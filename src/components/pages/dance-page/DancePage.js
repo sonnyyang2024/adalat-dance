@@ -11,6 +11,7 @@ import dataByLanguage from './dataByLanguage';
 // components
 import Button from '../../common/button/Button';
 import CourseList from './course-list/CourseList';
+import Gallery from '../../common/gallery/Gallery';
 
 // Styles
 import './DancePage.scss';
@@ -32,7 +33,7 @@ const DancePage = ({
 
   return (
     <div className="dance-page">
-      
+      <Gallery title={dance.title} />
     </div>
   );
 };
