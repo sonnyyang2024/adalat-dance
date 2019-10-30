@@ -43,16 +43,53 @@ export default {
         name: 'blue.jpg'
       }
     ],
+    coursesNotes: byLanguage({
+      en: 'All classes are cancelled on statutory holidays. Please double check with class contact before joining a new class.',
+      ch: '加拿大法定节假日没有课程。请与课程联系确认后再加入新的课程。'
+    }),
     courses: [
       {
         id: getUUID(),
         name: byLanguage({
-          en: 'Intermediate Adult Richmond',
-          ch: '列治文成人中级班'
+          en: 'Beginners Adult Class',
+          ch: '成人初级班'
         }),
-        location: '1234 Alpha St',
-        time: '9pm',
-        date: '2019/10/24'
+        description: '',
+        location: "Dancin' Stars",
+        address: '7757 Edmonds Street Burnaby',
+        time: 'TBA',
+        date: 'Every Monday',
+        notes: byLanguage({
+          en: 'Please register at Dancing Stars or contact Adalat.',
+          ch: '请联系Dancing Star或Adalat注册课程。'
+        })
+      },
+      {
+        id: getUUID(),
+        name: byLanguage({
+          en: 'All-Level Adult Class',
+          ch: '全等级成人班'
+        }),
+        description: byLanguage({
+          en: 'Learn new choreography while practicing techniques. ',
+          ch: '在学习编舞的同时巩固基础动作。'
+        }),
+        address: '250 - 12551 Vickers Way, Richmond',
+        time: '7:00 - 8:30PM',
+        date: 'Every Wednesday',
+        contacts: [
+          {
+            id: getUUID(),
+            name: 'Adalat Omar',
+            phoneNumber: '(604) 512-5617‬',
+            email: 'adalat.dance@gmail.com'
+          },
+          {
+            id: getUUID(),
+            name: 'Leana Li',
+            phoneNumber: '(604) 782-6544'
+          }
+        ]
       }
     ],
     coursesFor: byLanguage({
@@ -74,33 +111,70 @@ export default {
       ch: '学习维吾尔舞'
     }),
     imageNames: [
-      'adalat-uyghur.jpg'
+      {
+        id: getUUID(),
+        name: 'adalat-uyghur.jpg'
+      }
     ],
     courses: [
       {
         id: getUUID(),
         name: byLanguage({
-          en: 'Intermediate Adult Richmond',
-          ch: '列治文成人中级班'
+          en: 'All-Levels Kids Class',
+          ch: '全等级儿童班'
         }),
-        location: '1234 Alpha St',
-        time: '7pm - 8:30pm',
-        date: '2019/10/24'
+        location: "Dancin' Stars",
+        address: '7757 Edmonds Street, Burnaby, BC',
+        time: '4:30 - 6:00PM',
+        date: 'Every Wednesday',
+        contacts: [
+          {
+            id: getUUID(),
+            name: 'Adalat Omar',
+            phoneNumber: '(604) 512-5617‬',
+            email: 'adalat.dance@gmail.com'
+          },
+          {
+            id: getUUID(),
+            name: "Dancin' Stars",
+            phoneNumber: '(604) 524-3516',
+            email: 'dancinstarsbc@gmail.com',
+            website: 'http://dancinstarsbc.com'
+          }
+        ],
       },
       {
         id: getUUID(),
         name: byLanguage({
-          en: 'Intermediate Kids Burnaby',
-          ch: '本拿比儿童中级班'
+          en: 'All-Levels Adult Class',
+          ch: '全等级成人班'
         }),
-        location: '1234 Alpha St',
-        time: '7pm - 8:30pm',
-        date: '2019/10/27'
+        location: '',
+        address: '250 - 12551 Vickers Way, Richmond',
+        time: '7 - 8:30PM',
+        date: 'Every Monday',
+        contacts: [
+          {
+            id: getUUID(),
+            name: 'Adalat Omar',
+            phoneNumber: '(604) 512-5617‬',
+            email: 'adalat.dance@gmail.com'
+          },
+          {
+            id: getUUID(),
+            name: 'Leana Li',
+            phoneNumber: '(604) 782-6544'
+          }
+        ],
       }
     ],
     coursesFor: byLanguage({
       en: 'Classes for Uyghur Dance',
       ch: '维吾尔舞蹈课程'
+    }),
+    coursesNotes: byLanguage({
+      en: 'All classes are cancelled on statutory holidays. Please double check with class contact before joining a new class.',
+      ch: '加拿大法定节假日没有课程。请与课程联系确认后再加入新的课程。'
     })
   }
 };

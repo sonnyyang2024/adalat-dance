@@ -27,11 +27,12 @@ const DancePage = ({
   const dance = data[danceId];
 
   const classColumns = [
+    { id: getUUID(), key: 'name', label: 'Class Name' },
+    { id: getUUID(), key: 'location', label: 'Location' },
+    { id: getUUID(), key: 'address', label: 'Address' },
     { id: getUUID(), key: 'date', label: 'Date' },
     { id: getUUID(), key: 'time', label: 'Time' },
-    { id: getUUID(), key: 'location', label: 'Location' },
-    { id: getUUID(), key: 'name', label: 'Class Name' }
-  ]
+  ];
 
   return (
     <div className="dance-page">
@@ -42,6 +43,7 @@ const DancePage = ({
       />
       <ScheduleBanner 
         title={dance.coursesFor}
+        notes={dance.coursesNotes}
         columns={classColumns}
         rows={dance.courses}
       />

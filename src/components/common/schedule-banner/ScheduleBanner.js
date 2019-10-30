@@ -9,6 +9,7 @@ import './ScheduleBanner.scss';
 
 const ScheduleBanner = ({
   title,
+  notes,
   columns,
   rows
 }) => {
@@ -23,6 +24,9 @@ const ScheduleBanner = ({
         <h1 className="banner__title">
           {title}
         </h1>
+        {
+          notes && <p className="notes">{notes}</p>
+        }
         <table className="banner__list--schedule">
           <thead>
             <tr className="schedule-row">
