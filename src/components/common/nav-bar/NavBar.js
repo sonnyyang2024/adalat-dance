@@ -18,7 +18,7 @@ const translationsByLanguage = {
   en: {
     home: 'Home',
     bellydance: 'Bellydance',
-    uyghur: 'Uyghur',
+    uyghur: 'Uyghur Dance',
     bollywood: 'Bollywood',
     about: 'About'
   },
@@ -55,13 +55,13 @@ const NavBar = () => {
           </NavLink>
         </li>
         <li className="nav-bar__item">
-          <NavLink className="nav-bar__link" to={`/dance/${BOLLYWOOD_ID}`}>
-            {bollywood}
+          <NavLink className="nav-bar__link" to={`/dance/${UYGHUR_ID}`}>
+            {uyghur}
           </NavLink>
         </li>
         <li className="nav-bar__item">
-          <NavLink className="nav-bar__link" to={`/dance/${UYGHUR_ID}`}>
-            {uyghur}
+          <NavLink className="nav-bar__link" to={`/dance/${BOLLYWOOD_ID}`}>
+            {bollywood}
           </NavLink>
         </li>
         <li className="nav-bar__item">

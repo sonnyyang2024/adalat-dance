@@ -2,7 +2,6 @@
 
 import React, { Fragment } from 'react';
 import {
-  BOLLYWOOD_ID,
   BELLYDANCE_ID,
   UYGHUR_ID
 } from '../../../constants';
@@ -29,7 +28,53 @@ export default {
     en: 'Contact Adalat',
     ch: '联系Adalat'
   }),
-  banners: [
+  banners: [    {
+      title: byLanguage({
+        en: 'Services',
+        ch: '服务'
+      }),
+      list: [
+        {
+          id: getUUID(),
+          name: byLanguage({
+            en: 'Festivals & Theatre Productions',
+            ch: '节庆和剧场制作'
+          }),
+          description: byLanguage({
+            en: 'Hire Adalat and Adalat Dance Company for your next tv show, movie, or festival production.',
+            ch: '聘请Adalat和她的公司来创造你的下一个电视剧、电影或节庆表演制作。'
+          }),
+          imageName: 'bellydance-group.jpg',
+          linkTo: '/about'
+        },
+        {
+          id: getUUID(),
+          name: byLanguage({
+            en: 'Parties and Events',
+            ch: '聚会与活动'
+          }),
+          description: byLanguage({
+            en: 'Hire Adalat for weddings, birthday parties, and other celebrations!',
+            ch: '婚礼、生日派对、重大庆祝，让Adalat点亮你的派对，让你的来宾赞不绝口'
+          }),
+          imageName: 'adalat-candle-min.jpg',
+          linkTo: '/about'
+        },
+        {
+          id: getUUID(),
+          name: byLanguage({
+            en: 'Private Lessons',
+            ch: '私人一对一课程'
+          }),
+          description: byLanguage({
+            en: 'Learn dancing with Adalat, get a choreograph tailored to your style and level.',
+            ch: '让Adalat设计专属于你的课程和编舞。'
+          }),
+          imageName: 'adalat-bellydance-pink.JPG',
+          linkTo: '/about'
+        }
+      ]
+    },
     {
       title: byLanguage({
         en: 'Classes',
@@ -52,75 +97,15 @@ export default {
         {
           id: getUUID(),
           name: byLanguage({
-            en: 'Uyghur',
-            ch: '维吾尔舞'
+            en: 'Uyghur Traditional Dance',
+            ch: '维吾尔传统舞'
           }),
           description: byLanguage({
-            en: 'Learn authentic Uyghur Sanam dance with Adalat.',
+            en: 'Learn authentic Uyghur dance with Adalat.',
             ch: '跟着Adalat学习正宗的新疆维吾尔族舞蹈。'
           }),
           imageName: 'adalat-uyghur.jpg',
           linkTo: `/dance/${UYGHUR_ID}`
-        },
-        {
-          id: getUUID(),
-          name: byLanguage({
-            en: 'Bollywood',
-            ch: '宝莱坞舞'
-          }),
-          description: byLanguage({
-            en: 'Explore fun bollywood dance with Adalat.',
-            ch: '跟着Adalat探索宝莱坞舞蹈。'
-          }),
-          imageName: 'adalat-bollywood.jpg',
-          linkTo: `/dance/${BOLLYWOOD_ID}`
-        }
-      ]
-    },
-    {
-      title: byLanguage({
-        en: 'Services',
-        ch: '服务'
-      }),
-      list: [
-        {
-          id: getUUID(),
-          name: byLanguage({
-            en: 'Private Lessons',
-            ch: '私人一对一课程'
-          }),
-          description: byLanguage({
-            en: 'Learn dancing with Adalat, get a choreograph tailored to your style and level.',
-            ch: '让Adalat设计专属于你的课程和编舞。'
-          }),
-          imageName: 'adalat-bellydance-pink.JPG',
-          linkTo: '/about'
-        },
-        {
-          id: getUUID(),
-          name: byLanguage({
-            en: 'Parties and Events',
-            ch: '聚会与活动'
-          }),
-          description: byLanguage({
-            en: 'Weddings, birthday parties, celebrations... Adalat will make your party shine even more!',
-            ch: '婚礼、生日派对、重大庆祝，让Adalat点亮你的派对，让你的来宾赞不绝口'
-          }),
-          imageName: 'adalat-performance-candle.jpg',
-          linkTo: '/about'
-        },
-        {
-          id: getUUID(),
-          name: byLanguage({
-            en: 'Discounted Packages',
-            ch: '组合优惠'
-          }),
-          description: byLanguage({
-            en: 'Learn tailored curriculum and choreograph with your friends.',
-            ch: '招呼你的朋友们一起预定Adalat的课程，即可得到优惠。'
-          }),
-          imageName: 'bellydance-group.jpg',
-          linkTo: '/about'
         }
       ]
     }
