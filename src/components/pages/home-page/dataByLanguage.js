@@ -43,8 +43,8 @@ export default {
             ch: '肚皮舞'
           }),
           description: byLanguage({
-            en: 'A renowned bellydance artisit, Ada is also an amazing teacher.',
-            ch: '作为一名知名的肚皮舞艺术家，Ada是一个有趣又有经验的老师。'
+            en: 'A renowned bellydance artisit, Adalat is also an amazing teacher.',
+            ch: '作为一名知名的肚皮舞艺术家，Adalat是一个有趣又有经验的老师。'
           }),
           imageName: 'adalat-students-bellydance.jpg',
           linkTo: `/dance/${BELLYDANCE_ID}`
@@ -56,8 +56,8 @@ export default {
             ch: '维吾尔舞'
           }),
           description: byLanguage({
-            en: 'Learn authentic Uyghur Sanam dance with Ada.',
-            ch: '跟着Ada学习正宗的新疆维吾尔族舞蹈。'
+            en: 'Learn authentic Uyghur Sanam dance with Adalat.',
+            ch: '跟着Adalat学习正宗的新疆维吾尔族舞蹈。'
           }),
           imageName: 'adalat-uyghur.jpg',
           linkTo: `/dance/${UYGHUR_ID}`
@@ -69,8 +69,8 @@ export default {
             ch: '宝莱坞舞'
           }),
           description: byLanguage({
-            en: 'Explore fun bollywood dance with Ada.',
-            ch: '跟着Ada探索宝莱坞舞蹈。'
+            en: 'Explore fun bollywood dance with Adalat.',
+            ch: '跟着Adalat探索宝莱坞舞蹈。'
           }),
           imageName: 'adalat-bollywood.jpg',
           linkTo: `/dance/${BOLLYWOOD_ID}`
@@ -90,8 +90,8 @@ export default {
             ch: '私人一对一课程'
           }),
           description: byLanguage({
-            en: 'Learn dancing with Ada, get a choreograph tailored to your style and level.',
-            ch: '让Ada设计专属于你的课程和编舞。'
+            en: 'Learn dancing with Adalat, get a choreograph tailored to your style and level.',
+            ch: '让Adalat设计专属于你的课程和编舞。'
           }),
           imageName: 'adalat-bellydance-pink.JPG',
           linkTo: '/about'
@@ -103,8 +103,8 @@ export default {
             ch: '聚会与活动'
           }),
           description: byLanguage({
-            en: 'Weddings, birthday parties, celebrations... Ada will make your party shine even more!',
-            ch: '婚礼、生日派对、重大庆祝，让Ada点亮你的派对，让你的客人赞不绝口'
+            en: 'Weddings, birthday parties, celebrations... Adalat will make your party shine even more!',
+            ch: '婚礼、生日派对、重大庆祝，让Adalat点亮你的派对，让你的来宾赞不绝口'
           }),
           imageName: 'adalat-performance-candle.jpg',
           linkTo: '/about'
@@ -117,7 +117,7 @@ export default {
           }),
           description: byLanguage({
             en: 'Learn tailored curriculum and choreograph with your friends.',
-            ch: '招呼你的朋友们一起预定Ada的课程，即可得到优惠。'
+            ch: '招呼你的朋友们一起预定Adalat的课程，即可得到优惠。'
           }),
           imageName: 'bellydance-group.jpg',
           linkTo: '/about'
