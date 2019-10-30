@@ -38,6 +38,7 @@ const DancePage = ({
       <Gallery 
         title={dance.title} 
         description={dance.description}
+        imageNames={dance.imageNames}
       />
       <ScheduleBanner 
         title={dance.coursesFor}

@@ -2,11 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 
+import { getImageUrl } from '../../../utility';
+
 import './Gallery.scss';
 
 const Gallery = ({
   title,
-  description
+  description,
+  imageNames
 }) => {
   const settings = {
     dots: true,
@@ -20,25 +23,17 @@ const Gallery = ({
       <div className="container">
         <h1 className="gallery__title">{title}</h1>
         <p>{description}</p>
-        <Slider {...settings}>
-          <div>
-            <h3>1</h3>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
+        <Slider {...settings} className="gallery__slider">
+          {
+            imageNames.map(imageName => (
+              <div className="gallery__image-wrapper">
+                <img
+                  src={getImageUrl(imageName)}
+                  alt={`Adalat Omar ${title} ${imageName}`}
+                />
+              </div>
+            ))
+          }
         </Slider>
       </div>
     </div>

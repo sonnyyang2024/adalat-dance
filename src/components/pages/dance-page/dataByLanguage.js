@@ -14,11 +14,6 @@ export default {
     button: byLanguage({
       en: 'Learn Bollywood',
       ch: '学习宝莱坞舞蹈'
-    }),
-    courses: [],
-    coursesFor: byLanguage({
-      en: 'Classes for bollywood dance',
-      ch: '宝莱坞舞蹈课程'
     })
   },
   [BELLYDANCE_ID]: {
@@ -34,6 +29,11 @@ export default {
       en: 'Learn Bellydance',
       ch: '学习肚皮舞'
     }),
+    imageNames: [
+      'adalat-studio-bellydance.jpg',
+      'blue.jpg',
+      'ada-white.jpg'
+    ],
     courses: [
       {
         id: getUUID(),
@@ -47,7 +47,7 @@ export default {
       }
     ],
     coursesFor: byLanguage({
-      en: 'Classes for Bellydance',
+      en: 'Bellydance Classes',
       ch: '肚皮舞课程'
     })
   },
@@ -64,6 +64,9 @@ export default {
       en: 'Learn Uyghur Dance',
       ch: '学习维吾尔舞'
     }),
+    imageNames: [
+      'adalat-uyghur.jpg'
+    ],
     courses: [
       {
         id: getUUID(),

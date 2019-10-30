@@ -4,3 +4,19 @@
   @include gradient;
   padding: 30px 0;
 }
+
+.gallery__slider {
+  height: 400px;
+  margin: 30px 0;
+}
+
+.gallery__image-wrapper {
+  text-align: center;
+  margin: auto;
+}
+
+.gallery__slider img {
+  width: auto;
+  height: 400px;
+  margin: auto;
+}
