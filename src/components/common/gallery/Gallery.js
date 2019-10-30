@@ -24,16 +24,26 @@ const Gallery = ({
         <h1 className="gallery__title">{title}</h1>
         <p>{description}</p>
         <Slider {...settings} className="gallery__slider">
+          <div className="gallery__slider">
+            <iframe 
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/SPiJANRQ9EE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+            >
+            </iframe>
+          </div>
           {
             imageNames.map(imageName => (
-              <div className="gallery__image-wrapper">
-                <img
-                  src={getImageUrl(imageName)}
-                  alt={`Adalat Omar ${title} ${imageName}`}
+              <div className="gallery__slider">
+                <img className="gallery__slider__content"
+                  key={imageName.id}
+                  src={getImageUrl(imageName.name)}
+                  alt={`Adalat Omar ${title} ${imageName.name}`}
                 />
               </div>
             ))
           }
+
         </Slider>
       </div>
     </div>

@@ -30,9 +30,18 @@ export default {
       ch: '学习肚皮舞'
     }),
     imageNames: [
-      'adalat-studio-bellydance.jpg',
-      'blue.jpg',
-      'ada-white.jpg'
+      {
+        id: getUUID(),
+        name: 'ada-white.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-studio-bellydance.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'blue.jpg'
+      }
     ],
     courses: [
       {
