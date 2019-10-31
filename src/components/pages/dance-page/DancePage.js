@@ -28,10 +28,10 @@ const DancePage = ({
 
   const classColumns = [
     { id: getUUID(), key: 'name', label: 'Class Name' },
-    { id: getUUID(), key: 'location', label: 'Location' },
-    { id: getUUID(), key: 'address', label: 'Address' },
+    { id: getUUID(), key: 'fullAddress', label: 'Address' },
     { id: getUUID(), key: 'date', label: 'Date' },
     { id: getUUID(), key: 'time', label: 'Time' },
+    { id: getUUID(), key: 'contacts', label: 'Contacts', type: 'contacts' }
   ];
 
   return (

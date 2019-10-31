@@ -56,13 +56,29 @@ export default {
         }),
         description: '',
         location: "Dancin' Stars",
-        address: '7757 Edmonds Street Burnaby',
+        address: '7757 Edmonds Street, Burnaby',
+        fullAddress: "Dancin' Stars, 7757 Edmonds Street, Burnaby",
         time: 'TBA',
         date: 'Every Monday',
         notes: byLanguage({
-          en: 'Please register at Dancing Stars or contact Adalat.',
-          ch: '请联系Dancing Star或Adalat注册课程。'
-        })
+          en: "Please register at Dancin' Stars or contact Adalat.",
+          ch: "请联系Dancin' Stars或Adalat注册课程。"
+        }),
+        contacts: [
+          {
+            id: getUUID(),
+            name: 'Adalat Omar',
+            phoneNumber: '(604) 512-5617‬',
+            email: 'adalat.dance@gmail.com'
+          },
+          {
+            id: getUUID(),
+            name: "Dancin' Stars",
+            phoneNumber: '(604) 524-3516',
+            email: 'dancinstarsbc@gmail.com',
+            website: 'http://dancinstarsbc.com'
+          }
+        ]
       },
       {
         id: getUUID(),
@@ -75,6 +91,7 @@ export default {
           ch: '在学习编舞的同时巩固基础动作。'
         }),
         address: '250 - 12551 Vickers Way, Richmond',
+        fullAddress: '250 - 12551 Vickers Way, Richmond',
         time: '7:00 - 8:30PM',
         date: 'Every Wednesday',
         contacts: [
@@ -125,6 +142,7 @@ export default {
         }),
         location: "Dancin' Stars",
         address: '7757 Edmonds Street, Burnaby, BC',
+        fullAddress: "Dancin' Stars, 7757 Edmonds Street, Burnaby",
         time: '4:30 - 6:00PM',
         date: 'Every Wednesday',
         contacts: [
@@ -151,6 +169,7 @@ export default {
         }),
         location: '',
         address: '250 - 12551 Vickers Way, Richmond',
+        fullAddress: '250 - 12551 Vickers Way, Richmond',
         time: '7 - 8:30PM',
         date: 'Every Monday',
         contacts: [
