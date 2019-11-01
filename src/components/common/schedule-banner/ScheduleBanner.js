@@ -1,36 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 // styles
 import './ScheduleBanner.scss';
 
-const ContactsCell = ({ contacts }) => (
-  <td className="schedule-row__field">
-    {contacts.map(contact => (
-      <Fragment key={contact.id}>
-        {contact.name && (
-          <h4>
-            {contact.name}
-          </h4>
-        )}
-        {contact.phoneNumber && (
-          <a href={`tel:${contact.phoneNumber}`}>
-            {contact.phoneNumber}
-          </a>
-        )}
-        {contact.email && (
-          <a href={`mailto:${contact.email}`}>
-            {contact.email}
-          </a>
-        )}
-        {contact.website && (
-          <a href={contact.website} target="_blank" rel="noopener noreferrer">
-            {contact.website}
-          </a>
-        )}
-      </Fragment>
-    ))}
-  </td>
-);
+// components
+import Contacts from '../../common/contacts/Contacts';
 
 const ScheduleBanner = ({
   title,
@@ -69,10 +43,12 @@ const ScheduleBanner = ({
 
                   if (column.type === 'contacts') {
                     return (
-                      <ContactsCell 
-                        contacts={data} 
-                        key={`${row.id}${data}`}
-                      />
+                      <td className="schedule-row__field schedule-row__field--contacts">
+                        <Contacts
+                          contacts={data} 
+                          key={`${row.id}${data}`}
+                        />
+                      </td>
                     );
                   }
 
