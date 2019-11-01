@@ -78,6 +78,10 @@ export default {
             email: 'dancinstarsbc@gmail.com',
             website: 'http://dancinstarsbc.com'
           }
+        ],
+        contactNames: [
+          'adalat_omar',
+          "dancin_stars"
         ]
       },
       {
@@ -106,6 +110,10 @@ export default {
             name: 'Leana Li',
             phoneNumber: '(604) 782-6544'
           }
+        ],
+        contactNames: [
+          'adalat_omar',
+          'leana_li'
         ]
       }
     ],
@@ -160,6 +168,10 @@ export default {
             website: 'http://dancinstarsbc.com'
           }
         ],
+        contactNames: [
+          'adalat_omar',
+          "dancin_stars"
+        ]
       },
       {
         id: getUUID(),
@@ -185,6 +197,10 @@ export default {
             phoneNumber: '(604) 782-6544'
           }
         ],
+        contactNames: [
+          'adalat_omar',
+          'leana_li'
+        ]
       }
     ],
     coursesFor: byLanguage({

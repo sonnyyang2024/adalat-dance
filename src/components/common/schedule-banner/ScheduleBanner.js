@@ -43,9 +43,9 @@ const ScheduleBanner = ({
 
                   if (column.type === 'contacts') {
                     return (
-                      <td className="schedule-row__field schedule-row__field--contacts">
+                      <td className="schedule-row__field">
                         <Contacts
-                          contacts={data} 
+                          contactNames={data} 
                           key={`${row.id}${data}`}
                         />
                       </td>

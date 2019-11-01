@@ -30,7 +30,7 @@ const DancePage = ({
     { id: getUUID(), key: 'fullAddress', label: 'Address' },
     { id: getUUID(), key: 'date', label: 'Date' },
     { id: getUUID(), key: 'time', label: 'Time' },
-    { id: getUUID(), key: 'contacts', label: 'Contacts', type: 'contacts' }
+    { id: getUUID(), key: 'contactNames', label: 'Contacts', type: 'contacts' }
   ];
 
   return (

@@ -1,0 +1,41 @@
+.contact {
+  margin-top: .5rem;
+}
+
+.contact__name {
+  color: var(--color-purple);
+  margin: 0;
+}
+
+.contact__list {
+  padding-left: 0;
+  margin: 2px 0;
+  list-style: none;
+}
+
+.contact__item:hover {
+  background-color: var(--color-grey-100);
+
+  & a {
+    color: var(--color-purple);
+  }
+
+  & .contact__item__icon {
+    fill: var(--color-purple);
+  }
+}
+
+.contact__item a {
+  padding: 4px;
+  color: var(--color-grey-500);
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+}
+
+.contact__item__icon {
+  width: 24px;
+  margin-right: .5rem;
+  fill: var(--color-grey-500);
+  opacity: .6;
+}
