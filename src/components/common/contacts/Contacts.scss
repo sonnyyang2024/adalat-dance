@@ -3,7 +3,7 @@
 }
 
 .contact__name {
-  color: var(--color-purple);
+  font-size: 20px;
   margin: 0;
 }
 
@@ -13,7 +13,32 @@
   list-style: none;
 }
 
-.contact__item:hover {
+.contact__item a {
+  padding: 4px;
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+}
+
+.footer .contact__name {
+  font-size: 22px;
+}
+
+.footer .contact__item a {
+  color: white;
+  opacity: .8;
+
+  &:hover {
+    opacity: 1;
+    background-color: rgba(255,255,255,.2);
+  }
+}
+
+.footer .contact__item__icon {
+  fill: white;
+}
+
+.banner--schedule .contact__item:hover {
   background-color: var(--color-grey-100);
 
   & a {
@@ -25,17 +50,20 @@
   }
 }
 
-.contact__item a {
-  padding: 4px;
+.banner--schedule .contact__name {
+  color: var(--color-purple);
+}
+
+.banner--schedule .contact__item a {
   color: var(--color-grey-500);
-  text-decoration: none;
-  display: flex;
-  width: 100%;
+}
+
+.banner--schedule .contact__item__icon {
+  fill: var(--color-grey-500);
+  opacity: .6;
 }
 
 .contact__item__icon {
   width: 24px;
   margin-right: .5rem;
-  fill: var(--color-grey-500);
-  opacity: .6;
 }

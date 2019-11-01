@@ -14,8 +14,8 @@ export default {
     ch: '电话'
   }),
   contactMessage: byLanguage({
-    en: 'Call us',
-    ch: '请致电我们'
+    en: 'Contact Us',
+    ch: '联系我们'
   }),
   contacts: [
     {
