@@ -20,12 +20,18 @@
   width: 100%;
 }
 
+.footer .contact {
+  margin-top: 1.5rem;
+}
+
 .footer .contact__name {
   font-size: 22px;
+  opacity: .6;
 }
 
 .footer .contact__item a {
   color: white;
+  padding: 10px 6px;
   opacity: .8;
 
   &:hover {
