@@ -2,8 +2,8 @@ import { byLanguage, getUUID } from '../../../utility';
 
 export default {
   ctaMessage: byLanguage({
-    en: 'Contact Ada for your next event or class.',
-    ch: '联系Ada来预定活动或课程。'
+    en: 'Contact Adalat for your next event or class.',
+    ch: '联系Adalat来预定活动或课程。'
   }),
   ctaButton: byLanguage({
     en: 'Contact Adalat',
@@ -20,13 +20,14 @@ export default {
   contacts: [
     {
       id: getUUID(),
-      name: 'Ada',
-      phoneNumber: '604-123-4567'
+      name: 'Adalat Omar',
+      phoneNumber: '(604) 512-5617‬',
+      email: 'adalat.dance@gmail.com'
     },
     {
       id: getUUID(),
-      name: 'Leana',
-      phoneNumber: '604-782-6544',
+      name: 'Leana Li',
+      phoneNumber: '(604) 782-6544',
       notes: 'English, Mandarin, Cantonese'
     }
   ],
@@ -39,17 +40,17 @@ export default {
       {
         id: getUUID(),
         name: 'Facebook',
-        linkTo: 'https://facebook.com/adaladance'
+        linkTo: 'https://www.facebook.com/adalatdance'
       },
       {
         id: getUUID(),
         name: 'Instagram',
-        linkTo: 'https://instagram.com/adaladance'
+        linkTo: 'https://instagram.com/adalat_dance'
       },
       {
         id: getUUID(),
         name: 'Youtube',
-        linkTo: 'https://youtube.com/adaladance'
+        linkTo: 'https://www.youtube.com/user/adalatdance'
       }
     ]
   }

@@ -25,6 +25,13 @@ const HomePage = () => {
     scheduleBanner
   } = data;
 
+  const scheduleColumns = [
+    { id: getUUID(), key: 'date', label: 'Date' },
+    { id: getUUID(), key: 'startTime', label: 'Time' },
+    { id: getUUID(), key: 'venue', label: 'Venue' },
+    { id: getUUID(), key: 'eventName', label: 'Event' }
+  ]
+
   return (
     <div>
       <Hero
@@ -44,7 +51,8 @@ const HomePage = () => {
       }
       <ScheduleBanner
         title={scheduleBanner.title}
-        list={scheduleBanner.list}
+        columns={scheduleColumns}
+        rows={scheduleBanner.list}
       />
     </div>
   );

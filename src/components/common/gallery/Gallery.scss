@@ -1,0 +1,24 @@
+@import '../../../scheme/config.scss';
+
+.gallery {
+  @include gradient;
+  padding: 30px 0;
+}
+
+.gallery__slider {
+  height: 400px;
+  margin: 30px 0;
+}
+
+.gallery__slider {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery__slider__content {
+  height: 400px;
+  margin: auto;
+}

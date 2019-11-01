@@ -8,8 +8,14 @@ import useDataByLanguage from '../../../hooks/useDataByLanguage';
 import dataByLanguage from './dataByLanguage';
 
 // components
-import Button from '../../common/button/Button';
-import CourseList from './course-list/CourseList';
+import Gallery from '../../common/gallery/Gallery';
+import ScheduleBanner from '../../common/schedule-banner/ScheduleBanner';
+
+// Styles
+import './DancePage.scss';
+
+// Utils
+import { getUUID } from '../../../utility';
 
 const DancePage = ({
   match
@@ -19,15 +25,27 @@ const DancePage = ({
   const { danceId } = match.params;
   const dance = data[danceId];
 
+  const classColumns = [
+    { id: getUUID(), key: 'name', label: 'Class Name' },
+    { id: getUUID(), key: 'fullAddress', label: 'Address' },
+    { id: getUUID(), key: 'date', label: 'Date' },
+    { id: getUUID(), key: 'time', label: 'Time' },
+    { id: getUUID(), key: 'contacts', label: 'Contacts', type: 'contacts' }
+  ];
+
   return (
-    <div>
-      <h1>{dance.title}</h1>
-      <p>{dance.description}</p>
-      <Button
-        text={dance.button}
-        link="/"
+    <div className="dance-page">
+      <Gallery 
+        title={dance.title} 
+        description={dance.description}
+        imageNames={dance.imageNames}
       />
-      <CourseList courses={dance.courses} />
+      <ScheduleBanner 
+        title={dance.coursesFor}
+        notes={dance.coursesNotes}
+        columns={classColumns}
+        rows={dance.courses}
+      />
     </div>
   );
 };
