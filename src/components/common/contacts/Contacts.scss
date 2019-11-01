@@ -1,0 +1,76 @@
+.contact {
+  margin-top: .5rem;
+}
+
+.contact__name {
+  font-size: 20px;
+  margin: 0;
+}
+
+.contact__list {
+  padding-left: 0;
+  margin: 2px 0;
+  list-style: none;
+}
+
+.contact__item a {
+  padding: 4px;
+  text-decoration: none;
+  display: flex;
+  letter-spacing: .5px;
+  width: 100%;
+}
+
+.footer .contact {
+  margin-top: 1.5rem;
+}
+
+.footer .contact__name {
+  font-size: 22px;
+  opacity: .6;
+}
+
+.footer .contact__item a {
+  color: white;
+  padding: 10px 6px;
+  opacity: .8;
+
+  &:hover {
+    opacity: 1;
+    background-color: rgba(255,255,255,.2);
+  }
+}
+
+.footer .contact__item__icon {
+  fill: white;
+}
+
+.banner--schedule .contact__item:hover {
+  background-color: var(--color-grey-100);
+
+  & a {
+    color: var(--color-purple);
+  }
+
+  & .contact__item__icon {
+    fill: var(--color-purple);
+  }
+}
+
+.banner--schedule .contact__name {
+  color: var(--color-purple);
+}
+
+.banner--schedule .contact__item a {
+  color: var(--color-grey-500);
+}
+
+.banner--schedule .contact__item__icon {
+  fill: var(--color-grey-500);
+  opacity: .6;
+}
+
+.contact__item__icon {
+  width: 24px;
+  margin-right: .5rem;
+}

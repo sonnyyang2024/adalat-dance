@@ -64,20 +64,9 @@ export default {
           en: "Please register at Dancin' Stars or contact Adalat.",
           ch: "请联系Dancin' Stars或Adalat注册课程。"
         }),
-        contacts: [
-          {
-            id: getUUID(),
-            name: 'Adalat Omar',
-            phoneNumber: '(604) 512-5617‬',
-            email: 'adalat.dance@gmail.com'
-          },
-          {
-            id: getUUID(),
-            name: "Dancin' Stars",
-            phoneNumber: '(604) 524-3516',
-            email: 'dancinstarsbc@gmail.com',
-            website: 'http://dancinstarsbc.com'
-          }
+        contactNames: [
+          'adalat_omar',
+          "dancin_stars"
         ]
       },
       {
@@ -94,18 +83,9 @@ export default {
         fullAddress: '250 - 12551 Vickers Way, Richmond',
         time: '7:00 - 8:30PM',
         date: 'Every Wednesday',
-        contacts: [
-          {
-            id: getUUID(),
-            name: 'Adalat Omar',
-            phoneNumber: '(604) 512-5617‬',
-            email: 'adalat.dance@gmail.com'
-          },
-          {
-            id: getUUID(),
-            name: 'Leana Li',
-            phoneNumber: '(604) 782-6544'
-          }
+        contactNames: [
+          'adalat_omar',
+          'leana_li'
         ]
       }
     ],
@@ -145,21 +125,10 @@ export default {
         fullAddress: "Dancin' Stars, 7757 Edmonds Street, Burnaby",
         time: '4:30 - 6:00PM',
         date: 'Every Wednesday',
-        contacts: [
-          {
-            id: getUUID(),
-            name: 'Adalat Omar',
-            phoneNumber: '(604) 512-5617‬',
-            email: 'adalat.dance@gmail.com'
-          },
-          {
-            id: getUUID(),
-            name: "Dancin' Stars",
-            phoneNumber: '(604) 524-3516',
-            email: 'dancinstarsbc@gmail.com',
-            website: 'http://dancinstarsbc.com'
-          }
-        ],
+        contactNames: [
+          'adalat_omar',
+          "dancin_stars"
+        ]
       },
       {
         id: getUUID(),
@@ -172,19 +141,10 @@ export default {
         fullAddress: '250 - 12551 Vickers Way, Richmond',
         time: '7 - 8:30PM',
         date: 'Every Monday',
-        contacts: [
-          {
-            id: getUUID(),
-            name: 'Adalat Omar',
-            phoneNumber: '(604) 512-5617‬',
-            email: 'adalat.dance@gmail.com'
-          },
-          {
-            id: getUUID(),
-            name: 'Leana Li',
-            phoneNumber: '(604) 782-6544'
-          }
-        ],
+        contactNames: [
+          'adalat_omar',
+          'leana_li'
+        ]
       }
     ],
     coursesFor: byLanguage({

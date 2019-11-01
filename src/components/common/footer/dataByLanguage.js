@@ -14,23 +14,9 @@ export default {
     ch: '电话'
   }),
   contactMessage: byLanguage({
-    en: 'Call us',
-    ch: '请致电我们'
+    en: 'Contact Us',
+    ch: '联系我们'
   }),
-  contacts: [
-    {
-      id: getUUID(),
-      name: 'Adalat Omar',
-      phoneNumber: '(604) 512-5617‬',
-      email: 'adalat.dance@gmail.com'
-    },
-    {
-      id: getUUID(),
-      name: 'Leana Li',
-      phoneNumber: '(604) 782-6544',
-      notes: 'English, Mandarin, Cantonese'
-    }
-  ],
   socialMedia: {
     title: byLanguage({
       en: 'Social Media',

@@ -1,6 +1,9 @@
 import React from 'react';
 import Button from '../button/Button';
 
+// component 
+import Contacts from '../contacts/Contacts';
+
 // data
 import dataByLanguage from './dataByLanguage';
 
@@ -19,6 +22,11 @@ const Footer = () => {
     socialMedia
   } = useDataByLanguage(dataByLanguage);
 
+  const footerContacts = [
+    'adalat_omar',
+    'leana_li'
+  ]
+
   return (
     <div className="footer">
       <div className="container">
@@ -31,23 +39,7 @@ const Footer = () => {
         </div>
         <div className="footer__column">
           <h3>{contactMessage}</h3>
-          {
-            contacts.map(({
-              id,
-              name,
-              phoneNumber,
-            }) => (
-              <div key={id}>
-                <p>{name}</p>
-                <a
-                  className="footer__phone-number"
-                  href={`tel:${phoneNumber}`}
-                >
-                  {contact}: {phoneNumber}
-                </a>
-              </div>
-            ))
-          }
+          <Contacts contactNames={footerContacts} />
         </div>
         <div className="footer__column">
           <h3>{socialMedia.title}</h3>
