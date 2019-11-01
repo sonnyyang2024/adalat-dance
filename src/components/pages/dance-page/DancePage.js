@@ -8,7 +8,6 @@ import useDataByLanguage from '../../../hooks/useDataByLanguage';
 import dataByLanguage from './dataByLanguage';
 
 // components
-import CourseList from './course-list/CourseList';
 import Gallery from '../../common/gallery/Gallery';
 import ScheduleBanner from '../../common/schedule-banner/ScheduleBanner';
 

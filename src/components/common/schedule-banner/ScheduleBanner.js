@@ -1,17 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-
-// components
-import ScheduleRow from '../schedule-row/ScheduleRow';
+import React, { Fragment } from 'react';
 
 // styles
 import './ScheduleBanner.scss';
-import { arrayExpression } from '@babel/types';
 
 const ContactsCell = ({ contacts }) => (
   <td className="schedule-row__field">
     {contacts.map(contact => (
-      <>
+      <Fragment key={contact.id}>
         {contact.name && (
           <h4>
             {contact.name}
@@ -28,11 +23,11 @@ const ContactsCell = ({ contacts }) => (
           </a>
         )}
         {contact.website && (
-          <a href={contact.website} target="_blank">
+          <a href={contact.website} target="_blank" rel="noopener noreferrer">
             {contact.website}
           </a>
         )}
-      </>
+      </Fragment>
     ))}
   </td>
 );
@@ -43,9 +38,6 @@ const ScheduleBanner = ({
   columns,
   rows
 }) => {
-  const sortedRows = rows.sort((rowX, rowY) => {
-    return new Date(rowX.date) - new Date(rowY.date);
-  });
 
   return (
     <div className="banner--schedule">
@@ -77,13 +69,19 @@ const ScheduleBanner = ({
 
                   if (column.type === 'contacts') {
                     return (
-                      <ContactsCell contacts={data} />
+                      <ContactsCell 
+                        contacts={data} 
+                        key={`${row.id}${data}`}
+                      />
                     );
                   }
 
                   else {
                     return (
-                      <td className="schedule-row__field">
+                      <td 
+                        className="schedule-row__field"
+                        key={`${row.id}${data}`}
+                      >
                         {data}
                       </td>
                     );

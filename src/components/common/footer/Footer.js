@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Button from '../button/Button';
 
 // data
@@ -25,7 +24,10 @@ const Footer = () => {
       <div className="container">
         <div className="footer__column">
           <h2 className="footer__cta-message">{ctaMessage}</h2>
-          <Button text={ctaButton} />
+          <Button 
+            text={ctaButton}
+            link="/"
+          />
         </div>
         <div className="footer__column">
           <h3>{contactMessage}</h3>
@@ -55,10 +57,9 @@ const Footer = () => {
               name,
               linkTo
             }) => (
-              <p>
+              <p key={id}>
                 <a
                   className="footer__social-media__link"
-                  key={id}
                   href={linkTo}
                   target="_blank"
                   rel="noopener noreferrer"

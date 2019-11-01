@@ -26,6 +26,7 @@ const Gallery = ({
         <Slider {...settings} className="gallery__slider">
           <div className="gallery__slider">
             <iframe 
+              title="Video"
               width="560"
               height="315"
               src="https://www.youtube.com/embed/SPiJANRQ9EE?rel=0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
@@ -34,9 +35,11 @@ const Gallery = ({
           </div>
           {
             imageNames.map(imageName => (
-              <div className="gallery__slider">
+              <div
+                className="gallery__slider"
+                key={imageName.id}
+              >
                 <img className="gallery__slider__content"
-                  key={imageName.id}
                   src={getImageUrl(imageName.name)}
                   alt={`Adalat Omar ${title} ${imageName.name}`}
                 />
