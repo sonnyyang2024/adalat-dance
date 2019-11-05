@@ -38,7 +38,7 @@ const HomePage = () => {
         title={title}
         information={information}
         callToAction={callToAction}
-        imageName="adalat-blue-transparent.png"
+        imageName="adalat-white-cropped.png"
       />
       {
         banners.map(((banner) => (

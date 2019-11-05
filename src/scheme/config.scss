@@ -4,6 +4,7 @@
   --color-purple-dark: rgb(105, 52, 191);
   --color-grey-100: #eee;
   --color-grey-500: #555;
+  --color-black: #0a0606;
   --font-sans-serif: 'Open Sans', sans-serif;
   --font-sans-serif-secondary: 'Montserrat', 'Open Sans', sans-serif;
   --font-serif: 'Arapey', serif;
@@ -20,4 +21,13 @@
   background: transparent linear-gradient(90deg, rgba(105, 52, 191, .9) 0%, rgba(105, 52, 191, .56) 0%, #ED06D154 76%, #FF00D400 100%) 0% 0% no-repeat padding-box;
   // background: transparent linear-gradient(90deg, rgba(105, 52, 191, .56) 0%, rgba(105, 52, 191, .56) 0%, rgba(237,6,209,.40) 80%, rgba(255,255,255,.56) 100%) 0% 0% no-repeat padding-box;
   // opacity: 0.56;
+}
+
+@mixin hero-gradient {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,d700f2+0,7a08ed+28,0a0606+95 */
+  background: #1e5799; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #1e5799 0%, #d700f2 0%, #7a08ed 28%, #0a0606 95%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #1e5799 0%,#d700f2 0%,#7a08ed 28%,#0a0606 95%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #1e5799 0%,#d700f2 0%,#7a08ed 28%,#0a0606 95%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#0a0606',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
