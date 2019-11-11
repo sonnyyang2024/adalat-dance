@@ -14,10 +14,11 @@
 }
 
 a.nav-bar__link {
-  color: black;
+  color: white;
   text-decoration: none;
+  padding-bottom: 4px;
   
   &.active {
-    color: var(--color-purple);
+    border-bottom: 1px solid var(--color-pink);
   }
 }
