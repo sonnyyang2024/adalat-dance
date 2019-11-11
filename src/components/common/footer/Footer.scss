@@ -2,7 +2,7 @@
   background-color: var(--color-purple-dark);
   color: white;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 300px;
 }
 
 .footer h3 {
@@ -17,7 +17,7 @@
   margin-top: 0;
 }
 
-.footer > .container {
+.footer__contact__container {
   display: flex;
   justify-content: space-between;
 }

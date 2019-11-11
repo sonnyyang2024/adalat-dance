@@ -3,6 +3,7 @@ import Button from '../button/Button';
 
 // component 
 import Contacts from '../contacts/Contacts';
+import ContactForm from '../contact-form/ContactForm';
 
 // data
 import dataByLanguage from './dataByLanguage';
@@ -29,7 +30,10 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <div className="container">
+      <div className="footer__form__container container">
+        <ContactForm />
+      </div>
+      <div className="footer__contact__container container">
         <div className="footer__column">
           <h2 className="footer__cta-message">{ctaMessage}</h2>
           <Button 
