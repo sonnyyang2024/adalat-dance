@@ -1,8 +1,8 @@
 .footer {
   background-color: var(--color-purple-dark);
   color: white;
-  padding-top: 30px;
-  padding-bottom: 300px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .footer h3 {
@@ -17,16 +17,20 @@
   margin-top: 0;
 }
 
+.footer .container {
+  max-width: 640px;
+}
+
 .footer__contact__container {
   display: flex;
   justify-content: space-between;
 }
 
 .footer__column {
-  width: 32%;
+  width: 50%;
 
   &:not(:first-child) {
-    margin-left: 60px;
+    margin-left: 20px;
   }
 }
 

@@ -23,19 +23,23 @@ const ContactForm = () => {
     <form className="contact-form">
       <div className="contact-form__container">
         <h1 className="contact-form__title">{title}</h1>
+        <div className="column field half-width">
+          <label>{name} *</label>
+          <input type="text" name="name" required />
+        </div>
         <div className="columns">
           <div className="column field half-width">
-            <label>{name}</label>
-            <input type="text" name="name" />
+            <label>{email} *</label>
+            <input type="email" name="email" required />
           </div>
           <div className="column field half-width">
-            <label>{email}</label>
-            <input type="email" name="email" />
+            <label>{phone}</label>
+            <input type="tel" name="phone" />
           </div>
         </div>
         <div className="field">
-            <label>{details}</label>
-            <textarea className="contact__textarea"></textarea>
+            <label>{details} *</label>
+            <textarea className="contact__textarea" required></textarea>
           </div>
         <div className="contact-form__button-wrapper">
           <input

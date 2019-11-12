@@ -35,13 +35,6 @@ const Footer = () => {
       </div>
       <div className="footer__contact__container container">
         <div className="footer__column">
-          <h2 className="footer__cta-message">{ctaMessage}</h2>
-          <Button 
-            text={ctaButton}
-            link="/"
-          />
-        </div>
-        <div className="footer__column">
           <h3>{contactMessage}</h3>
           <Contacts contactNames={footerContacts} />
         </div>
