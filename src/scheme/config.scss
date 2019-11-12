@@ -20,9 +20,9 @@
 }
 
 @mixin gradient {
-  background: transparent -webkit-gradient( linear, left top, right top, color-stop(0, rgba(215, 0, 242, .8)), color-stop(40%, rgba(122, 8, 237, .3)), color-stop(90%, rgba(54,21,105,.6)));
-  background: transparent -o-linear-gradient( left, rgba(215, 0, 242, .8) 0, rgba(122, 8, 237, .3) 40%, rgba(54,21,105,.6) 90%);
-  background: transparent linear-gradient( 90deg, rgba(215, 0, 242, .8) 0, rgba(122, 8, 237, .3) 40%, rgba(54,21,105,.6) 90%);
+  background: -webkit-gradient( linear, left top, right top, color-stop(0, rgba(215, 0, 242, 1)), color-stop(40%, rgba(122, 8, 237, 1)), color-stop(90%, rgba(54,21,105,1)));
+  background: transparent -o-linear-gradient( left, rgba(215, 0, 242, .8) 0, rgba(122, 8, 237, .5) 40%, rgba(54,21,105,.6) 90%);
+  background: linear-gradient( 90deg, rgba(215, 0, 242, 1) 0, rgba(122, 8, 237, 1) 40%, rgba(54,21,105,1) 90%);
 }
 
 @mixin hero-gradient {

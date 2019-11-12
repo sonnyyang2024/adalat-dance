@@ -1,14 +1,23 @@
 .language-switcher {
-  color: var(--color-grey-500);
-  font-size: 14px;
+  color: white;
+  font-size: 18px;
   font-family: var(--font-body-secondary);
   background-color: var(--color-grey-100);
-  width: 35px;
-  height: 35px;
+  width: 4rem;
+  height: 100%;
   border: none;
   display: inline-block;
-
+  background: var(--color-purple);
+  position: absolute;
+  right: 0;
+  top: 0;
+  
   &:hover {
     cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+    text-decoration: underline;
   }
 }

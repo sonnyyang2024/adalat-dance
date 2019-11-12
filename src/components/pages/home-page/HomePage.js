@@ -29,7 +29,8 @@ const HomePage = () => {
     { id: getUUID(), key: 'date', label: 'Date' },
     { id: getUUID(), key: 'startTime', label: 'Time' },
     { id: getUUID(), key: 'venue', label: 'Venue' },
-    { id: getUUID(), key: 'eventName', label: 'Event' }
+    { id: getUUID(), key: 'danceType', label: 'Performance' },
+    { id: getUUID(), key: 'mapLink', label: 'Directions', type: 'mapLink' }
   ]
 
   return (
