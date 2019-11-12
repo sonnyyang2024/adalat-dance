@@ -20,6 +20,7 @@ const submitStates = {
 
 const ContactForm = () => {
   const [submitState, setSubmitState] = useState(submitStates.notSubmitted);
+  const [errorMessage, setErrorMessage] = useState('');
 
   const {
     name,
@@ -29,7 +30,12 @@ const ContactForm = () => {
     interest,
     interestDefault,
     interests,
-    submit
+    submit,
+    submitting,
+    submitSuccess,
+    submitSuccessMessage,
+    submitFailure,
+    submitFailureMessage
   } = useDataByLanguage(dataByLanguage);
 
   const handleSubmit = (e) => {
@@ -58,12 +64,14 @@ const ContactForm = () => {
     axios.post('https://formspree.io/mbjjoweo', data)
       .then(() => {
         setSubmitState(submitStates.submissionSuccess);
+        document.getElementById('form--contact').reset();
         setTimeout(() => {
           setSubmitState(submitStates.notSubmitted);
-        }, 3000);
+        }, 4000);
       })
       .catch((error) => {
         setSubmitState(submitStates.submissionFailure);
+        setErrorMessage(error);
       });
   };
 
@@ -71,7 +79,7 @@ const ContactForm = () => {
     <div className="contact-form">
       {
         (
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} id="form--contact">
             <input
               style={{ display: 'none' }}
               name='city'
@@ -115,15 +123,17 @@ const ContactForm = () => {
                 <label>{details} *</label>
                 <textarea className="contact__textarea" required name="details"></textarea>
               </div>
-              <div className="contact-form__button-wrapper">
+              
                 {
                   submitState === submitStates.notSubmitted && (
+                  <div className="contact-form__button-wrapper">
                     <button
                       className="contact-form__button button"
                       type="submit"
                     >
                       <span className="button__text">{submit}</span>
                     </button>
+                  </div>
                 )}
                 {
                   submitState === submitStates.submitting && (
@@ -131,30 +141,33 @@ const ContactForm = () => {
                       className="contact-form__button button--loading"
                     >
                       <div className="lds-heart"><div></div></div>
-                      <span className="button__text">submitting</span>
+                      <span className="button__text">{submitting}</span>
                     </button>
                 )}
                 {
                   submitState === submitStates.submissionSuccess && (
-                    <button
-                      className="contact-form__button button--disabled"
-                    >
-                      <span className="button__text">submitted!</span>
-                    </button>
-                )}
-                {
-                  submitState === submitStates.submissionFailure && (
-                    <>
+                    <div className="contact-form__button-wrapper">
                       <button
                         className="contact-form__button button--disabled"
                       >
-                        <span className="button__text">submission failed</span>
+                        <span className="button__text">{submitSuccess}</span>
                       </button>
-                      <p>Please try again later.</p>
-                    </>
+                      <p>{submitSuccessMessage}</p>
+                    </div>
+                )}
+                {
+                  submitState === submitStates.submissionFailure && (
+                    <div className="contact-form__button-wrapper">
+                      <button
+                        className="contact-form__button button--disabled"
+                      >
+                        <span className="button__text">{submitFailure}</span>
+                      </button>
+                      <p>{submitFailureMessage}</p>
+                      <p className="erorr">{errorMessage.toString()}</p>
+                    </div>
                 )}
               </div>
-            </div>
           </form>
         )}
     </div>

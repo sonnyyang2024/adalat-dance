@@ -54,5 +54,21 @@ export default {
   submit: byLanguage({
     en: 'Submit Form',
     ch: '提交表格'
+  }),
+  submitSuccess: byLanguage({
+    en: 'submitted!',
+    ch: '已提交!'
+  }),
+  submitSuccessMessage: byLanguage({
+    en: 'Thank you! Your form has been submitted. I will get back to you shortly.',
+    ch: '谢谢！你的表格已提交，我会尽快回复你。'
+  }),
+  submitFailure: byLanguage({
+    en: 'submission failed',
+    ch: '提交失败'
+  }),
+  submitting: byLanguage({
+    en: 'submitting',
+    ch: '正在提交中'
   })
 };
