@@ -31,7 +31,7 @@ const Hero = ({
           {
             callToAction && (
               <div className="hero__button-wrapper">
-                <Button text={callToAction} link="/" />
+                <Button text={callToAction} link="#contact-form" />
               </div>
             )
           }

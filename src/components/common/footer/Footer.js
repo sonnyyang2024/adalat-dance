@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../button/Button';
 
 // component 
 import Contacts from '../contacts/Contacts';
@@ -15,22 +14,20 @@ import './Footer.scss';
 
 const Footer = () => {
   const {
-    ctaButton,
     ctaMessage,
-    contact,
     contactMessage,
-    contacts,
     socialMedia
   } = useDataByLanguage(dataByLanguage);
 
   const footerContacts = [
     'adalat_omar',
     'leana_li'
-  ]
+  ];
 
   return (
     <div className="footer">
-      <div className="footer__form__container container">
+      <div className="footer__form__container container" id="contact-form">
+        <h1 className="contact-form__title">{ctaMessage}</h1>
         <ContactForm />
       </div>
       <div className="footer__contact__container container">
