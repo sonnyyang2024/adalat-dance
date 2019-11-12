@@ -25,6 +25,8 @@ const ContactForm = () => {
     email,
     phone,
     details,
+    interest,
+    interests,
     submit
   } = useDataByLanguage(dataByLanguage);
 
@@ -38,18 +40,18 @@ const ContactForm = () => {
     const formData = new FormData(form);
 
     const data = {
+      interest: formData.get('interest'),
       name: formData.get('name'),
       email: formData.get('email'),
       phone: formData.get('phone'),
       details: formData.get('details'),
       _gotcha: formData.get('city'),
       _replyto: formData.get('email'),
-      _subject: `Website Inquiry from ${formData.get('name')}`
+      _subject: `Website Inquiry about ${formData.get('interest')} from ${formData.get('name')}`
     };
 
     axios.post('https://formspree.io/mbjjoweo', data)
       .then(() => {
-
         setSubmitState(submitStates.submissionSuccess);
       })
       .catch((error) => {
@@ -64,6 +66,21 @@ const ContactForm = () => {
         name='city'
       />
       <div className="contact-form__container">
+        <div className="field">
+          <label for="interest">{interest}</label>
+          <select name="interest">
+            {
+              interests.map(interest => (
+                <option
+                  value={interest}
+                  key={interest}
+                >
+                  {interest}
+                </option>
+              ))
+            }
+          </select>
+        </div>
         <div className="column field half-width">
           <label>{name} *</label>
           <input type="text" name="name" required />
@@ -79,9 +96,9 @@ const ContactForm = () => {
           </div>
         </div>
         <div className="field">
-            <label>{details} *</label>
-            <textarea className="contact__textarea" required name="details"></textarea>
-          </div>
+          <label>{details} *</label>
+          <textarea className="contact__textarea" required name="details"></textarea>
+        </div>
         <div className="contact-form__button-wrapper">
           <input
             className="contact-form__button button"
