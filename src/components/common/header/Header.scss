@@ -1,8 +1,10 @@
 @import '../../../scheme/config.scss';
 
 .header {
+  @include gradient;
   width: 100%;
   padding: 0 20px;
+  padding-right: 70px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -12,11 +14,10 @@
   right: 0;
   z-index: 99;
   box-sizing: border-box;
-  background: transparent;
 
   transition: all 1s ease;
 }
 
 .header.off-top {
-  @include gradient;
+  box-shadow: 0 0 6px rgba(0,0,0,.2);
 }

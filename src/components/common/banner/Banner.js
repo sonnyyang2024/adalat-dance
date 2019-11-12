@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import BannerItem from '../banner-item/BannerItem';
 
-import { getUUID } from '../../../utility';
-
 import './Banner.scss';
 
 const Banner = ({
@@ -19,7 +17,7 @@ const Banner = ({
         {
           list.map((item) => (
             <BannerItem
-              key={getUUID()}
+              key={item.name}
               name={item.name}
               description={item.description}
               imageName={item.imageName}

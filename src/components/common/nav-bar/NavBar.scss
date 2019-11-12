@@ -6,21 +6,13 @@
   flex-wrap: wrap;
   list-style: none;
   justify-content: space-around;
-  transition: 1s all ease;
-}
-
-.header.off-top .nav-bar__list {
-  margin: 15px 0;
+  transition: .4s all ease;
 }
 
 .nav-bar__item {
   padding: 4px 30px;
   display: inline-block;
-  transition: 1s all ease;
-}
-
-.header.off-top .nav-bar__item {
-  padding: 0px 25px;
+  transition: .4s all ease;
 }
 
 a.nav-bar__link {

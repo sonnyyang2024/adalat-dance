@@ -28,7 +28,8 @@ export default {
     en: 'Contact Adalat',
     ch: '联系Adalat'
   }),
-  banners: [    {
+  banners: [    
+    {
       title: byLanguage({
         en: 'Services',
         ch: '服务'
@@ -45,7 +46,7 @@ export default {
             ch: '聘请Adalat和她的公司来创造你的下一个电视剧、电影或节庆表演制作。'
           }),
           imageName: 'bellydance-group.jpg',
-          linkTo: '/about'
+          linkTo: '#contact-form'
         },
         {
           id: getUUID(),
@@ -58,7 +59,7 @@ export default {
             ch: '婚礼、生日派对、重大庆祝，让Adalat点亮你的派对，让你的来宾赞不绝口'
           }),
           imageName: 'adalat-candle-min.jpg',
-          linkTo: '/about'
+          linkTo: '#contact-form'
         },
         {
           id: getUUID(),
@@ -71,7 +72,7 @@ export default {
             ch: '让Adalat设计专属于你的课程和编舞。'
           }),
           imageName: 'adalat-bellydance-pink.JPG',
-          linkTo: '/about'
+          linkTo: '#contact-form'
         }
       ]
     },

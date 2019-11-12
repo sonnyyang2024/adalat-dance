@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import $ from 'jquery';
+
 import { Provider } from 'react-redux';
 import store from './store';
 
@@ -21,3 +23,11 @@ ReactDOM.render(
 );
 
 serviceWorker.unregister();
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+  }, 800);
+});
