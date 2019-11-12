@@ -61,15 +61,16 @@ textarea:focus {
   flex-direction: column;
 }
 
-.button {
+@mixin staticButton {
   font-size: 14px;
   font-family: var(--font-body-secondary);
-  padding: 10px 26px;
-  margin: 8px 0;
-  border: none;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
+  min-height: 2.2rem;
+  padding: 10px 26px;
+  margin: 8px 0;
+  border: none;
   background: #fb00ca; /* Old browsers */
   background: -moz-linear-gradient(right, var(--color-pink) 0%, var(--color-purple) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(right, var(--color-pink) 0%,var(--color-purple) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -80,6 +81,10 @@ textarea:focus {
   display: inline-block;
   position: relative;
   transition: .4s all ease;
+}
+
+.button {
+  @include staticButton;
 
   &:hover {
     cursor: pointer;
@@ -111,3 +116,70 @@ textarea:focus {
   z-index: 1;
 }
 
+.button--disabled {
+  @include staticButton;
+}
+
+.button--loading {
+  @include staticButton;
+
+  padding: 2px 18px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.lds-heart {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  transform: rotate(45deg);
+  transform-origin: 32px 32px;
+}
+.lds-heart div {
+  top: 23px;
+  left: 19px;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: #fff;
+}
+.lds-heart div:before {
+  left: -17px;
+  border-radius: 50% 0 0 50%;
+}
+.lds-heart div:after {
+  top: -17px;
+  border-radius: 50% 50% 0 0;
+}
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
