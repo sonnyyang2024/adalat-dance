@@ -26,6 +26,7 @@ const ContactForm = () => {
     phone,
     details,
     interest,
+    interestDefault,
     interests,
     submit
   } = useDataByLanguage(dataByLanguage);
@@ -37,17 +38,20 @@ const ContactForm = () => {
     setSubmitState(submitStates.submitting);
     
     const form = e.target;
-    const formData = new FormData(form);
-
+    const formData = [...new FormData(form)].reduce((formData, [key, value]) => ({
+      ...formData,
+      [key]: value
+    }), {});
+    
     const data = {
-      interest: formData.get('interest'),
-      name: formData.get('name'),
-      email: formData.get('email'),
-      phone: formData.get('phone'),
-      details: formData.get('details'),
-      _gotcha: formData.get('city'),
-      _replyto: formData.get('email'),
-      _subject: `Website Inquiry about ${formData.get('interest')} from ${formData.get('name')}`
+      interest: formData.interest,
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      details: formData.details,
+      _gotcha: formData.city,
+      _replyto: formData.email,
+      _subject: `Website Inquiry about ${formData.interest} from ${formData.name}`
     };
 
     axios.post('https://formspree.io/mbjjoweo', data)
@@ -67,8 +71,13 @@ const ContactForm = () => {
       />
       <div className="contact-form__container">
         <div className="field">
-          <label for="interest">{interest}</label>
-          <select name="interest">
+          <label for="interest">{interest} *</label>
+          <select name="interest" required>
+            <option
+              value=''
+            >
+              {interestDefault}
+            </option>
             {
               interests.map(interest => (
                 <option

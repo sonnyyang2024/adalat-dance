@@ -25,6 +25,10 @@ export default {
     en: 'I am interested in',
     ch: '我想了解更多关于'
   }),
+  interestDefault: byLanguage({
+    en: 'Choose one',
+    ch: '请选择'
+  }),
   interests: [
     byLanguage({
       en: 'Bellydance Classes',
