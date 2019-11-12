@@ -1,3 +1,5 @@
+@import '../../../scheme/config.scss';
+
 .header {
   width: 100%;
   padding: 0 20px;
@@ -10,4 +12,11 @@
   right: 0;
   z-index: 99;
   box-sizing: border-box;
+  background: transparent;
+
+  transition: all 1s ease;
+}
+
+.header.off-top {
+  @include gradient;
 }

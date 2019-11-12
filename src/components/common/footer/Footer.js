@@ -1,8 +1,8 @@
 import React from 'react';
-import Button from '../button/Button';
 
 // component 
 import Contacts from '../contacts/Contacts';
+import ContactForm from '../contact-form/ContactForm';
 
 // data
 import dataByLanguage from './dataByLanguage';
@@ -14,29 +14,23 @@ import './Footer.scss';
 
 const Footer = () => {
   const {
-    ctaButton,
     ctaMessage,
-    contact,
     contactMessage,
-    contacts,
     socialMedia
   } = useDataByLanguage(dataByLanguage);
 
   const footerContacts = [
     'adalat_omar',
     'leana_li'
-  ]
+  ];
 
   return (
     <div className="footer">
-      <div className="container">
-        <div className="footer__column">
-          <h2 className="footer__cta-message">{ctaMessage}</h2>
-          <Button 
-            text={ctaButton}
-            link="/"
-          />
-        </div>
+      <div className="footer__form__container container" id="contact-form">
+        <h1 className="contact-form__title">{ctaMessage}</h1>
+        <ContactForm />
+      </div>
+      <div className="footer__contact__container container">
         <div className="footer__column">
           <h3>{contactMessage}</h3>
           <Contacts contactNames={footerContacts} />
