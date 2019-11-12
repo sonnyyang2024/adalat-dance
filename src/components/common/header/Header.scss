@@ -1,7 +1,6 @@
 @import '../../../scheme/config.scss';
 
 .header {
-  @include gradient;
   width: 100%;
   padding: 0 20px;
   display: flex;
@@ -13,11 +12,11 @@
   right: 0;
   z-index: 99;
   box-sizing: border-box;
-  background-color: var(--color-purple-transparent);
+  background: transparent;
 
   transition: all 1s ease;
 }
 
 .header.off-top {
-  background-color: red;
+  @include gradient;
 }
