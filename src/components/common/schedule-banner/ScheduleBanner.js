@@ -52,6 +52,23 @@ const ScheduleBanner = ({
                         </td>
                       );
                     }
+                    if (column.type === 'mapLink') {
+                      return (
+                        <td
+                          key={`${row.id}${data}`}
+                          className="schedule-row__field"
+                        >
+                          <a
+                            className="schedule__link"
+                            href={data}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            see on map
+                          </a>
+                        </td>
+                      );
+                    }
                     else {
                       return (
                         <td 

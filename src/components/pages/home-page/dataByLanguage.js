@@ -112,58 +112,41 @@ export default {
   ],
   scheduleBanner: {
     title: byLanguage({
-      en: 'Upcoming Shows',
-      ch: '近期演出'
+      en: 'Upcoming Public Shows',
+      ch: '近期公开演出'
     }),
     list: [
       {
         id: getUUID(),
-        date: '2019/10/24',
-        startTime: '9PM',
-        venue: 'Zeitoon Restaurant',
-        eventName: byLanguage({
-          en: 'Halloween Drum Night',
-          ch: '万圣节鼓舞演出'
+        date: 'Every Saturaday',
+        startTime: '10:30 PM',
+        venue: 'Zeitoon Restaurant, Port Moody',
+        mapLink: 'https://g.page/zeitoon-portmoody?share',
+        danceType: byLanguage({
+          en: 'Bellydance',
+          ch: '肚皮舞'
         })
       },
       {
         id: getUUID(),
-        date: '2019/11/23',
-        startTime: '11PM',
-        venue: 'Paradiz Hookah Lounge',
-        eventName: byLanguage({
-          en: 'Persian Celebration',
-          ch: '波斯庆祝夜'
+        date: 'Every Saturday',
+        startTime: '11:00 PM',
+        venue: 'Paradiz Hookah Lounge, Port Moody',
+        mapLink: 'https://goo.gl/maps/P3tNCCNtnLKEuQz16',
+        danceType: byLanguage({
+          en: 'Bellydance',
+          ch: '肚皮舞'
         })
       },
       {
         id: getUUID(),
-        date: '2019/10/22',
-        startTime: '9PM',
-        venue: 'Zeitoon Restaurant',
-        eventName: byLanguage({
-          en: 'Halloween Drum Night',
-          ch: '万圣节鼓舞演出'
-        })
-      },
-      {
-        id: getUUID(),
-        date: '2019/11/08',
-        startTime: '11PM',
-        venue: 'Cozba Middle Eastern Restaurant',
-        eventName: byLanguage({
-          en: 'Persian Celebration',
-          ch: '波斯庆祝夜'
-        })
-      },
-      {
-        id: getUUID(),
-        date: '2020/2/24',
-        startTime: '9PM',
-        venue: 'Zeitoon Restaurant',
-        eventName: byLanguage({
-          en: 'Nowruz Persian New Year Party',
-          ch: '万圣节鼓舞演出'
+        date: 'Every Saturday',
+        startTime: 'Evening',
+        venue: 'Afghan Horsemen Restaurant, Vancouver',
+        mapLink: 'https://goo.gl/maps/55EM66E64P4eP8xD6',
+        danceType: byLanguage({
+          en: 'Bellydance',
+          ch: '肚皮舞'
         })
       }
     ]
