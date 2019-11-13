@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 
 // hooks
@@ -32,6 +33,7 @@ const translationsByLanguage = {
 };
 
 const NavBar = () => {
+  // Use language
   const language = useLanguage();
   const {
     home,
@@ -41,9 +43,28 @@ const NavBar = () => {
     about
   } = translationsByLanguage[language];
 
+  // State
+  const [listExpanded, setListExpanded] = useState(false);
+
+  const handleToggle = (e) => {
+    e.preventDefault();
+    setListExpanded(!listExpanded);
+  };
+
   return (
     <nav className="nav-bar">
-      <ul className="nav-bar__list">
+      <a
+        href="/"
+        className="nav-bar__toggle"
+        onClick={handleToggle}
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20"><path d="M64 384h384v-42.666H64V384zm0-106.666h384v-42.667H64v42.667zM64 128v42.665h384V128H64z"/></svg>
+      </a>
+      <ul
+        className={classNames('nav-bar__list', {
+          'list-expanded': listExpanded
+        })}
+      >
         <li className="nav-bar__item">
           <NavLink className="nav-bar__link" exact to="/">
             {home}
