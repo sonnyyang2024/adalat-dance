@@ -51,6 +51,8 @@ const NavBar = () => {
     setListExpanded(!listExpanded);
   };
 
+  const closeList = () => (setListExpanded(false));
+
   return (
     <nav className="nav-bar">
       <a
@@ -66,27 +68,48 @@ const NavBar = () => {
         })}
       >
         <li className="nav-bar__item">
-          <NavLink className="nav-bar__link" exact to="/">
+          <NavLink
+            className="nav-bar__link"
+            exact
+            to="/"
+            onClick={closeList}
+          >
             {home}
           </NavLink>
         </li>
         <li className="nav-bar__item">
-          <NavLink className="nav-bar__link" to={`/dance/${BELLYDANCE_ID}`}>
+          <NavLink
+            className="nav-bar__link"
+            to={`/dance/${BELLYDANCE_ID}`}
+            onClick={closeList}
+          >
             {bellydance}
           </NavLink>
         </li>
         <li className="nav-bar__item">
-          <NavLink className="nav-bar__link" to={`/dance/${UYGHUR_ID}`}>
+          <NavLink
+            className="nav-bar__link"
+            to={`/dance/${UYGHUR_ID}`}
+            onClick={closeList}
+          >
             {uyghur}
           </NavLink>
         </li>
         <li className="nav-bar__item">
-          <NavLink className="nav-bar__link" to={`/dance/${BOLLYWOOD_ID}`}>
+          <NavLink
+            className="nav-bar__link"
+            to={`/dance/${BOLLYWOOD_ID}`}
+            onClick={closeList}
+          >
             {bollywood}
           </NavLink>
         </li>
         <li className="nav-bar__item">
-          <NavLink className="nav-bar__link" to="/about">
+          <NavLink
+            className="nav-bar__link"
+            to="/about"
+            onClick={closeList}
+          >
             {about}
           </NavLink>
         </li>
