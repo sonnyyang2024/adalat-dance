@@ -1,3 +1,5 @@
+@import '../../../scheme/config.scss';
+
 .footer {
   background-color: var(--color-purple-dark);
   color: white;
@@ -26,16 +28,28 @@
 }
 
 .footer__contact__container {
-  display: flex;
-  justify-content: space-between;
+  @media (min-width: $break-medium) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer__column {
-  width: 50%;
-  padding-right: 10px;
-
-  &:not(:first-child) {
-    margin-left: 40px;
+  @media (max-width: $break-medium) {
+    &:not(:first-child) {
+      border-top: 1px solid rgba(255,255,255,0.3);
+      margin-top: 15px;
+      padding-top: 15px;
+    }
+  }
+  
+  @media (min-width: $break-medium) {
+    width: 50%;
+    padding-right: 10px;
+  
+    &:not(:first-child) {
+      margin-left: 40px;
+    }
   }
 }
 

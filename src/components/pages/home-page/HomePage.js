@@ -12,7 +12,7 @@ import dataByLanguage from './dataByLanguage';
 // components
 import Hero from './hero/Hero';
 import Banner from '../../common/banner/Banner';
-import ScheduleBanner from '../../common/schedule-banner/ScheduleBanner';
+// import ScheduleBanner from '../../common/schedule-banner/ScheduleBanner';
 
 const HomePage = () => {
   const data = useDataByLanguage(dataByLanguage);
@@ -22,16 +22,16 @@ const HomePage = () => {
     information,
     callToAction,
     banners,
-    scheduleBanner
   } = data;
+  // scheduleBanner
 
-  const scheduleColumns = [
-    { id: getUUID(), key: 'date', label: 'Date' },
-    { id: getUUID(), key: 'startTime', label: 'Time' },
-    { id: getUUID(), key: 'venue', label: 'Venue' },
-    { id: getUUID(), key: 'danceType', label: 'Performance' },
-    { id: getUUID(), key: 'mapLink', label: 'Directions', type: 'mapLink' }
-  ]
+  // const scheduleColumns = [
+  //   { id: getUUID(), key: 'date', label: 'Date' },
+  //   { id: getUUID(), key: 'startTime', label: 'Time' },
+  //   { id: getUUID(), key: 'venue', label: 'Venue' },
+  //   { id: getUUID(), key: 'danceType', label: 'Performance' },
+  //   { id: getUUID(), key: 'mapLink', label: 'Directions', type: 'mapLink' }
+  // ];
 
   return (
     <div>
@@ -50,11 +50,11 @@ const HomePage = () => {
           />
         )))
       }
-      <ScheduleBanner
+      {/* <ScheduleBanner
         title={scheduleBanner.title}
         columns={scheduleColumns}
         rows={scheduleBanner.list}
-      />
+      /> */}
     </div>
   );
 };

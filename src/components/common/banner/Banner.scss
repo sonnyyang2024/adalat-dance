@@ -1,3 +1,5 @@
+@import '../../../scheme/config.scss';
+
 .banner {
   padding-top: 20px;
   padding-bottom: 50px;
@@ -16,6 +18,11 @@
 .banner__list {
   display: flex;
   height: 380px;
+
+  @media (max-width: $break-medium) {
+    display: block;
+    height: unset;
+  }
 }
 
 .banner-item {
