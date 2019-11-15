@@ -1,17 +1,22 @@
 .contact-form {
+  color: white;
+  max-width: 600px;
+  background-color: white;
+  padding: 20px 40px;
+  margin: auto;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
-  padding: 20px 40px;
-  background-color: white;
-  border-radius: 20px;
-  color: black;
-  max-width: 600px;
-  margin: auto;
 }
 
 .contact-form__container {
   width: 100%;
   margin: auto;
+
+  & * {
+
+    box-sizing: border-box;
+  }
 }
 
 .contact-form__title {
@@ -43,6 +48,7 @@
 
 .contact-form__button-wrapper p {
   margin-bottom: 0;
+  color: red;
 }
 
 .contact-form__submitting {

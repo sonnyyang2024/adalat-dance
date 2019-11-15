@@ -72,104 +72,110 @@ const ContactForm = () => {
       .catch((error) => {
         setSubmitState(submitStates.submissionFailure);
         setErrorMessage(error);
+        setTimeout(() => {
+          setSubmitState(submitStates.notSubmitted);
+          document.getElementById('form--contact').reset();
+        }, 4000);
       });
   };
 
   return (
     <div className="contact-form">
-      {
-        (
-          <form onSubmit={handleSubmit} id="form--contact">
-            <input
-              style={{ display: 'none' }}
-              name='city'
-            />
-            <div className="contact-form__container">
-              <div className="field">
-                <label htmlFor="interest">{interest} *</label>
-                <select name="interest" required>
+      <form onSubmit={handleSubmit} id="form--contact">
+        <input
+          style={{ display: 'none' }}
+          name="city"
+        />
+        <div className="contact-form__container">
+          <div className="field">
+            <label htmlFor="interest">{interest} *</label>
+            <select name="interest" required>
+              <option
+                value=""
+              >
+                {interestDefault}
+              </option>
+              {
+                interests.map(interest => (
                   <option
-                    value=''
+                    value={interest}
+                    key={interest}
                   >
-                    {interestDefault}
+                    {interest}
                   </option>
-                  {
-                    interests.map(interest => (
-                      <option
-                        value={interest}
-                        key={interest}
-                      >
-                        {interest}
-                      </option>
-                    ))
-                  }
-                </select>
+                ))
+              }
+            </select>
+          </div>
+          <div className="column field half-width field--float">
+            <label>{name} *</label>
+            <input type="text" name="name" placeholder={name + ' *'} required />
+          </div>
+          <div className="columns">
+            <div className="column field half-width field--float">
+              <label>{email} *</label>
+              <input type="email" name="email" placeholder={email + ' *'} required />
+            </div>
+            <div className="column field half-width field--float">
+              <label>{phone}</label>
+              <input type="tel" name="phone" placeholder={phone} />
+            </div>
+          </div>
+          <div className="field field--float">
+            <label>{details} *</label>
+            <textarea
+              className="contact__textarea"
+              name="details"
+              placeholder={details + ' *'}
+              required
+            />
+          </div>
+          
+            {
+              submitState === submitStates.notSubmitted && (
+              <div className="contact-form__button-wrapper">
+                <button
+                  className="contact-form__button button"
+                  type="submit"
+                >
+                  <span className="button__text">{submit}</span>
+                </button>
               </div>
-              <div className="column field half-width">
-                <label>{name} *</label>
-                <input type="text" name="name" required />
-              </div>
-              <div className="columns">
-                <div className="column field half-width">
-                  <label>{email} *</label>
-                  <input type="email" name="email" required />
+            )}
+            {
+              submitState === submitStates.submitting && (
+                <button
+                  className="contact-form__button button--loading"
+                >
+                  <div className="lds-heart"><div></div></div>
+                  <span className="button__text">{submitting}</span>
+                </button>
+            )}
+            {
+              submitState === submitStates.submissionSuccess && (
+                <div className="contact-form__button-wrapper">
+                  <button
+                    className="contact-form__button button--disabled"
+                  >
+                    <span className="button__text">{submitSuccess}</span>
+                  </button>
+                  <p>{submitSuccessMessage}</p>
                 </div>
-                <div className="column field half-width">
-                  <label>{phone}</label>
-                  <input type="tel" name="phone" />
-                </div>
+            )}
+          {
+            submitState === submitStates.submissionFailure && (
+              <div className="contact-form__button-wrapper">
+                <button
+                  className="contact-form__button button--disabled"
+                >
+                  <span className="button__text">{submitFailure}</span>
+                </button>
+                <p>{submitFailureMessage}</p>
+                <p className="erorr">{errorMessage.toString()}</p>
               </div>
-              <div className="field">
-                <label>{details} *</label>
-                <textarea className="contact__textarea" required name="details"></textarea>
-              </div>
-              
-                {
-                  submitState === submitStates.notSubmitted && (
-                  <div className="contact-form__button-wrapper">
-                    <button
-                      className="contact-form__button button"
-                      type="submit"
-                    >
-                      <span className="button__text">{submit}</span>
-                    </button>
-                  </div>
-                )}
-                {
-                  submitState === submitStates.submitting && (
-                    <button
-                      className="contact-form__button button--loading"
-                    >
-                      <div className="lds-heart"><div></div></div>
-                      <span className="button__text">{submitting}</span>
-                    </button>
-                )}
-                {
-                  submitState === submitStates.submissionSuccess && (
-                    <div className="contact-form__button-wrapper">
-                      <button
-                        className="contact-form__button button--disabled"
-                      >
-                        <span className="button__text">{submitSuccess}</span>
-                      </button>
-                      <p>{submitSuccessMessage}</p>
-                    </div>
-                )}
-                {
-                  submitState === submitStates.submissionFailure && (
-                    <div className="contact-form__button-wrapper">
-                      <button
-                        className="contact-form__button button--disabled"
-                      >
-                        <span className="button__text">{submitFailure}</span>
-                      </button>
-                      <p>{submitFailureMessage}</p>
-                      <p className="erorr">{errorMessage.toString()}</p>
-                    </div>
-                )}
-              </div>
-          </form>
-        )}
+          )}
+          </div>
+      </form>
     </div>
   );
 };
