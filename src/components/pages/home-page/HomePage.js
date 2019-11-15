@@ -47,6 +47,7 @@ const HomePage = () => {
             key={getUUID()}
             title={banner.title}
             list={banner.list}
+            type={banner.type}
           />
         )))
       }

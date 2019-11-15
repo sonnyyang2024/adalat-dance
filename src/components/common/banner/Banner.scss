@@ -3,6 +3,11 @@
 .banner {
   padding-top: 20px;
   padding-bottom: 50px;
+
+  @media (max-width: $break-medium) {
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
 }
 
 .banner:nth-child(odd) {
@@ -13,6 +18,12 @@
   color: var(--color-purple);
   margin-bottom: 28px;
   font-size: 38px;
+
+  @media (max-width: $break-medium) {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 
 .banner__list {
@@ -30,11 +41,17 @@
   text-decoration: none;
   height: 100%;
   background-color: var(--color-purple-dark);
-  padding-top: 230px;
+  padding-top: 200px;
   flex: 1;
   position: relative;
   display: flex;
   box-sizing: border-box;
+
+  @media (max-width: $break-medium) {
+    padding-top: 0;
+    margin: 4px 0;
+    overflow: hidden;
+  }
 }
 
 .banner-item:before {
@@ -63,13 +80,36 @@
   position: relative;
   z-index: 1;
   padding: 0 20px;
+
+  @media (max-width: $break-medium) {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10px 15px;
+  }
 }
 
 .banner-item__name {
-  font-size: 28px;
+  font-size: 24px;
   margin-bottom: 10px;
   display: flex;
   align-items: center;
+  
+  @media (max-width: $break-medium) {
+    font-size: 24px;
+    font-weight: 800;
+  }
+}
+
+.banner-item__description {
+  @media (max-width: $break-medium) {
+    font-size: 16px;
+    opacity: .6;
+    letter-spacing: .2px;
+    line-height: 1.3;
+  }
 }
 
 .banner-item__icon {
@@ -77,11 +117,27 @@
   height: 100%;
   opacity: 0;
   transition: .5s all;
+
+  @media (max-width: $break-medium) {
+    display: none;
+  }
 }
 
 .banner-item:hover .banner-item__icon {
   margin-left: 1rem;
   opacity: 1;
+}
+
+// In page banner hover icon effect
+.in-page .banner-item__icon {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  transform: rotate(90deg);
+}
+
+.in-page .banner-item:hover .banner-item__icon {
+  transform: rotate(90deg) translateX(60px);
 }
 
 .banner-item__image {
@@ -97,4 +153,10 @@
   z-index: 0;
   opacity: .55;
   transition: .4s all ease;
+
+  @media (max-width: $break-medium) {
+    width: 40%;
+    left: unset;
+    right: 0;
+  }
 }
