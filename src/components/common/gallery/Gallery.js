@@ -6,6 +6,44 @@ import { getImageUrl } from '../../../utility';
 
 import './Gallery.scss';
 
+const SampleNextArrow = ({
+  onClick, 
+  className
+}) => {
+  return (
+    <div
+      onClick={onClick}
+      className={className}
+    >
+      <img
+        src={getImageUrl('arrow-next.svg')}
+        alt="Arrow next"
+        width="30"
+        height="30"
+      />
+    </div>
+  );
+};
+
+const SamplePrevArrow = ({
+  className,
+  onClick
+}) => {
+  return (
+    <div
+      onClick={onClick}
+      className={className}
+    >
+      <img
+        src={getImageUrl('arrow-prev.svg')}
+        alt="Arrow previous"
+        width="30"
+        height="30"
+      />
+    </div>
+  );
+};
+
 const Gallery = ({
   title,
   description,
@@ -16,7 +54,9 @@ const Gallery = ({
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
   };
   return (
     <div className="gallery">
@@ -24,15 +64,6 @@ const Gallery = ({
         <h1 className="gallery__title">{title}</h1>
         <p>{description}</p>
         <Slider {...settings} className="gallery__slider">
-          <div className="gallery__slider">
-            <iframe 
-              title="Video"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/SPiJANRQ9EE?rel=0" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen
-            >
-            </iframe>
-          </div>
           {
             imageNames.map(imageName => (
               <div
@@ -42,6 +73,8 @@ const Gallery = ({
                 <img className="gallery__slider__content"
                   src={getImageUrl(imageName.name)}
                   alt={`Adalat Omar ${title} ${imageName.name}`}
+                  height="300"
+                  width="300"
                 />
               </div>
             ))
@@ -55,7 +88,6 @@ const Gallery = ({
 
 Gallery.propTypes = {
   title: PropTypes.string.isRequired
-}
+};
 
 export default Gallery;
-
