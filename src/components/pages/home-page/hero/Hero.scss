@@ -13,12 +13,13 @@
 
   @media (max-width: $break-medium) {
     display: block;
-    height: 100vh;
+    height: 650px;
     width: 100vw;
     overflow: hidden;
     padding: 0;
     min-height: unset;
     max-height: unset;
+    position: relative;
   }
 }
 
@@ -31,7 +32,7 @@
   flex: 3;
 
   @media (max-width: $break-medium) {
-    height: 100vh;
+    height: 100%;
     position: unset;
     display: block;
     z-index: 2;
@@ -70,10 +71,11 @@
   @media (max-width: $break-medium) {
     position: absolute;
     display: block;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     padding: 0;
     overflow-x: hidden;
