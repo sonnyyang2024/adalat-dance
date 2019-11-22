@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 // styles
 import './ScheduleBanner.scss';
@@ -44,7 +45,7 @@ const ScheduleBanner = ({
                       return (
                         <td
                           key={`${row.id}${data}`}
-                          className="schedule-row__field"
+                          className='schedule-row__field contacts'
                         >
                           <Contacts
                             contactNames={data} 
@@ -69,16 +70,19 @@ const ScheduleBanner = ({
                         </td>
                       );
                     }
-                    else {
-                      return (
-                        <td 
-                          className="schedule-row__field"
-                          key={`${row.id}${data}`}
-                        >
-                          {data}
-                        </td>
-                      );
-                    }
+                    return (
+                      <td
+                        className={classNames(
+                          'schedule-row__field regular',
+                          {
+                            address: column.type === 'address'
+                          }
+                        )}
+                        key={`${row.id}${data}`}
+                      >
+                        {data}
+                      </td>
+                    );
                   })}
                 </tr>
               ))}

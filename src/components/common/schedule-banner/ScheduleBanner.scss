@@ -1,9 +1,13 @@
+@import '../../../scheme/config.scss';
+
 .banner--schedule {
-  padding-bottom: 60px;
+  background: white;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .banner__list--schedule {
-  width:  100%;
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -11,12 +15,33 @@
   text-align: left;
   justify-content: space-between;
 
-  &:nth-child(odd) {
-    background-color: #F7F7F7;
+  @media (max-width: $break-medium) {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
   }
 
-  &:last-child {
-    border-bottom: 1px solid var(--color-pink);
+  @media (min-width: $break-medium) {
+      &:nth-child(odd) {
+        background-color: #F7F7F7;
+      }
+    
+      &:last-child {
+        border-bottom: 1px solid var(--color-pink);
+      }
+  }
+
+}
+
+.banner__list--schedule thead .schedule-row {
+  font-size: 14px;
+  opacity: .7;
+
+  @media (max-width: $break-medium) {
+    display: none;
   }
 }
 
@@ -26,8 +51,43 @@
 }
 
 .schedule-row__field {
-  padding: 20px 18px;
-  border-top: 1px solid var(--color-pink);
+  @media (max-width: $break-medium) {
+    padding: 5px 10px;
+  }
+
+  @media (min-width: $break-medium) {
+    padding: 20px 18px;
+    border-top: 1px solid var(--color-pink);
+  }
+}
+
+.schedule-row__field.regular {
+  @media (max-width: $break-medium) {
+    text-align: center;
+  }
+}
+
+// first field in a row (title)
+.schedule-row td:first-child {
+  font-weight: 800;
+  font-family: var(--font-body-secondary);
+  width: auto;
+
+  @media (max-width: $break-medium) {
+    color: var(--color-pink);
+    font-size: 20px;
+    opacity: 0.7;
+    text-align: center;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--color-pink);
+  }
+}
+
+// second field in a row (subtitle)
+.schedule-row__field.address {
+  font-style: italic;
+  opacity: .5;
 }
 
 .schedule__link {

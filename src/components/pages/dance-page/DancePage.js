@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// components
+import Button from '../../common/button/Button';
+
 // hooks
 import useDataByLanguage from '../../../hooks/useDataByLanguage';
 
@@ -27,25 +30,39 @@ const DancePage = ({
 
   const classColumns = [
     { id: getUUID(), key: 'name', label: 'Class Name' },
-    { id: getUUID(), key: 'fullAddress', label: 'Address' },
     { id: getUUID(), key: 'date', label: 'Date' },
     { id: getUUID(), key: 'time', label: 'Time' },
-    { id: getUUID(), key: 'contactNames', label: 'Contacts', type: 'contacts' }
+    {
+      id: getUUID(),
+      key: 'fullAddress',
+      label: 'Address',
+      type: 'address'
+    },
+    {
+      id: getUUID(),
+      key: 'contactNames',
+      label: 'Contacts',
+      type: 'contacts'
+    }
   ];
 
   return (
     <div className="dance-page">
-      <Gallery 
-        title={dance.title} 
+      <Gallery
+        title={dance.title}
         description={dance.description}
         imageNames={dance.imageNames}
       />
-      <ScheduleBanner 
+      <ScheduleBanner
         title={dance.coursesFor}
         notes={dance.coursesNotes}
         columns={classColumns}
         rows={dance.courses}
       />
+      <div className="contact__cta">
+        <p>{data.contactCtaMessage}</p>
+        <Button text={data.contactCtaButton} link="#contact-form" />
+      </div>
     </div>
   );
 };

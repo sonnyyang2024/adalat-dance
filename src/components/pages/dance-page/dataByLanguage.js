@@ -58,15 +58,21 @@ export default {
         location: "Dancin' Stars",
         address: '7757 Edmonds Street, Burnaby',
         fullAddress: "Dancin' Stars, 7757 Edmonds Street, Burnaby",
-        time: 'TBA',
-        date: 'Every Monday',
+        time: byLanguage({
+          en: 'Time TBA',
+          ch: '时间待定'
+        }),
+        date: byLanguage({
+          en: 'Every Monday',
+          ch: '每周一'
+        }),
         notes: byLanguage({
           en: "Please register at Dancin' Stars or contact Adalat.",
           ch: "请联系Dancin' Stars或Adalat注册课程。"
         }),
         contactNames: [
           'adalat_omar',
-          "dancin_stars"
+          'dancin_stars'
         ]
       },
       {
@@ -82,7 +88,10 @@ export default {
         address: '250 - 12551 Vickers Way, Richmond',
         fullAddress: '250 - 12551 Vickers Way, Richmond',
         time: '7:00 - 8:30PM',
-        date: 'Every Wednesday',
+        date: byLanguage({
+          en: 'Every Wednesday',
+          ch: '每周三'
+        }),
         contactNames: [
           'adalat_omar',
           'leana_li'
@@ -124,10 +133,13 @@ export default {
         address: '7757 Edmonds Street, Burnaby, BC',
         fullAddress: "Dancin' Stars, 7757 Edmonds Street, Burnaby",
         time: '4:30 - 6:00PM',
-        date: 'Every Wednesday',
+        date: byLanguage({
+          en: 'Every Wednesday',
+          ch: '每周三'
+        }),
         contactNames: [
           'adalat_omar',
-          "dancin_stars"
+          'dancin_stars'
         ]
       },
       {
@@ -140,7 +152,10 @@ export default {
         address: '250 - 12551 Vickers Way, Richmond',
         fullAddress: '250 - 12551 Vickers Way, Richmond',
         time: '7 - 8:30PM',
-        date: 'Every Monday',
+        date: byLanguage({
+          en: 'Every Monday',
+          ch: '每周一'
+        }),
         contactNames: [
           'adalat_omar',
           'leana_li'
@@ -155,5 +170,13 @@ export default {
       en: 'All classes are cancelled on statutory holidays. Please double check with class contact before joining a new class.',
       ch: '加拿大法定节假日没有课程。请与课程联系确认后再加入新的课程。'
     })
-  }
+  },
+  contactCtaButton: byLanguage({
+    en: 'Contact Adalat',
+    ch: '联系Adalat'
+  }),
+  contactCtaMessage: byLanguage({
+    en: "Can't find any class that suits your style or level? Ask Adalat about private classes.",
+    ch: '找不到适合你的风格和等级的课程？向Adalat咨询一对一私人课程。'
+  })
 };

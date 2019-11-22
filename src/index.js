@@ -26,8 +26,8 @@ serviceWorker.unregister();
 
 $(document).on('click', 'a[href^="#"]', function (event) {
   event.preventDefault();
-
+  const HEADER_OFFSET = $('#header').height();
   $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
+    scrollTop: $($.attr(this, 'href')).offset().top - HEADER_OFFSET
   }, 800);
 });

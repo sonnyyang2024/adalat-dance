@@ -1,3 +1,5 @@
+@import './config.scss';
+
 body {
   font-family: var(--font-body);
 }
@@ -21,19 +23,23 @@ options,
 input,
 textarea {
   font-size: 18px;
-  border: 1px solid var(--color-grey-100);
-  padding: 4px 8px;
-  height: 1.5rem;
-  border-radius: 4px;
+  outline: none;
+  box-shadow: 0;
+  height: 2rem;
+  padding: 4px 2px;
+  border: none;
+  border-bottom: 1px solid var(--color-grey-500);
+  border-radius: 0;
 }
 
 select {
   height: 2.5rem;
-  background: white;
 }
 
 textarea {
+  padding: 4px 8px;
   min-height: 100px;
+  background-color: var(--color-grey-100);
 }
 
 label {
@@ -43,22 +49,60 @@ label {
 input:focus,
 textarea:focus,
 select:focus {
-  outline: 1px solid var(--color-pink);
+  outline: none;
+  border-color: var(--color-pink);
+}
+
+// Float field
+.field--float {
+  text-transform: lowercase;
+  margin: 4px 0;
+}
+
+.field--float label {
+  opacity: 0;
+  position: absolute;
+  transition: .3s all ease;
+}
+
+.field--float:focus-within {
+  & label {
+    opacity: 1;
+    display: inline;
+    font-size: 14px;
+    transform: translate(4px, -14px);
+  }
+
+  & ::placeholder {
+    display: none;
+    opacity: 0;
+  }
 }
 
 .container {
   padding: 20px 40px;
   max-width: 1100px;
   margin: auto;
+
+  @media (max-width: $break-medium) {
+    padding: 20px 12px;
+  }
 }
 
 .columns {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $break-medium) {
+    flex-direction: column;
+  }
 }
 
 .half-width {
   width: 50%;
+  @media (max-width: $break-medium) {
+    width: 100%;
+  }
 }
 
 .field {

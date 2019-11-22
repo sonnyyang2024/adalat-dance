@@ -28,12 +28,13 @@ export default {
     en: 'Contact Adalat',
     ch: '联系Adalat'
   }),
-  banners: [    
+  banners: [
     {
       title: byLanguage({
         en: 'Services',
         ch: '服务'
       }),
+      type: 'in-page',
       list: [
         {
           id: getUUID(),

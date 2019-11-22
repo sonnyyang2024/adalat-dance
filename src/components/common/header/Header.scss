@@ -14,8 +14,26 @@
   right: 0;
   z-index: 99;
   box-sizing: border-box;
-
   transition: all 1s ease;
+
+  @media (max-width: $break-medium) {
+    height: 60px;
+    justify-content: space-between;
+  }
+}
+
+.header__text--mobile {
+  display: none;
+  color: white;
+  text-decoration: none;
+
+  @media (max-width: $break-medium) {
+    display: block;
+  }
+}
+
+.header__text--mobile h1 {
+  font-size: 26px;
 }
 
 .header.off-top {
