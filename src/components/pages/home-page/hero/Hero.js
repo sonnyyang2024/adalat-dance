@@ -12,6 +12,7 @@ import './Hero.scss';
 
 const Hero = ({
   title,
+  subtitle,
   information,
   callToAction,
   imageName
@@ -21,6 +22,7 @@ const Hero = ({
       <div className="hero__left">
         <div className="hero__left__content">
           <h1 className="hero__title">{title}</h1>
+          <p className="hero__subtitle">{subtitle}</p>
           {
             information && (
               <div className="hero__description">
@@ -52,6 +54,7 @@ const Hero = ({
 
 Hero.propTypes = {
   title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
   information: PropTypes.element,
   callToAction: PropTypes.string,
   imageName: PropTypes.string.isRequired

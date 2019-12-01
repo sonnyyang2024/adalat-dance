@@ -10,6 +10,10 @@ import { byLanguage, getUUID } from '../../../utility';
 
 export default {
   title: 'Adalat Omar',
+  subtitle: byLanguage({
+    en: 'Professional dance artist based in Vancouver, Canada',
+    ch: '加拿大温哥华的专业舞蹈艺术家'
+  }),
   information: byLanguage({
     en: (
       <Fragment>

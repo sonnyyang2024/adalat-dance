@@ -1,4 +1,34 @@
+@import './scheme/config.scss';
+
 body {
   margin: 0;
   background-color: var(--color-purple-dark);
+}
+
+.contact-button__mobile {
+  @media (max-width: $break-medium) {
+    position: fixed;
+    width: 50%;
+    bottom: 0;
+    right: 0;
+    background-color: var(--color-purple);
+    z-index: 999;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    transform: translate(50%, 50%) rotate(135deg);
+  
+    & .button {
+      font-size: 16px;
+      letter-spacing: 1px;
+      text-align: center;
+      font-weight: bold;
+
+      width: 100%;
+      height: 100%;
+      padding: 20px 0;
+      margin: 0;
+
+    }
+  }
 }
