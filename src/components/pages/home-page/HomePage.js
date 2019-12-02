@@ -19,6 +19,7 @@ const HomePage = () => {
 
   const {
     title,
+    subtitle,
     information,
     callToAction,
     banners,
@@ -37,6 +38,7 @@ const HomePage = () => {
     <div>
       <Hero
         title={title}
+        subtitle={subtitle}
         information={information}
         callToAction={callToAction}
         imageName="adalat-white-cropped.png"

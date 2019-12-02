@@ -15,24 +15,28 @@ import Footer from './components/common/footer/Footer';
 // pages
 import HomePage from './components/pages/home-page/HomePage';
 import DancePage from './components/pages/dance-page/DancePage';
+import AboutPage from './components/pages/about-page/AboutPage';
 
 const App = () => (
   <div className="App">
     <Router>
       <Header />
-      <div className="page__content">
-        <Switch>
-          <Route
-            exact
-            path="/"
-            component={HomePage}
-          />
-          <Route
-            path="/dance/:danceId"
-            component={DancePage}
-          />
-        </Switch>
-      </div>
+      <Switch>
+        <Route
+          exact
+          path="/"
+          component={HomePage}
+        />
+        <Route
+          path="/dance/:danceId"
+          component={DancePage}
+        />
+        <Route
+          exact
+          path="/about"
+          component={AboutPage}
+        />
+      </Switch>
     </Router>
     <Footer />
   </div>

@@ -74,6 +74,12 @@
   }
 }
 
+.nav-bar__item.contact {
+  @media (min-width: $break-medium) {
+    display: none;
+  }
+}
+
 a.nav-bar__link {
   color: white;
   text-decoration: none;
@@ -90,4 +96,28 @@ a.nav-bar__link {
       opacity: 1;
     }
   }
+}
+
+.contact-button__mobile {
+  @media (max-width: $break-medium) {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    top: 13px;
+    right: 120px;
+    z-index: 99;
+    opacity: .8;
+
+    & svg {
+      fill: white;
+    }
+  }
+
+  @media (min-width: $break-medium) {
+    display: none;
+  }
+}
+
+.list-expanded ~ .contact-button__mobile  {
+  display: none;
 }

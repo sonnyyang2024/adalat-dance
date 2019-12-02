@@ -1,0 +1,94 @@
+@import '../../../scheme/config.scss';
+
+.page-content {
+  padding-top: 60px;
+  background-color: black;
+}
+
+.about__banner {
+  background-color: var(--color-black);
+  color: white;
+  display: flex;
+  margin-bottom: 20px;
+
+  @media (min-width: $break-medium) {
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+
+      & .title {
+        color: var(--color-purple);
+      }
+  
+      & .subtitle {
+        color: var(--color-purple);
+        opacity: .9;
+      }
+    }
+  }
+
+  @media (max-width: $break-medium) {
+    flex-direction: column;
+  }
+}
+
+.about__banner .container {
+  display: flex;
+
+  @media (max-width: $break-medium) {
+    flex-direction: column;
+  }
+}
+
+.banner__context {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: $break-medium) {
+    position: relative;
+    top: -50px;
+    color: black;
+    background-color: var(--color-grey-100);
+    padding: 0 20px 20px 20px;
+    animation: slideInFromBottom .4s ease;
+  }
+}
+
+.banner__context .title {
+  color: var(--color-pink);
+  margin-bottom: 4px;
+}
+
+.banner__context p {
+  opacity: .7;
+  line-height: 1.6;
+
+  @media (max-width: $break-medium) {
+    line-height: 1.4;
+    opacity: .6;
+  }
+}
+
+.banner__context .subtitle {
+  color: var(--color-pink);
+  opacity: .7;
+}
+
+.banner__image-wrapper {
+  flex: 1;
+  position: sticky;
+  top: 60px;
+}
+
+.about__banner__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.about__banner .button {
+  margin-right: 10px;
+}
