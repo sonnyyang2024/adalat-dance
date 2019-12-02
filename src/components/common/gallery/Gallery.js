@@ -71,30 +71,24 @@ const Gallery = ({
     ]
   };
   return (
-    <div className="gallery">
-      <div className="container">
-        <h1 className="gallery__title">{title}</h1>
-        <p>{description}</p>
-      </div>
-      <Slider {...settings} className="gallery__slider">
-        {
-          imageNames.map(imageName => (
-            <div
-              className="gallery__slider"
-              key={imageName.id}
-            >
-              <img
-                className="gallery__slider__content"
-                src={getImageUrl(imageName.name)}
-                alt={`Adalat Omar ${title} ${imageName.name}`}
-                height="300"
-                width="300"
-              />
-            </div>
-          ))
-        }
-      </Slider>
-    </div>
+    <Slider {...settings} className="gallery__slider">
+      {
+        imageNames.map(imageName => (
+          <div
+            className="gallery__slider"
+            key={imageName.id}
+          >
+            <img
+              className="gallery__slider__content"
+              src={getImageUrl(imageName.name)}
+              alt={`Adalat Omar ${title} ${imageName.name}`}
+              height="300"
+              width="300"
+            />
+          </div>
+        ))
+      }
+    </Slider>
   );
 };
 

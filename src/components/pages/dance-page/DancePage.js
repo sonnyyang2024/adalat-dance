@@ -48,6 +48,12 @@ const DancePage = ({
 
   return (
     <div className="dance-page">
+      <div className="gallery">
+        <div className="container">
+          <h1 className="gallery__title">{dance.title}</h1>
+          <p>{dance.description}</p>
+        </div>
+      </div>
       <Gallery
         title={dance.title}
         description={dance.description}
