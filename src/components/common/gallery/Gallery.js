@@ -44,15 +44,15 @@ const SamplePrevArrow = ({
   );
 };
 
-const Gallery = ({
-  title,
-  description,
-  imageNames
+const Gallery = ({ 
+  imageNames,
+  title
 }) => {
   const settings = {
     infinite: true,
     variableWidth: true,
     speed: 500,
+    draggable: true,
     slidesToShow: 2,
     slidesToScroll: 2,
     autoplay: true,
@@ -93,7 +93,8 @@ const Gallery = ({
 };
 
 Gallery.propTypes = {
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  imageNames: PropTypes.array.isRequired
 };
 
 export default Gallery;

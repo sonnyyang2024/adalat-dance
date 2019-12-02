@@ -59,6 +59,13 @@ const DancePage = ({
         description={dance.description}
         imageNames={dance.imageNames}
       />
+      <div className="contact__cta">
+        <h1 className="title">Services</h1>
+        <p className="subtitle">events, festivals, theatre productions</p>
+        <p>Adalat Omar has been performing mainly in the Greater Vancouver area. The venues include Arabic, Greek, Persian, Turkish, Mediterranean restaurants, weddings, events, festivals and theatre productions.</p>
+        <p>Locally, Adalat Omar regularly performs at the Afghan Horseman Restaurant, Paradiz Teahouse & Hookah Lounge, Cazba Restaurant, Saray Turkish Restaurant, Taverna Greka, Zeitoon Restaurant and Arwaz Hookah Lounge. She also regularly performs at weddings, private party and corporate events.</p>
+        <Button text={data.contactCtaButton} link="#contact-form" />
+      </div>
       { dance.courses && (
         <ScheduleBanner
           title={dance.coursesFor}
