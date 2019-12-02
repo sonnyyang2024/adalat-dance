@@ -88,7 +88,7 @@ const AboutPage = () => (
         <div className="banner__image-wrapper">
           <img
             className="about__banner__image"
-            src={getImageUrl('adalat-candles-lg.jpg')}
+            src={getImageUrl('adalat-wings-purple.jpg')}
             alt="Adalat Omar Bellydance Vancouver, candles, events"
             width="400"
             height="270"
@@ -151,14 +151,18 @@ const AboutPage = () => (
               className="button"
               to={`/dance/${BELLYDANCE_ID}`}
             >
-              Learn Bellydance
+              <span className="button__text">
+                Learn Bellydance
+              </span>
             </Link>
 
             <Link
               className="button"
               to={`/dance/${UYGHUR_ID}`}
             >
-              Learn Uyghur Dance
+              <span className="button__text">
+                Learn Uyghur Dance
+              </span>
             </Link>
           </div>
         </div>

@@ -53,12 +53,14 @@ const DancePage = ({
         description={dance.description}
         imageNames={dance.imageNames}
       />
-      <ScheduleBanner
-        title={dance.coursesFor}
-        notes={dance.coursesNotes}
-        columns={classColumns}
-        rows={dance.courses}
-      />
+      { dance.courses && (
+        <ScheduleBanner
+          title={dance.coursesFor}
+          notes={dance.coursesNotes}
+          columns={classColumns}
+          rows={dance.courses}
+        />
+      )}
       <div className="contact__cta">
         <p>{data.contactCtaMessage}</p>
         <Button text={data.contactCtaButton} link="#contact-form" />

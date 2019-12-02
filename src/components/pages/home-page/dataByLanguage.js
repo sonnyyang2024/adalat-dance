@@ -12,7 +12,7 @@ export default {
   title: 'Adalat Omar',
   subtitle: byLanguage({
     en: 'Professional dance artist based in Vancouver, Canada',
-    ch: '加拿大温哥华的专业舞蹈艺术家'
+    ch: '加拿大温哥华 专业舞蹈艺术家'
   }),
   information: byLanguage({
     en: (
@@ -22,7 +22,7 @@ export default {
     ),
     ch: (
       <Fragment>
-        <p>Adalat是一个专业肚皮舞、维吾尔舞、宝莱坞舞蹈艺术家。天地玄黄宇宙洪荒，日月辰宿列张。寒来暑秋收冬藏。成岁，律吕调阳。</p>
+        <p>中东肚皮舞、维吾尔舞、宝莱坞舞蹈编排、表演与培训。</p>
       </Fragment>
     )
   }),
@@ -92,8 +92,8 @@ export default {
             ch: '肚皮舞'
           }),
           description: byLanguage({
-            en: 'A renowned bellydance artisit, Adalat is also an amazing teacher.',
-            ch: '作为一名知名的肚皮舞艺术家，Adalat是一个有趣又有经验的老师。'
+            en: 'Learn Oriental Bellydance with Adalat.',
+            ch: '跟着Adalat学习东方肚皮舞。'
           }),
           imageName: 'adalat-students-bellydance.jpg',
           linkTo: `/dance/${BELLYDANCE_ID}`
@@ -105,7 +105,7 @@ export default {
             ch: '维吾尔传统舞'
           }),
           description: byLanguage({
-            en: 'Learn authentic Uyghur dance with Adalat.',
+            en: 'Learn authentic Uyghur folk dance with Adalat.',
             ch: '跟着Adalat学习正宗的新疆维吾尔族舞蹈。'
           }),
           imageName: 'adalat-uyghur.jpg',
