@@ -14,6 +14,15 @@
   @media (min-width: $break-medium) {
     &:nth-child(even) {
       flex-direction: row-reverse;
+
+      & .title {
+        color: var(--color-purple);
+      }
+  
+      & .subtitle {
+        color: var(--color-purple);
+        opacity: .9;
+      }
     }
   }
 
@@ -57,10 +66,9 @@
   line-height: 1.6;
 
   @media (max-width: $break-medium) {
-    line-height: 1.3;
+    line-height: 1.4;
     opacity: .6;
   }
-
 }
 
 .banner__context .subtitle {
@@ -70,6 +78,8 @@
 
 .banner__image-wrapper {
   flex: 1;
+  position: sticky;
+  top: 60px;
 }
 
 .about__banner__image {
@@ -77,4 +87,8 @@
   height: 100%;
   object-fit: cover;
   object-position: left;
+}
+
+.about__banner .button {
+  margin-right: 10px;
 }
