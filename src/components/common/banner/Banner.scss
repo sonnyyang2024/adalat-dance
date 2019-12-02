@@ -35,6 +35,7 @@
   @media (max-width: $break-medium) {
     display: block;
     height: unset;
+    min-height: unset;
   }
 }
 

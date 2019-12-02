@@ -14,7 +14,21 @@ export default {
     button: byLanguage({
       en: 'Learn Bollywood',
       ch: '学习宝莱坞舞蹈'
-    })
+    }),
+    imageNames: [
+      {
+        id: getUUID(),
+        name: 'adalat-bollywood-pink.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-bollywood-1.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-bollywood-2.jpg'
+      }
+    ],
   },
   [BELLYDANCE_ID]: {
     title: byLanguage({
@@ -32,7 +46,11 @@ export default {
     imageNames: [
       {
         id: getUUID(),
-        name: 'ada-white.jpg'
+        name: 'adalat-dance-petals.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-wings-purple.jpg'
       },
       {
         id: getUUID(),
@@ -40,7 +58,31 @@ export default {
       },
       {
         id: getUUID(),
-        name: 'blue.jpg'
+        name: 'adalat-dark.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-drum.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-omar-sword.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'ada-white.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-candles-lg.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-bellydance-pink.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-dance-company.jpg'
       }
     ],
     coursesNotes: byLanguage({
@@ -119,7 +161,23 @@ export default {
     imageNames: [
       {
         id: getUUID(),
+        name: 'adalat-uyghur-green.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-uyghur-class.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-uyghur-pink.jpg'
+      },
+      {
+        id: getUUID(),
         name: 'adalat-uyghur.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-uyghur-red.jpg'
       }
     ],
     courses: [
