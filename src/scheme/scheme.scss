@@ -255,3 +255,54 @@ select:focus {
     transform: scale(0.9);
   }
 }
+
+@keyframes appear {
+  0% {
+    opacity: .4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: .7;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideInFromBottomWithDelay {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  45% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    opacity: .4;
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

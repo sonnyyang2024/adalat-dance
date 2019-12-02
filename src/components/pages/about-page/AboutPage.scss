@@ -52,7 +52,7 @@
     color: black;
     background-color: var(--color-grey-100);
     padding: 0 20px 20px 20px;
-    margin: 0 10px;
+    animation: slideInFromBottom .4s ease;
   }
 }
 

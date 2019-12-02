@@ -144,7 +144,7 @@ const AboutPage = () => (
             <h2 className="about-banner__title title">Dance Classes</h2>
             <p className="subtitle">group & private classes</p>
             <p>
-              Adalat Omar has been teaching classes in Middle Eastern Oriental Dance and Uyghur Traditional Folk Dance for many years. Currently, her advanced class students proudly perform  groups or solo dance in many festivals and events as a part of Adalat Dance Company. They are booked for many upcoming events.
+              Adalat Omar teaches classes in Middle Eastern Oriental Dance and Uyghur Traditional Folk Dance for many years. Currently, her advanced class students proudly perform  groups or solo dance in many festivals and events as a part of Adalat Dance Company. They are booked for many upcoming events.
             </p>
             <p> Her Uyghur kids class also successfully performed Uyghur traditional folk dance at many festivals, such as Nowruz Festival, Canada Day Festival, Silk Road Festival, Turkic Festival, World Festival, and Fusion Festival.</p>
             <Link
