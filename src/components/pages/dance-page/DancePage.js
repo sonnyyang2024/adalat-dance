@@ -59,12 +59,14 @@ const DancePage = ({
         description={dance.description}
         imageNames={dance.imageNames}
       />
-      <div className="contact__cta">
-        <h1 className="title">Services</h1>
-        <p className="subtitle">events, festivals, theatre productions</p>
-        <p>Adalat Omar has been performing mainly in the Greater Vancouver area. The venues include Arabic, Greek, Persian, Turkish, Mediterranean restaurants, weddings, events, festivals and theatre productions.</p>
-        <p>Locally, Adalat Omar regularly performs at the Afghan Horseman Restaurant, Paradiz Teahouse & Hookah Lounge, Cazba Restaurant, Saray Turkish Restaurant, Taverna Greka, Zeitoon Restaurant and Arwaz Hookah Lounge. She also regularly performs at weddings, private party and corporate events.</p>
-        <Button text={data.contactCtaButton} link="#contact-form" />
+      <div className="contact__cta contact__cta--services">
+        <div className="contact__cta__container">
+          <h1 className="title">{data.servicesTitle}</h1>
+          <p className="subtitle">{data.servicesSubtitle}</p>
+          <p>{data.servicesDescription}</p>
+          <Button text={data.servicesCtaButton} link="#contact-form" />
+          <Button text={data.servicesCtaButtonAbout} link="/about" />
+        </div>
       </div>
       { dance.courses && (
         <ScheduleBanner
@@ -74,10 +76,15 @@ const DancePage = ({
           rows={dance.courses}
         />
       )}
-      <div className="contact__cta">
-        <p>{data.contactCtaMessage}</p>
-        <Button text={data.contactCtaButton} link="#contact-form" />
-      </div>
+      { dance.courses && (
+        <div className="contact__cta">
+          <div className="contact__cta__container">
+            <h2 className="title">{data.privateClassTitle}</h2>
+            <p className="subtitle">{data.contactCtaMessage}</p>
+            <Button text={data.contactCtaButton} link="#contact-form" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

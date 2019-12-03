@@ -68,7 +68,7 @@ select:focus {
   margin-top: 0;
   letter-spacing: .5px;
   opacity: .7;
-  line-height: .5;
+  line-height: 1;
 
   @media (max-width: $break-medium) {
     font-size: 14px;
