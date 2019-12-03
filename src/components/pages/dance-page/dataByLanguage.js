@@ -10,8 +10,8 @@ export default {
       ch: '宝莱坞舞蹈'
     }),
     description: byLanguage({
-      en: 'Originated in India.',
-      ch: '来自古老的印度。'
+      en: '',
+      ch: ''
     }),
     button: byLanguage({
       en: 'Learn Bollywood',
@@ -38,8 +38,8 @@ export default {
       ch: '中东肚皮舞'
     }),
     description: byLanguage({
-      en: 'Originated in the Middle East.',
-      ch: '来自古老的中东。'
+      en: '',
+      ch: ''
     }),
     button: byLanguage({
       en: 'Learn Bellydance',
