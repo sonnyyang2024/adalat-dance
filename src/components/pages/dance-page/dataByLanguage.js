@@ -1,3 +1,5 @@
+import React, { Fragment } from 'react';
+
 import { byLanguage, getUUID } from '../../../utility';
 import { BOLLYWOOD_ID, BELLYDANCE_ID, UYGHUR_ID } from '../../../constants';
 
@@ -8,8 +10,8 @@ export default {
       ch: '宝莱坞舞蹈'
     }),
     description: byLanguage({
-      en: 'Originated in India.',
-      ch: '来自古老的印度。'
+      en: '',
+      ch: ''
     }),
     button: byLanguage({
       en: 'Learn Bollywood',
@@ -36,8 +38,8 @@ export default {
       ch: '中东肚皮舞'
     }),
     description: byLanguage({
-      en: 'Originated in the Middle East.',
-      ch: '来自古老的中东。'
+      en: '',
+      ch: ''
     }),
     button: byLanguage({
       en: 'Learn Bellydance',
@@ -229,6 +231,10 @@ export default {
       ch: '加拿大法定节假日没有课程。请与课程联系确认后再加入新的课程。'
     })
   },
+  privateClassTitle: byLanguage({
+    en: 'Private Classes',
+    ch: '私人课程'
+  }),
   contactCtaButton: byLanguage({
     en: 'Contact Adalat',
     ch: '联系Adalat'
@@ -236,5 +242,39 @@ export default {
   contactCtaMessage: byLanguage({
     en: "Can't find any class that suits your style or level? Ask Adalat about private classes.",
     ch: '找不到适合你的风格和等级的课程？向Adalat咨询一对一私人课程。'
+  }),
+  servicesTitle: byLanguage({
+    en: 'Services',
+    ch: '服务'
+  }),
+  servicesCtaButton: byLanguage({
+    en: 'Book Adalat for Your Next Event',
+    ch: '为你的下一个活动预定Adalat'
+  }),
+  servicesCtaButtonAbout: byLanguage({
+    en: 'More About Adalat',
+    ch: '更多关于Adalat'
+  }),
+  servicesSubtitle: byLanguage({
+    en: 'events, festivals, theatre productions',
+    ch: '活动、节日表演、电影艺术制作'
+  }),
+  servicesDescription: byLanguage({
+    en: (
+      <Fragment>
+        <p>Adalat Omar has been performing mainly in the Greater Vancouver area. The venues include Arabic, Greek, Persian, Turkish, Mediterranean restaurants, weddings, events, festivals and theatre productions.</p>
+        <p>She is one of the main dancers in popular TV series "Shimmy". She has also appeared on TV series “The Real Housewives of Vancouver” and movie “Kayan”. She has performed as a featured artist with dance and music troupe around the world for many events and festivals.</p>
+      </Fragment>
+    ),
+    ch: (
+      <Fragment>
+        <p>
+          Adalat Omar主要在大温哥华地区演出。 这些场所包括阿拉伯文，希腊文，波斯文，土耳其文，地中海餐馆，婚礼，活动，节日和戏剧作品。
+        </p>
+        <p>
+          她是受欢迎的电视连续剧《Shimmy》的主要舞者之一。她还出演了电视连续剧《温哥华的真正的家庭主妇》和电影《Kayan》。她曾在世界各地的舞蹈和音乐团担任特色艺术家，参加过许多活动和节日。
+        </p>
+      </Fragment>
+    )
   })
 };

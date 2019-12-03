@@ -48,11 +48,26 @@ const DancePage = ({
 
   return (
     <div className="dance-page">
+      <div className="gallery">
+        <div className="container">
+          <h1 className="gallery__title">{dance.title}</h1>
+          <p>{dance.description}</p>
+        </div>
+      </div>
       <Gallery
         title={dance.title}
         description={dance.description}
         imageNames={dance.imageNames}
       />
+      <div className="contact__cta contact__cta--services">
+        <div className="contact__cta__container">
+          <h1 className="title">{data.servicesTitle}</h1>
+          <p className="subtitle">{data.servicesSubtitle}</p>
+          <p>{data.servicesDescription}</p>
+          <Button text={data.servicesCtaButton} link="#contact-form" />
+          <Button text={data.servicesCtaButtonAbout} link="/about" />
+        </div>
+      </div>
       { dance.courses && (
         <ScheduleBanner
           title={dance.coursesFor}
@@ -61,10 +76,15 @@ const DancePage = ({
           rows={dance.courses}
         />
       )}
-      <div className="contact__cta">
-        <p>{data.contactCtaMessage}</p>
-        <Button text={data.contactCtaButton} link="#contact-form" />
-      </div>
+      { dance.courses && (
+        <div className="contact__cta">
+          <div className="contact__cta__container">
+            <h2 className="title">{data.privateClassTitle}</h2>
+            <p className="subtitle">{data.contactCtaMessage}</p>
+            <Button text={data.contactCtaButton} link="#contact-form" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
