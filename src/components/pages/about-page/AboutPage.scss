@@ -9,6 +9,12 @@
   background-color: var(--color-black);
 }
 
+.about .container {
+  @media (max-width: $break-medium) {
+    padding: 0;
+  }
+}
+
 .about__banner {
   background-color: var(--color-black);
   color: white;

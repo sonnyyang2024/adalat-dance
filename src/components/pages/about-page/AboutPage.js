@@ -20,7 +20,7 @@ const AboutPage = () => {
   const { sections } = data;
 
   return (
-    <div className="page-content">
+    <div className="page-content about">
       <div className="container">
         {
           sections.map((section) => (
