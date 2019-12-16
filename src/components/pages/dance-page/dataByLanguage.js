@@ -95,51 +95,100 @@ export default {
       {
         id: getUUID(),
         name: byLanguage({
-          en: 'Beginners Adult Class',
-          ch: '成人初级班'
+          en: 'Beginner Class',
+          ch: '初级班'
         }),
         description: '',
         location: "Dancin' Stars",
         address: '7757 Edmonds Street, Burnaby',
         fullAddress: "Dancin' Stars, 7757 Edmonds Street, Burnaby",
-        time: byLanguage({
-          en: 'Time TBA',
-          ch: '时间待定'
-        }),
+        time: '7:00-8:30PM',
         date: byLanguage({
-          en: 'Every Monday',
-          ch: '每周一'
-        }),
-        notes: byLanguage({
-          en: "Please register at Dancin' Stars or contact Adalat.",
-          ch: "请联系Dancin' Stars或Adalat注册课程。"
+          en: 'Every Thursday (Jan 16th to Feb 27)',
+          ch: '每周四 （1月16日至2月27日）'
         }),
         contactNames: [
           'adalat_omar',
           'dancin_stars'
-        ]
+        ],
+        price: byLanguage({
+          en: (
+            <Fragment>
+              <strong>$140 / 7 classes <small>(full term)</small></strong>
+              <p>$25 / drop-in</p>
+            </Fragment>
+          ),
+          ch: (
+            <Fragment>
+              <strong>$140 / 7节课 (全期)</strong>
+              <p>$25 / 单次课</p>
+            </Fragment>
+          )
+        })
       },
       {
         id: getUUID(),
         name: byLanguage({
-          en: 'All-Level Adult Class',
-          ch: '全等级成人班'
-        }),
-        description: byLanguage({
-          en: 'Learn new choreography while practicing techniques. ',
-          ch: '在学习编舞的同时巩固基础动作。'
+          en: 'Beginner Class',
+          ch: '初级班'
         }),
         address: '250 - 12551 Vickers Way, Richmond',
         fullAddress: '250 - 12551 Vickers Way, Richmond',
         time: '7:00 - 8:30PM',
         date: byLanguage({
-          en: 'Every Wednesday',
-          ch: '每周三'
+          en: 'Every Monday (Jan 6th - Feb 24th)',
+          ch: '每周一 （1月6日至2月24日）'
         }),
         contactNames: [
           'adalat_omar',
           'leana_li'
-        ]
+        ],
+        price: byLanguage({
+          en: (
+            <Fragment>
+              <strong>$160 / 8 classes <small>(full term)</small></strong>
+              <p>$25 / drop-in</p>
+            </Fragment>
+          ),
+          ch: (
+            <Fragment>
+              <strong>$160 / 8节课 (全期)</strong>
+              <p>$25 / 单次课</p>
+            </Fragment>
+          )
+        })
+      },
+      {
+        id: getUUID(),
+        name: byLanguage({
+          en: 'Intermediate Class',
+          ch: '中级班'
+        }),
+        address: '250 - 12551 Vickers Way, Richmond',
+        fullAddress: '250 - 12551 Vickers Way, Richmond',
+        time: '7:00 - 8:30PM',
+        date: byLanguage({
+          en: 'Every Wednesday (Jan 8th - Mar 25)',
+          ch: '每周三 （1月8日至3月25日）'
+        }),
+        contactNames: [
+          'adalat_omar',
+          'leana_li'
+        ],
+        price: byLanguage({
+          en: (
+            <Fragment>
+              <strong>$240 / 12 classes <small>(full term)</small></strong>
+              <p>$25 / drop-in</p>
+            </Fragment>
+          ),
+          ch: (
+            <Fragment>
+              <strong>$240 / 12节课 (全期)</strong>
+              <p>$25 / 单次课</p>
+            </Fragment>
+          )
+        })
       }
     ],
     coursesFor: byLanguage({
@@ -186,40 +235,35 @@ export default {
       {
         id: getUUID(),
         name: byLanguage({
-          en: 'All-Levels Kids Class',
-          ch: '全等级儿童班'
+          en: 'All-Level Class',
+          ch: '全等级班'
         }),
         location: "Dancin' Stars",
         address: '7757 Edmonds Street, Burnaby, BC',
         fullAddress: "Dancin' Stars, 7757 Edmonds Street, Burnaby",
         time: '4:30 - 6:00PM',
         date: byLanguage({
-          en: 'Every Wednesday',
-          ch: '每周三'
+          en: 'Every Wednesday (Jan 8th - Mar 25th)',
+          ch: '每周三 （1月8日至3月25日）'
         }),
         contactNames: [
           'adalat_omar',
           'dancin_stars'
-        ]
-      },
-      {
-        id: getUUID(),
-        name: byLanguage({
-          en: 'All-Levels Adult Class',
-          ch: '全等级成人班'
-        }),
-        location: '',
-        address: '250 - 12551 Vickers Way, Richmond',
-        fullAddress: '250 - 12551 Vickers Way, Richmond',
-        time: '7 - 8:30PM',
-        date: byLanguage({
-          en: 'Every Monday',
-          ch: '每周一'
-        }),
-        contactNames: [
-          'adalat_omar',
-          'leana_li'
-        ]
+        ],
+        price: byLanguage({
+          en: (
+            <Fragment>
+              <strong>$240 / 12 classes <small>(full term)</small></strong>
+              <p>$25 / drop-in</p>
+            </Fragment>
+          ),
+          ch: (
+            <Fragment>
+              <strong>$240/ 12节课 (全期)</strong>
+              <p>$25 / 单次课</p>
+            </Fragment>
+          )
+        })
       }
     ],
     coursesFor: byLanguage({
