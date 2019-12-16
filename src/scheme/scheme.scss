@@ -4,6 +4,11 @@ body {
   font-family: var(--font-body);
 }
 
+hr {
+  opacity: .3;
+  border: .5px solid white;
+}
+
 h1,
 h2,
 h3,
