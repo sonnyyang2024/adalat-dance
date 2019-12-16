@@ -40,6 +40,11 @@ const DancePage = ({
     },
     {
       id: getUUID(),
+      key: 'price',
+      label: 'Price'
+    },
+    {
+      id: getUUID(),
       key: 'contactNames',
       label: 'Contacts',
       type: 'contacts'

@@ -81,6 +81,12 @@ select:focus {
   }
 }
 
+p.small {
+  font-size: .9rem;
+  margin: 0;
+  opacity: .8;
+}
+
 // Float field
 .field--float {
   text-transform: lowercase;
