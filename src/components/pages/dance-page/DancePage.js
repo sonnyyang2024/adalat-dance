@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 // components
@@ -74,12 +74,20 @@ const DancePage = ({
         </div>
       </div>
       { dance.courses && (
-        <ScheduleBanner
-          title={dance.coursesFor}
-          notes={dance.coursesNotes}
-          columns={classColumns}
-          rows={dance.courses}
-        />
+        <Fragment>
+          <ScheduleBanner
+            id="dance__schedule"
+            title={dance.coursesFor}
+            notes={dance.coursesNotes}
+            columns={classColumns}
+            rows={dance.courses}
+          />
+          <div className="class__schedule__button-wrapper">
+            <div className="container">
+              <a href={dance.otherClassCtaLink}>{dance.otherClassCta}</a>
+            </div>
+          </div>
+        </Fragment>
       )}
       { dance.courses && (
         <div className="contact__cta">

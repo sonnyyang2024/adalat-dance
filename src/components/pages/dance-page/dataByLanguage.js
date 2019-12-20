@@ -194,7 +194,12 @@ export default {
     coursesFor: byLanguage({
       en: 'Bellydance Classes',
       ch: '肚皮舞课程'
-    })
+    }),
+    otherClassCta: byLanguage({
+      en: 'Check Out Uyghur Dance Classes',
+      ch: '查看维吾尔民族舞课程'
+    }),
+    otherClassCtaLink: '/dance/uyghur'
   },
   [UYGHUR_ID]: {
     title: byLanguage({
@@ -273,7 +278,12 @@ export default {
     coursesNotes: byLanguage({
       en: 'All classes are cancelled on statutory holidays. Please double check with class contact before joining a new class.',
       ch: '加拿大法定节假日没有课程。请与课程联系确认后再加入新的课程。'
-    })
+    }),
+    otherClassCta: byLanguage({
+      en: 'Check Out Bellydance Classes',
+      ch: '查看肚皮舞课程'
+    }),
+    otherClassCtaLink: '/dance/bellydance'
   },
   privateClassTitle: byLanguage({
     en: 'Private Classes',
