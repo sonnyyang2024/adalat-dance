@@ -17,6 +17,7 @@ export default {
   'leana_li': {
     id: getUUID(),
     name: 'Leana Li',
-    phoneNumber: '(604) 782-6544'
+    phoneNumber: '(604) 782-6544',
+    email: 'trustleanali@gmail.com'
   }
 };

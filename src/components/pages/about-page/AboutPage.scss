@@ -1,8 +1,18 @@
 @import '../../../scheme/config.scss';
 
+:root {
+  --subtitle-color: #cf96ff;
+}
+
 .page-content {
   padding-top: 60px;
   background-color: var(--color-black);
+}
+
+.about .container {
+  @media (max-width: $break-medium) {
+    padding: 0;
+  }
 }
 
 .about__banner {
@@ -20,8 +30,8 @@
       }
   
       & .subtitle {
-        color: var(--color-purple);
-        opacity: .9;
+        color: var(--subtitle-color);
+        font-weight: bold;
       }
     }
   }

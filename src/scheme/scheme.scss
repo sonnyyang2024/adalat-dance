@@ -4,6 +4,11 @@ body {
   font-family: var(--font-body);
 }
 
+hr {
+  opacity: .3;
+  border: .5px solid white;
+}
+
 h1,
 h2,
 h3,
@@ -74,6 +79,12 @@ select:focus {
     font-size: 14px;
     opacity: .8;
   }
+}
+
+p.small {
+  font-size: .9rem;
+  margin: 0;
+  opacity: .8;
 }
 
 // Float field

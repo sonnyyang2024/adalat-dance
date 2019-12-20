@@ -19,10 +19,7 @@ const Footer = () => {
     socialMedia
   } = useDataByLanguage(dataByLanguage);
 
-  const footerContacts = [
-    'adalat_omar',
-    'leana_li'
-  ];
+  const footerContacts = ['adalat_omar'];
 
   return (
     <div className="footer">
@@ -56,6 +53,11 @@ const Footer = () => {
             ))
           }
         </div>
+      </div>
+      <div className="footer__notation">
+        <hr/>
+        <p>© 2019 by Adalat Omar</p>
+        <p>website by <a href="https://xwang.dev" target="_blank" rel="noopener noreferrer">Xuenan</a> & <a href="http://www.rachnachohan.ca/" target="_blank" rel="noopener noreferrer">Rachna</a></p>
       </div>
     </div>
   )

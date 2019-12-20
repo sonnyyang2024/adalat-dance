@@ -14,8 +14,8 @@ export default {
     ch: '电话'
   }),
   contactMessage: byLanguage({
-    en: 'Contact Us',
-    ch: '联系我们'
+    en: 'Contact Me',
+    ch: '联系我'
   }),
   socialMedia: {
     title: byLanguage({
