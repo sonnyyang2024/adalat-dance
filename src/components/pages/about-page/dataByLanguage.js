@@ -83,7 +83,7 @@ export default {
         en: 'events, festivals, theatre productions',
         ch: '活动、节日表演、电影艺术制作'
       }),
-      imageSrc: 'adalat-dark.jpg',
+      imageSrc: 'adalat-omar-blue-performance.jpg',
       description: byLanguage({
         en: (
           <Fragment>
@@ -117,7 +117,7 @@ export default {
         en: 'movies, tv, and theatre productions',
         ch: '电影，电视和戏剧作品'
       }),
-      imageSrc: 'adalat-dark.jpg',
+      imageSrc: 'adalat-omar-shimmy-production.jpg',
       description: byLanguage({
         en: (
           <Fragment>
@@ -174,7 +174,7 @@ export default {
         en: 'group & private classes available',
         ch: '团体和私人班'
       }),
-      imageSrc: 'adalat-omar-class.jpg',
+      imageSrc: 'adalat-omar-classes-2.jpg',
       description: byLanguage({
         en: (
           <Fragment>
