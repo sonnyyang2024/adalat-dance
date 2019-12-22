@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { byLanguage } from '../../../utility';
 
 // actions
-import { changeLanguage } from '../../../store/actions/preferences';
+import { changeLanguage, setIsSwitchingLanguage } from '../../../store/actions/preferences';
 
 // hooks
 import useLanguage from '../../../hooks/useLanguage';
@@ -26,13 +26,19 @@ const LanguageSwitcher = () => {
   const data = useDataByLanguage(dataByLanguage);
 
   const handleOnClick = () => {
-    dispatch(
-      changeLanguage(
-        language === 'en'
-          ? 'ch'
-          : 'en'
-      )
-    );
+    // fire language switching animation
+    dispatch(setIsSwitchingLanguage(true));
+    setTimeout(() => dispatch(setIsSwitchingLanguage(false)), 1000);
+
+    setTimeout(() => {
+      dispatch(
+        changeLanguage(
+          language === 'en'
+            ? 'ch'
+            : 'en'
+        )
+      );
+    }, 800);
   };
 
   return (

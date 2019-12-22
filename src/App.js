@@ -11,6 +11,7 @@ import {
 } from 'react-router-dom';
 import Header from './components/common/header/Header';
 import Footer from './components/common/footer/Footer';
+import LanguageSwitchingAnimation from './components/common/languageSwitchingAnimation/LanguageSwitchingAnimation';
 
 // pages
 import HomePage from './components/pages/home-page/HomePage';
@@ -19,6 +20,7 @@ import AboutPage from './components/pages/about-page/AboutPage';
 
 const App = () => (
   <div className="App">
+    <LanguageSwitchingAnimation />
     <Router>
       <Header />
       <Switch>
