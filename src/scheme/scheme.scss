@@ -27,28 +27,35 @@ select,
 options,
 input,
 textarea {
+  color: white;
   font-size: 18px;
   outline: none;
-  box-shadow: 0;
+  background-color: transparent;
   height: 2rem;
   padding: 4px 2px;
   border: none;
-  border-bottom: 1px solid var(--color-grey-500);
+  border-bottom: 1px solid white;
   border-radius: 0;
+  box-shadow: 0;
 }
 
 select {
+  // Reset defaul select
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
   height: 2.5rem;
+  background-color: var(--color-purple-dark);
+  border-bottom: 1px solid white;
 }
 
 textarea {
-  padding: 4px 8px;
   min-height: 100px;
-  background-color: var(--color-grey-100);
 }
 
 label {
-  color: var(--color-grey-500)
+  color: white;
 }
 
 input:focus,
@@ -88,6 +95,10 @@ p.small {
 }
 
 // Float field
+.field--float ::placeholder {
+  color: rgba(255,255,255,.5);
+}
+
 .field--float {
   text-transform: lowercase;
   margin: 4px 0;
@@ -101,6 +112,7 @@ p.small {
 
 .field--float:focus-within {
   & label {
+    color: var(--color-pink);
     opacity: 1;
     display: inline;
     font-size: 14px;
