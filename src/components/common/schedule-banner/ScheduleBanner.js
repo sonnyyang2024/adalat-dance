@@ -11,7 +11,8 @@ const ScheduleBanner = ({
   title,
   notes,
   columns,
-  rows
+  rows,
+  bottomNotes
 }) => {
   return (
     <div className="banner--schedule">
@@ -89,6 +90,7 @@ const ScheduleBanner = ({
             </tbody>
           </table>
         </div>
+        <p className="schedule__bottom-notes">{bottomNotes}</p>
       </div>
     </div>
   );
