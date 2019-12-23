@@ -38,7 +38,7 @@ const LanguageSwitcher = () => {
             : 'en'
         )
       );
-    }, 800);
+    }, 500);
   };
 
   return (
