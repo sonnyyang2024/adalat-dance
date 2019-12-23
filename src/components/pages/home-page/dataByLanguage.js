@@ -1,5 +1,4 @@
 /* eslint-disable max-len */
-
 import React, { Fragment } from 'react';
 import {
   BELLYDANCE_ID,
@@ -157,7 +156,7 @@ export default {
     ],
     showList: [
       {
-        time: '8:00PM',
+        time: '8:00 PM',
         day: byLanguage({
           en: 'Every Saturday',
           ch: '每周六'
