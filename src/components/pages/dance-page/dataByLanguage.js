@@ -253,6 +253,10 @@ export default {
       },
       {
         id: getUUID(),
+        name: 'adalat-omar-uyghur-performance.jpg'
+      },
+      {
+        id: getUUID(),
         name: 'adalat-uyghur-pink.jpg'
       },
       {
