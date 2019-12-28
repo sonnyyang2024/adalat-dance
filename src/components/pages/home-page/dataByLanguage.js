@@ -1,5 +1,4 @@
 /* eslint-disable max-len */
-
 import React, { Fragment } from 'react';
 import {
   BELLYDANCE_ID,
@@ -114,44 +113,75 @@ export default {
       ]
     }
   ],
-  scheduleBanner: {
+  publicShows: {
     title: byLanguage({
       en: 'Upcoming Public Shows',
       ch: '近期公开演出'
     }),
-    list: [
+    subtitle: byLanguage({
+      en: 'Adalat performs regularly at local venues like hookah lounges and restaurants. Here is her regular public shows schedule. ',
+      ch: 'Adalat定期在水烟吧和餐厅等当地场所演出。以下为她的定期公开表演时间表。'
+    }),
+    bottomNotes: 'Occassionally, Adalat also performs at other Metro Vancouver venues.',
+    showTableColumns: [
       {
-        id: getUUID(),
-        date: 'Every Saturaday',
-        startTime: '10:30 PM',
-        venue: 'Zeitoon Restaurant, Port Moody',
-        mapLink: 'https://g.page/zeitoon-portmoody?share',
-        danceType: byLanguage({
-          en: 'Bellydance',
-          ch: '肚皮舞'
-        })
+        key: 'venueName',
+        label: byLanguage({
+          en: 'Venue',
+          ch: '场所'
+        }),
       },
       {
-        id: getUUID(),
-        date: 'Every Saturday',
-        startTime: '11:00 PM',
-        venue: 'Paradiz Hookah Lounge, Port Moody',
-        mapLink: 'https://goo.gl/maps/P3tNCCNtnLKEuQz16',
-        danceType: byLanguage({
-          en: 'Bellydance',
-          ch: '肚皮舞'
-        })
+        key: 'time',
+        label: byLanguage({
+          en: 'Start Time',
+          ch: '出场时间'
+        }),
       },
       {
-        id: getUUID(),
-        date: 'Every Saturday',
-        startTime: 'Evening',
-        venue: 'Afghan Horsemen Restaurant, Vancouver',
-        mapLink: 'https://goo.gl/maps/55EM66E64P4eP8xD6',
-        danceType: byLanguage({
-          en: 'Bellydance',
-          ch: '肚皮舞'
-        })
+        key: 'day',
+        label: byLanguage({
+          en: 'Day',
+          ch: '日期'
+        }),
+      },
+      // {
+      //   key: 'address',
+      //   label: byLanguage({
+      //     en: 'Address',
+      //     ch: '地址'
+      //   }),
+      //   type: 'linkedAddress'
+      // }
+    ],
+    showList: [
+      {
+        time: '8:00 PM',
+        day: byLanguage({
+          en: 'Every Saturday',
+          ch: '每周六'
+        }),
+        venueName: 'Afghan Horsemen Restaurant, Vancouver',
+        address: '200 - 500 Granville Street, Vancouver',
+        venueLink: 'https://google.com'
+      },
+      {
+        day: byLanguage({
+          en: 'Every Saturday',
+          ch: '每周六'
+        }),
+        time: '10:30 PM',
+        venueName: 'Zeitoon Restaurant, Port Moody',
+        venueLink: 'https://g.page/zeitoon-portmoody?share',
+      },
+      {
+        day: byLanguage({
+          en: 'Every Saturday',
+          ch: '每周六'
+        }),
+        time: '11:00 PM',
+        venueName: 'Paradiz Hookah Lounge, Port Moody',
+        venueLink: 'https://goo.gl/maps/P3tNCCNtnLKEuQz16',
       }
     ]
   }

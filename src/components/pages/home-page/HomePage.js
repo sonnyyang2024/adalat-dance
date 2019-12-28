@@ -12,6 +12,7 @@ import dataByLanguage from './dataByLanguage';
 // components
 import Hero from './hero/Hero';
 import Banner from '../../common/banner/Banner';
+import ScheduleBanner from '../../common/schedule-banner/ScheduleBanner';
 
 const HomePage = () => {
   const data = useDataByLanguage(dataByLanguage);
@@ -22,7 +23,19 @@ const HomePage = () => {
     information,
     callToAction,
     banners,
+    publicShows
   } = data;
+
+  const scheduleColumns = publicShows.showTableColumns.map(showColumn => (
+    {
+      id: getUUID(),
+      key: showColumn.key,
+      label: showColumn.label,
+      type: showColumn.type
+    }
+  ));
+
+  const scheduleRows = publicShows.showList;
 
   return (
     <div>
@@ -43,11 +56,15 @@ const HomePage = () => {
           />
         )))
       }
-      {/* <ScheduleBanner
-        title={scheduleBanner.title}
+
+      <ScheduleBanner
+        title={publicShows.title}
+        notes={publicShows.subtitle}
         columns={scheduleColumns}
-        rows={scheduleBanner.list}
-      /> */}
+        rows={scheduleRows}
+        bottomNotes={publicShows.bottomNotes}
+      />
+
     </div>
   );
 };

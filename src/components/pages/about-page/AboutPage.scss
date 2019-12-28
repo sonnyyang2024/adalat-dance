@@ -58,9 +58,9 @@
 
   @media (max-width: $break-medium) {
     position: relative;
-    top: -50px;
-    color: black;
-    background-color: var(--color-grey-100);
+    top: 0;
+    color: white;
+    background-color: rgba(0,0,0, .8);
     padding: 0 20px 20px 20px;
   }
 }
@@ -87,8 +87,8 @@
 
 .banner__image-wrapper {
   flex: 1;
-  position: sticky;
   top: 60px;
+  position: sticky;
 }
 
 .about__banner__image {

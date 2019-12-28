@@ -52,19 +52,15 @@ export default {
       },
       {
         id: getUUID(),
-        name: 'adalat-wings-purple.jpg'
-      },
-      {
-        id: getUUID(),
-        name: 'adalat-studio-bellydance.jpg'
-      },
-      {
-        id: getUUID(),
         name: 'adalat-dark.jpg'
       },
       {
         id: getUUID(),
         name: 'adalat-drum.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-omar-black-dress2.jpg'
       },
       {
         id: getUUID(),
@@ -80,11 +76,47 @@ export default {
       },
       {
         id: getUUID(),
+        name: 'adalat-omar-dress-white-candle.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-omar-white-dress2.jpg'
+      },
+      {
+        id: getUUID(),
         name: 'adalat-bellydance-pink.jpg'
       },
       {
         id: getUUID(),
         name: 'adalat-dance-company.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-omar-blue-bellydance.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-omar-blue-veil.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-omar-pattern-dress.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-omar-patter-dress.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-omar-pattern-dress-2.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-omar-pattern-dress3.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-omar-pink-dress.jpg'
       }
     ],
     coursesNotes: byLanguage({
@@ -215,10 +247,6 @@ export default {
       ch: '学习维吾尔舞'
     }),
     imageNames: [
-      {
-        id: getUUID(),
-        name: 'adalat-uyghur-green.jpg'
-      },
       {
         id: getUUID(),
         name: 'adalat-uyghur-class.jpg'

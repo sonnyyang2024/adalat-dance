@@ -1,7 +1,8 @@
-import { CHANGE_LANGUAGE } from '../types/preferences';
+import { CHANGE_LANGUAGE, SET_IS_SWITCHING_LANGUAGE } from '../types/preferences';
 
 const defaultPreferences = {
-  language: 'en'
+  language: 'en',
+  isSwitchingLanguage: false
 };
 
 const preferencesReducer = (preferences = defaultPreferences, action) => {
@@ -10,6 +11,11 @@ const preferencesReducer = (preferences = defaultPreferences, action) => {
       return {
         ...preferences,
         language: action.language
+      };
+    case SET_IS_SWITCHING_LANGUAGE:
+      return {
+        ...preferences,
+        isSwitchingLanguage: action.isSwitchingLanguage
       };
     default:
       return preferences;
