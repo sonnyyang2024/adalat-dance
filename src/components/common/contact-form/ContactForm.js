@@ -61,7 +61,7 @@ const ContactForm = () => {
       _subject: `Website Inquiry about ${formData.interest} from ${formData.name}`
     };
 
-    axios.post('https://formspree.io/mbjjoweo', data)
+    axios.post('https://formspree.io/xwkvnawz', data)
       .then(() => {
         setSubmitState(submitStates.submissionSuccess);
         document.getElementById('form--contact').reset();
