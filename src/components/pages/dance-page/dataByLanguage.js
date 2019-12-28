@@ -29,6 +29,10 @@ export default {
       {
         id: getUUID(),
         name: 'adalat-bollywood-2.jpg'
+      },
+      {
+        id: getUUID(),
+        name: 'adalat-omar-bollywood.jpg'
       }
     ],
   },
