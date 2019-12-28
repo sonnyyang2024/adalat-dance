@@ -122,7 +122,6 @@ export default {
       en: 'Adalat performs regularly at local venues like hookah lounges and restaurants. Here is her regular public shows schedule. ',
       ch: 'Adalat定期在水烟吧和餐厅等当地场所演出。以下为她的定期公开表演时间表。'
     }),
-    bottomNotes: 'Occassionally, Adalat also performs at other Metro Vancouver venues.',
     showTableColumns: [
       {
         key: 'venueName',
@@ -158,11 +157,51 @@ export default {
       {
         time: '8:00 PM',
         day: byLanguage({
+          en: 'Every Friday',
+          ch: '每周五'
+        }),
+        venueName: 'Cazba Restaurant, Vancouver',
+        address: 'Downtown',
+        venueLink: 'https://google.com'
+      },
+      {
+        time: '8:45 PM',
+        day: byLanguage({
+          en: 'Every Friday',
+          ch: '每周五'
+        }),
+        venueName: 'Afghan Horsemen Restaurant, Vancouver',
+        address: 'Granville Street, Vancouver',
+        venueLink: 'https://google.com'
+      },
+      {
+        time: '10:00 PM',
+        day: byLanguage({
+          en: 'Every Friday',
+          ch: '每周五'
+        }),
+        venueName: 'Saray Turkish Cousine, Vancouver',
+        address: 'Vancouver',
+        venueLink: 'https://google.com'
+      },
+      {
+        time: '11:00 PM',
+        day: byLanguage({
+          en: 'Every Friday',
+          ch: '每周五'
+        }),
+        venueName: 'Arwaz Hookah Lounge, Vancouver',
+        address: 'Vancouver',
+        venueLink: 'https://google.com'
+      },
+      {
+        time: '8:00 PM',
+        day: byLanguage({
           en: 'Every Saturday',
           ch: '每周六'
         }),
-        venueName: 'Afghan Horsemen Restaurant, Vancouver',
-        address: '200 - 500 Granville Street, Vancouver',
+        venueName: 'Cazba Restaurant, North Vancouver',
+        address: 'North Vancouver',
         venueLink: 'https://google.com'
       },
       {
@@ -170,9 +209,18 @@ export default {
           en: 'Every Saturday',
           ch: '每周六'
         }),
-        time: '10:30 PM',
-        venueName: 'Zeitoon Restaurant, Port Moody',
-        venueLink: 'https://g.page/zeitoon-portmoody?share',
+        time: '8:45 PM',
+        venueName: 'Afghan Horsemen Restaurant, Vancouver',
+        address: 'Granville Street, Vancouver',
+      },
+      {
+        day: byLanguage({
+          en: 'Every Saturday',
+          ch: '每周六'
+        }),
+        time: '10:00 PM',
+        venueName: 'Saray Turkish Cousine',
+        address: 'Vancouver',
       },
       {
         day: byLanguage({
@@ -183,6 +231,10 @@ export default {
         venueName: 'Paradiz Hookah Lounge, Port Moody',
         venueLink: 'https://goo.gl/maps/P3tNCCNtnLKEuQz16',
       }
-    ]
+    ],
+    bottomNotes: byLanguage({
+      en: 'Occassionally, Adalat also performs at other Metro Vancouver venues, such as Taverna Greka (New Westminster), Zeitoon Restaurant (Port Moody), and Minoas Greek Taverna (Burnaby).',
+      ch: 'Adalat还常常在其他大温地区场所演出，比如Taverna Greka (New Westminster), Zeitoon Restaurant (Port Moody), 和 Minoas Greek Taverna (Burnaby)。'
+    })
   }
 };
