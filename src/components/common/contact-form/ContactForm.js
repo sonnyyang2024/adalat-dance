@@ -74,7 +74,7 @@ const ContactForm = () => {
         setErrorMessage(error);
         setTimeout(() => {
           setSubmitState(submitStates.notSubmitted);
-          document.getElementById('form--contact').reset();
+          // document.getElementById('form--contact').reset();
         }, 4000);
       });
   };
