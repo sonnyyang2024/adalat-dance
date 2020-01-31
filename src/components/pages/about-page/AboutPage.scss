@@ -6,7 +6,9 @@
 
 .page-content {
   padding-top: 60px;
-  background-color: var(--color-black);
+  background: linear-gradient(-45deg,  var(--color-purple-darkest), var(--color-purple-dark), var(--color-black), var(--color-black));
+  background-size: 400% 400%;
+  animation: gradient 14s ease infinite;
 }
 
 .about .container {
@@ -16,7 +18,6 @@
 }
 
 .about__banner {
-  background-color: var(--color-black);
   color: white;
   display: flex;
   margin-bottom: 20px;

@@ -4,6 +4,7 @@
   background: white;
   width: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .banner__list--schedule {
@@ -105,7 +106,6 @@
 
 .schedule__bottom-notes {
   font-style: italic;
-  opacity: .6;
-  line-height: 1.5;
-  margin-top: 30px;
+  text-align: right;
+  opacity: .5;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import BannerItem from '../banner-item/BannerItem';
@@ -16,18 +17,21 @@ const Banner = ({
     })}
   >
     <div className="container">
-      <h1 className="banner__title">
-        {title}
-      </h1>
+      <Fade bottom>
+        <h1 className="banner__title">
+          {title}
+        </h1>
+      </Fade>
       <div className="banner__list">
         {
-          list.map((item) => (
+          list.map((item, index) => (
             <BannerItem
               key={item.name}
               name={item.name}
               description={item.description}
               imageName={item.imageName}
               linkTo={item.linkTo}
+              bannerIndex={index}
             />
           ))
         }

@@ -1,4 +1,5 @@
 @import '../../../../scheme/config.scss';
+@import '../../../../scheme/scheme.scss';
 
 .hero {
   @include hero-gradient;
@@ -59,8 +60,7 @@
 
 .hero__title {
   font-size: 48px;
-  animation: slideInFromBottomWithDelay 1.5s ease;
-  
+
   @media (max-width: $break-medium) {
     font-size: 90px;
     line-height: 1;
@@ -70,7 +70,6 @@
 
 .hero__subtitle {
   font-size: 18px;
-  animation: slideInFromBottomWithDelay 1.6s ease;
   
   @media (max-width: $break-medium) {
     letter-spacing: .5px;
@@ -83,16 +82,12 @@
 }
 
 .hero__description {
-  animation: slideInFromBottomWithDelay 2s ease;
-
   @media (max-width: $break-medium) {
     display: none;
   }
 }
 
 .hero__button-wrapper {
-  animation: slideInFromBottomWithDelay 2.1s ease;
-
   @media (max-width: $break-medium) {
     display: none;
   }
@@ -122,7 +117,6 @@
   width: unset;
   min-height: 95%;
   object-fit: cover;
-  animation: slideInFromRight .8s ease;
 
   @media (max-width: $break-medium) {
     height: 90%;

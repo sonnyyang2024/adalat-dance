@@ -289,43 +289,20 @@ p.small {
   }
 }
 
-@keyframes slideInFromBottom {
+// Gradient background sample usage:
+// background: linear-gradient(-45deg, var(--color-purple-dark), var(--color-black), #690067, var(--color-black));
+// background-size: 400% 400%;
+// animation: gradient 12s ease infinite;
+
+// Gradient background
+@keyframes gradient {
   0% {
-    opacity: .7;
-    transform: translateY(50px);
+      background-position: 0% 50%;
   }
-
+  50% {
+      background-position: 100% 50%;
+  }
   100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-@keyframes slideInFromBottomWithDelay {
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-
-  45% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-@keyframes slideInFromRight {
-  0% {
-    opacity: .4;
-    transform: translateX(10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
+      background-position: 0% 50%;
   }
 }
