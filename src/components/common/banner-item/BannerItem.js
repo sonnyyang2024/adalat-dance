@@ -11,7 +11,7 @@ const BannerItem = ({
   linkTo,
   bannerIndex
 }) => (
-  <Fade delay={bannerIndex * 600 + 200} duration={1500}>
+  <Fade delay={bannerIndex * 400 + 100} duration={1600}>
     <a className="banner-item" href={linkTo}>
       <div className="banner-item__fg">
         <h2 className="banner-item__name">

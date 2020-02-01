@@ -17,8 +17,8 @@ const AboutPage = () => {
   const { sections } = data;
 
   const getDelay = index => {
-    if (index > 0 && index <= 3) {
-      return index * 400
+    if (index > 0 && index <= 2) {
+      return index * 300
     }
 
     return 0
@@ -30,7 +30,7 @@ const AboutPage = () => {
         {
           sections.map((section, index) => (
             <div className="about__banner" key={section.id}>
-              <Fade delay={getDelay(index)}>
+              <Fade delay={getDelay(index)} duration={1600}>
                 <div className="banner__image-wrapper">
                   <img
                     className="about__banner__image"
@@ -42,7 +42,7 @@ const AboutPage = () => {
                 </div>
               </Fade>
 
-              <Fade delay={getDelay(index) + 100} duration={1300}>
+              <Fade delay={getDelay(index) + 400} duration={1300}>
                 <div className="banner__context">
                   <div>
                     <h2 className="about-banner__title title">{section.title}</h2>
