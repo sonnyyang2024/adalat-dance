@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import './Button.scss';
 
@@ -6,9 +7,9 @@ const Button = ({
   text,
   link
 }) => (
-  <a className="button" href={link}>
+  <Link className="button" to={link}>
     <span className="button__text">{text}</span>
-  </a>
+  </Link>
 );
 
 Button.propTypes = {

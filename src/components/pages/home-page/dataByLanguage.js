@@ -26,8 +26,8 @@ export default {
     )
   }),
   callToAction: byLanguage({
-    en: 'Contact Adalat',
-    ch: '联系Adalat'
+    en: 'Bellydance Classes',
+    ch: '肚皮舞课程'
   }),
   banners: [
     {

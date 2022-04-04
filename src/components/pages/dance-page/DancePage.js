@@ -89,15 +89,14 @@ const DancePage = ({
           </div>
         </Fragment>
       )}
-      { dance.courses && (
-        <div className="contact__cta">
+
+      <div className="contact__cta">
           <div className="contact__cta__container">
             <h2 className="title">{data.privateClassTitle}</h2>
             <p className="subtitle">{data.contactCtaMessage}</p>
             <Button text={data.contactCtaButton} link="#contact-form" />
           </div>
         </div>
-      )}
     </div>
   );
 };

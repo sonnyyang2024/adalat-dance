@@ -56,8 +56,8 @@ const Footer = () => {
       </div>
       <div className="footer__notation">
         <hr/>
-        <p>© 2019 by Adalat Omar</p>
-        <p>website by <a href="https://xwang.dev" target="_blank" rel="noopener noreferrer">Xuenan</a> & <a href="http://www.rachnachohan.ca/" target="_blank" rel="noopener noreferrer">Rachna</a></p>
+        <p>© 2022 by Adalat Omar</p>
+        <p>website by <a href="https://https://xwang.netlify.app/" target="_blank" rel="noopener noreferrer">Xuenan</a> & <a href="http://www.rachnachohan.ca/" target="_blank" rel="noopener noreferrer">Rachna</a></p>
       </div>
     </div>
   )

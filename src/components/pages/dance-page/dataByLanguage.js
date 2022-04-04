@@ -131,33 +131,31 @@ export default {
       {
         id: getUUID(),
         name: byLanguage({
-          en: 'Beginner Class',
-          ch: '初级班'
+          en: 'Mixed-Level Group Class',
+          ch: '进阶班'
         }),
-        description: '',
-        location: "Dancin' Stars",
-        address: '7757 Edmonds Street, Burnaby',
-        fullAddress: "Dancin' Stars, 7757 Edmonds Street, Burnaby",
-        time: '7:00-8:30PM',
+        address: '170 - 5771 No.3 Road, Richmond',
+        fullAddress: '170 - 5771 No.3 Road, Richmond',
+        time: '5:30 - 7:00PM',
         date: byLanguage({
-          en: 'Every Thursday (Jan 16th to Feb 27)',
-          ch: '每周四 （1月16日至2月27日）'
+          en: 'Every Monday (April to June 2022)',
+          ch: '每周一 （2022年四月至六月）'
         }),
         contactNames: [
           'adalat_omar',
-          'dancin_stars'
+          'danya'
         ],
         price: byLanguage({
           en: (
             <Fragment>
-              <strong>$140 / 7 classes <small>(full term)</small></strong>
-              <p>$25 / drop-in</p>
+              <p>$30 / drop-in</p>
+              <strong>full term discount: $25/class </strong>
             </Fragment>
           ),
           ch: (
             <Fragment>
-              <strong>$140 / 7节课 (全期)</strong>
-              <p>$25 / 单次课</p>
+              <p>$30 / 单次课</p>
+              <strong>整季折扣：$25/节</strong>
             </Fragment>
           )
         })
@@ -165,71 +163,39 @@ export default {
       {
         id: getUUID(),
         name: byLanguage({
-          en: 'Beginner Class',
-          ch: '初级班'
+          en: 'Performance Group Class',
+          ch: '表演班'
         }),
-        address: '250 - 12551 Vickers Way, Richmond',
-        fullAddress: '250 - 12551 Vickers Way, Richmond',
+        address: '170 - 5771 No.3 Road, Richmond',
+        fullAddress: '170 - 5771 No.3 Road, Richmond',
         time: '7:00 - 8:30PM',
         date: byLanguage({
-          en: 'Every Monday (Jan 6th - Feb 24th)',
-          ch: '每周一 （1月6日至2月24日）'
+          en: 'Every Monday (April to June 2022)',
+          ch: '每周一 （2022年四月至六月）'
         }),
         contactNames: [
           'adalat_omar',
-          'leana_li'
+          'danya'
         ],
         price: byLanguage({
           en: (
             <Fragment>
-              <strong>$160 / 8 classes <small>(full term)</small></strong>
-              <p>$25 / drop-in</p>
+              <p>$30 / drop-in</p>
+              <strong>full term discount: $25/class </strong>
             </Fragment>
           ),
           ch: (
             <Fragment>
-              <strong>$160 / 8节课 (全期)</strong>
-              <p>$25 / 单次课</p>
-            </Fragment>
-          )
-        })
-      },
-      {
-        id: getUUID(),
-        name: byLanguage({
-          en: 'Intermediate Class',
-          ch: '中级班'
-        }),
-        address: '250 - 12551 Vickers Way, Richmond',
-        fullAddress: '250 - 12551 Vickers Way, Richmond',
-        time: '7:00 - 8:30PM',
-        date: byLanguage({
-          en: 'Every Wednesday (Jan 8th - Mar 25)',
-          ch: '每周三 （1月8日至3月25日）'
-        }),
-        contactNames: [
-          'adalat_omar',
-          'leana_li'
-        ],
-        price: byLanguage({
-          en: (
-            <Fragment>
-              <strong>$240 / 12 classes <small>(full term)</small></strong>
-              <p>$25 / drop-in</p>
-            </Fragment>
-          ),
-          ch: (
-            <Fragment>
-              <strong>$240 / 12节课 (全期)</strong>
-              <p>$25 / 单次课</p>
+              <p>$30 / 单次课</p>
+              <strong>整季折扣：$25/节</strong>
             </Fragment>
           )
         })
       }
     ],
     coursesFor: byLanguage({
-      en: 'Bellydance Classes',
-      ch: '肚皮舞课程'
+      en: 'Bellydance Group Classes',
+      ch: '肚皮舞大课'
     }),
     otherClassCta: byLanguage({
       en: 'Check Out Uyghur Dance Classes',
@@ -272,41 +238,6 @@ export default {
         name: 'adalat-uyghur-red.jpg'
       }
     ],
-    courses: [
-      {
-        id: getUUID(),
-        name: byLanguage({
-          en: 'All-Level Class',
-          ch: '全等级班'
-        }),
-        location: "Dancin' Stars",
-        address: '7757 Edmonds Street, Burnaby, BC',
-        fullAddress: "Dancin' Stars, 7757 Edmonds Street, Burnaby",
-        time: '4:30 - 6:00PM',
-        date: byLanguage({
-          en: 'Every Wednesday (Jan 8th - Mar 25th)',
-          ch: '每周三 （1月8日至3月25日）'
-        }),
-        contactNames: [
-          'adalat_omar',
-          'dancin_stars'
-        ],
-        price: byLanguage({
-          en: (
-            <Fragment>
-              <strong>$240 / 12 classes <small>(full term)</small></strong>
-              <p>$25 / drop-in</p>
-            </Fragment>
-          ),
-          ch: (
-            <Fragment>
-              <strong>$240/ 12节课 (全期)</strong>
-              <p>$25 / 单次课</p>
-            </Fragment>
-          )
-        })
-      }
-    ],
     coursesFor: byLanguage({
       en: 'Classes for Uyghur Dance',
       ch: '维吾尔舞蹈课程'
@@ -330,8 +261,8 @@ export default {
     ch: '联系Adalat'
   }),
   contactCtaMessage: byLanguage({
-    en: "Can't find any class that suits your style or level? Ask Adalat about private classes.",
-    ch: '找不到适合你的风格和等级的课程？向Adalat咨询一对一私人课程。'
+    en: "Can't find any group class that suits your style or schedule? Ask Adalat about private classes.",
+    ch: '找不到适合你的课程？向Adalat咨询一对一私人课程。'
   }),
   servicesTitle: byLanguage({
     en: 'Services',

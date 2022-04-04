@@ -14,10 +14,10 @@ export default {
       email: 'dancinstarsbc@gmail.com',
       website: 'http://dancinstarsbc.com'
   },
-  'leana_li': {
+  'danya': {
     id: getUUID(),
-    name: 'Leana Li',
-    phoneNumber: '(604) 782-6544',
-    email: 'trustleanali@gmail.com'
+    name: 'Danya',
+    phoneNumber: '(778) 233-6210',
+    email: 'academy@adalatdance.ca'
   }
 };

@@ -16,7 +16,7 @@ const ScheduleBanner = ({
   bottomNotes
 }) => {
   return (
-    <div className="banner--schedule">
+    <div className="banner--schedule" id="schedule">
       <div className="container">
           <div>
             <Fade bottom duration={700}>
