@@ -16,8 +16,7 @@ export default {
   },
   'danya': {
     id: getUUID(),
-    name: 'Danya',
-    phoneNumber: '(778) 233-6210',
+    name: 'Assistant: Danya',
     email: 'academy@adalatdance.ca'
   }
 };

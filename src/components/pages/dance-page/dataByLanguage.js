@@ -142,8 +142,8 @@ export default {
           ch: '每周一 （2022年四月至六月）'
         }),
         contactNames: [
+          'danya',
           'adalat_omar',
-          'danya'
         ],
         price: byLanguage({
           en: (
@@ -174,8 +174,8 @@ export default {
           ch: '每周一 （2022年四月至六月）'
         }),
         contactNames: [
+          'danya',
           'adalat_omar',
-          'danya'
         ],
         price: byLanguage({
           en: (

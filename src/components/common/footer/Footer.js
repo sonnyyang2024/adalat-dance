@@ -19,7 +19,7 @@ const Footer = () => {
     socialMedia
   } = useDataByLanguage(dataByLanguage);
 
-  const footerContacts = ['adalat_omar'];
+  const footerContacts = ['adalat_omar', 'danya'];
 
   return (
     <div className="footer">
