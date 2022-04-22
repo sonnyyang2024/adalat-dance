@@ -17,6 +17,6 @@ export default {
   'danya': {
     id: getUUID(),
     name: 'Assistant: Danya',
-    email: 'academy@adalatdance.ca'
+    email: 'academy@adalatdance.com'
   }
 };
