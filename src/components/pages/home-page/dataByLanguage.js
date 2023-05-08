@@ -32,6 +32,53 @@ export default {
   banners: [
     {
       title: byLanguage({
+        en: 'Classes',
+        ch: '课程'
+      }),
+      list: [
+        {
+          id: getUUID(),
+          name: byLanguage({
+            en: 'Bellydance',
+            ch: '肚皮舞'
+          }),
+          description: byLanguage({
+            en: 'Learn Oriental Bellydance with Adalat.',
+            ch: '跟着Adalat学习东方肚皮舞。'
+          }),
+          imageName: 'adalat-students-bellydance.jpg',
+          linkTo: `/dance/${BELLYDANCE_ID}`
+        },
+        {
+          id: getUUID(),
+          name: byLanguage({
+            en: 'Private Lessons',
+            ch: '私人一对一课程'
+          }),
+          description: byLanguage({
+            en: '$110 per hour. 5 - 7PM on Thursdays at 5365 Lane St., Burnaby. Fully booked until July 15th. Sign up for waitlist.',
+            ch: '让Adalat设计专属于你的课程和编舞。'
+          }),
+          imageName: 'adalat-bellydance-pink.JPG',
+          linkTo: '#contact-form'
+        },
+        {
+          id: getUUID(),
+          name: byLanguage({
+            en: 'Uyghur Traditional Dance',
+            ch: '维吾尔传统舞'
+          }),
+          description: byLanguage({
+            en: 'Learn authentic Uyghur folk dance with Adalat. Not available at the moment.',
+            ch: '跟着Adalat学习正宗的新疆维吾尔族舞蹈。暂未开班。'
+          }),
+          imageName: 'adalat-uyghur.jpg',
+          linkTo: `/dance/${UYGHUR_ID}`
+        }
+      ]
+    },
+    {
+      title: byLanguage({
         en: 'Services',
         ch: '服务'
       }),
@@ -62,56 +109,10 @@ export default {
           }),
           imageName: 'adalat-candle-min.jpg',
           linkTo: '#contact-form'
-        },
-        {
-          id: getUUID(),
-          name: byLanguage({
-            en: 'Private Lessons',
-            ch: '私人一对一课程'
-          }),
-          description: byLanguage({
-            en: 'Learn dancing with Adalat, get a choreograph tailored to your style and level.',
-            ch: '让Adalat设计专属于你的课程和编舞。'
-          }),
-          imageName: 'adalat-bellydance-pink.JPG',
-          linkTo: '#contact-form'
         }
       ]
     },
-    {
-      title: byLanguage({
-        en: 'Classes',
-        ch: '课程'
-      }),
-      list: [
-        {
-          id: getUUID(),
-          name: byLanguage({
-            en: 'Bellydance',
-            ch: '肚皮舞'
-          }),
-          description: byLanguage({
-            en: 'Learn Oriental Bellydance with Adalat.',
-            ch: '跟着Adalat学习东方肚皮舞。'
-          }),
-          imageName: 'adalat-students-bellydance.jpg',
-          linkTo: `/dance/${BELLYDANCE_ID}`
-        },
-        {
-          id: getUUID(),
-          name: byLanguage({
-            en: 'Uyghur Traditional Dance',
-            ch: '维吾尔传统舞'
-          }),
-          description: byLanguage({
-            en: 'Learn authentic Uyghur folk dance with Adalat.',
-            ch: '跟着Adalat学习正宗的新疆维吾尔族舞蹈。'
-          }),
-          imageName: 'adalat-uyghur.jpg',
-          linkTo: `/dance/${UYGHUR_ID}`
-        }
-      ]
-    }
+    
   ],
   publicShows: {
     title: byLanguage({

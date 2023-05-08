@@ -131,15 +131,15 @@ export default {
       {
         id: getUUID(),
         name: byLanguage({
-          en: 'Mixed-Level Group Class',
-          ch: '进阶班'
+          en: 'Techniques & Combos',
+          ch: '技巧组合班'
         }),
-        address: '170 - 5771 No.3 Road, Richmond',
-        fullAddress: '170 - 5771 No.3 Road, Richmond',
-        time: '5:30 - 7:00PM',
+        address: 'Flying Dance Studio',
+        fullAddress: 'Flying Dance Studio 4351 No.3 Rd #260, Richmond, BC',
+        time: '5:45 - 7:15PM',
         date: byLanguage({
-          en: 'Every Monday (April to June 2022)',
-          ch: '每周一 （2022年四月至六月）'
+          en: 'Every Monday (April to July 31st, 2023)',
+          ch: '每周一 （2023年4月17日至7月31日）'
         }),
         contactNames: [
           'danya',
@@ -148,14 +148,14 @@ export default {
         price: byLanguage({
           en: (
             <Fragment>
-              <p>$30 / drop-in</p>
-              <strong>full term discount: $25/class </strong>
+              <p>$37 / drop-in</p>
+              <strong>$158 / 5 drop-in pass</strong>
             </Fragment>
           ),
           ch: (
             <Fragment>
-              <p>$30 / 单次课</p>
-              <strong>整季折扣：$25/节</strong>
+              <p>$37 / 单次课</p>
+              <strong>$158 / 5 次drop-in</strong>
             </Fragment>
           )
         })
@@ -163,15 +163,15 @@ export default {
       {
         id: getUUID(),
         name: byLanguage({
-          en: 'Performance Group Class',
-          ch: '表演班'
+          en: 'Choreograph Class',
+          ch: '成品舞班'
         }),
-        address: '170 - 5771 No.3 Road, Richmond',
-        fullAddress: '170 - 5771 No.3 Road, Richmond',
-        time: '7:00 - 8:30PM',
+        address: 'Flying Dance Studio',
+        fullAddress: 'Flying Dance Studio 4351 No.3 Rd #260, Richmond, BC',
+        time: '7:30 - 9:00PM',
         date: byLanguage({
-          en: 'Every Monday (April to June 2022)',
-          ch: '每周一 （2022年四月至六月）'
+          en: 'Every Monday (April to July 31st, 2023)',
+          ch: '每周一 （2023年4月17日至7月31日）'
         }),
         contactNames: [
           'danya',
@@ -180,22 +180,54 @@ export default {
         price: byLanguage({
           en: (
             <Fragment>
-              <p>$30 / drop-in</p>
-              <strong>full term discount: $25/class </strong>
+              <p>$37 / drop-in</p>
+              <strong>$158 / 5 drop-in pass</strong>
             </Fragment>
           ),
           ch: (
             <Fragment>
-              <p>$30 / 单次课</p>
-              <strong>整季折扣：$25/节</strong>
+              <p>$37 / 单次课</p>
+              <strong>$158 / 5 次drop-in</strong>
             </Fragment>
           )
         })
-      }
+      },
+      {
+        id: getUUID(),
+        name: byLanguage({
+          en: 'Techniques & Combos',
+          ch: '技巧组合班'
+        }),
+        address: '5365 Lane St, Burnaby, BC ',
+        fullAddress: '5365 Lane St, Burnaby, BC',
+        time: '7:00 - 8:30PM',
+        date: byLanguage({
+          en: 'Every Thursday (April to July 31st, 2023)',
+          ch: '每周四 （2023年4月17日至7月31日）'
+        }),
+        contactNames: [
+          'danya',
+          'adalat_omar',
+        ],
+        price: byLanguage({
+          en: (
+            <Fragment>
+              <p>$37 / drop-in</p>
+              <strong>$158 / 5 drop-in pass</strong>
+            </Fragment>
+          ),
+          ch: (
+            <Fragment>
+              <p>$37 / 单次课</p>
+              <strong>$158 / 5 次drop-in</strong>
+            </Fragment>
+          )
+        })
+      },
     ],
     coursesFor: byLanguage({
       en: 'Bellydance Group Classes',
-      ch: '肚皮舞大课'
+      ch: '肚皮舞团体课'
     }),
     otherClassCta: byLanguage({
       en: 'Check Out Uyghur Dance Classes',
@@ -261,7 +293,7 @@ export default {
     ch: '联系Adalat'
   }),
   contactCtaMessage: byLanguage({
-    en: "Can't find any group class that suits your style or schedule? Ask Adalat about private classes.",
+    en: "$110 per hour. 5 - 7PM on Thursdays at 5365 Lane St., Burnaby. Fully booked until July 15th. ",
     ch: '找不到适合你的课程？向Adalat咨询一对一私人课程。'
   }),
   servicesTitle: byLanguage({
