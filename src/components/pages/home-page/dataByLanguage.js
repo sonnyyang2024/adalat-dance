@@ -176,16 +176,6 @@ export default {
         venueLink: 'https://google.com'
       },
       {
-        time: '10:00 PM',
-        day: byLanguage({
-          en: 'Every Friday',
-          ch: '每周五'
-        }),
-        venueName: 'Saray Turkish Cousine, Vancouver',
-        address: 'Vancouver',
-        venueLink: 'https://google.com'
-      },
-      {
         time: '11:00 PM',
         day: byLanguage({
           en: 'Every Friday',
@@ -193,16 +183,6 @@ export default {
         }),
         venueName: 'Arwaz Hookah Lounge, Vancouver',
         address: 'Vancouver',
-        venueLink: 'https://google.com'
-      },
-      {
-        time: '8:00 PM',
-        day: byLanguage({
-          en: 'Every Saturday',
-          ch: '每周六'
-        }),
-        venueName: 'Cazba Restaurant, North Vancouver',
-        address: 'North Vancouver',
         venueLink: 'https://google.com'
       },
       {
@@ -219,22 +199,13 @@ export default {
           en: 'Every Saturday',
           ch: '每周六'
         }),
-        time: '10:00 PM',
-        venueName: 'Saray Turkish Cousine',
-        address: 'Vancouver',
-      },
-      {
-        day: byLanguage({
-          en: 'Every Saturday',
-          ch: '每周六'
-        }),
         time: '11:00 PM',
         venueName: 'Paradiz Hookah Lounge, Port Moody',
         venueLink: 'https://goo.gl/maps/P3tNCCNtnLKEuQz16',
       }
     ],
     bottomNotes: byLanguage({
-      en: 'Occassionally, Adalat also performs at other Metro Vancouver venues, such as Taverna Greka (New Westminster), Zeitoon Restaurant (Port Moody), and Minoas Greek Taverna (Burnaby).',
+      en: 'Disclaimer: Please confirm with the venue before attending the show, as showtimes may change depending on the circumstances. Occassionally, Adalat also performs at other Metro Vancouver venues, such as Taverna Greka (New Westminster), Zeitoon Restaurant (Port Moody), and Minoas Greek Taverna (Burnaby).',
       ch: 'Adalat还常常在其他大温地区场所演出，比如Taverna Greka (New Westminster), Zeitoon Restaurant (Port Moody), 和 Minoas Greek Taverna (Burnaby)。'
     })
   }
