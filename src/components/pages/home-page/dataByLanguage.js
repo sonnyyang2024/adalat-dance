@@ -56,7 +56,7 @@ export default {
             ch: '私人一对一课程'
           }),
           description: byLanguage({
-            en: '$110 per hour. 5 - 7PM on Thursdays at 5365 Lane St., Burnaby. Fully booked until July 15th. Sign up for waitlist.',
+            en: 'Thursday afternoons at 5365 Lane St., Burnaby. Fully booked until July 15th. Sign up for waitlist.',
             ch: '让Adalat设计专属于你的课程和编舞。'
           }),
           imageName: 'adalat-bellydance-pink.JPG',
@@ -69,8 +69,8 @@ export default {
             ch: '维吾尔传统舞'
           }),
           description: byLanguage({
-            en: 'Learn authentic Uyghur folk dance with Adalat. Not available at the moment.',
-            ch: '跟着Adalat学习正宗的新疆维吾尔族舞蹈。暂未开班。'
+            en: 'Learn authentic Uyghur folk dance with Adalat.',
+            ch: '跟着Adalat学习正宗的新疆维吾尔族舞蹈。'
           }),
           imageName: 'adalat-uyghur.jpg',
           linkTo: `/dance/${UYGHUR_ID}`
