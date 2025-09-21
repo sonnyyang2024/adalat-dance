@@ -45,6 +45,7 @@ export default {
       en: '',
       ch: ''
     }),
+    video: 'bellydance.mp4',
     button: byLanguage({
       en: 'Learn Bellydance',
       ch: '学习肚皮舞'
@@ -131,15 +132,15 @@ export default {
       {
         id: getUUID(),
         name: byLanguage({
-          en: 'Techniques & Combos',
-          ch: '技巧组合班'
+          en: 'Basic Techniques & Combos',
+          ch: '基础技巧组合'
         }),
-        address: 'Flying Dance Studio',
-        fullAddress: 'Flying Dance Studio 4351 No.3 Rd #260, Richmond, BC',
-        time: '5:45 - 7:15PM',
+        address: '4351 No. 3 Rd, Richmond, BC',
+        fullAddress: '4351 No. 3 Rd, Richmond, BC',
+        time: '6:00 PM – 7:30 PM',
         date: byLanguage({
-          en: 'Every Monday (April to July 31st, 2023)',
-          ch: '每周一 （2023年4月17日至7月31日）'
+          en: 'Mondays\nSep 8 – Nov 24',
+          ch: '周一\n9月8日 – 11月24日'
         }),
         contactNames: [
           'danya',
@@ -148,14 +149,14 @@ export default {
         price: byLanguage({
           en: (
             <Fragment>
-              <p>$37 / drop-in</p>
-              <strong>$158 / 5 drop-in pass</strong>
+              <p> $308 per course (11 sessions)</p>
+              <p> Drop-in $38</p>
             </Fragment>
           ),
           ch: (
             <Fragment>
-              <p>$37 / 单次课</p>
-              <strong>$158 / 5 次drop-in</strong>
+              <p> $308 整个课程 (11节课)</p>
+              <p> 单次课 $38</p>
             </Fragment>
           )
         })
@@ -163,15 +164,15 @@ export default {
       {
         id: getUUID(),
         name: byLanguage({
-          en: 'Choreograph Class',
-          ch: '成品舞班'
+          en: 'Choreography',
+          ch: '编舞课'
         }),
-        address: 'Flying Dance Studio',
-        fullAddress: 'Flying Dance Studio 4351 No.3 Rd #260, Richmond, BC',
-        time: '7:30 - 9:00PM',
+        address: '4351 No. 3 Rd, Richmond, BC',
+        fullAddress: '4351 No. 3 Rd, Richmond, BC',
+        time: '7:45 PM – 9:15 PM',
         date: byLanguage({
-          en: 'Every Monday (April to July 31st, 2023)',
-          ch: '每周一 （2023年4月17日至7月31日）'
+          en: 'Mondays\nSep 8 – Nov 24',
+          ch: '周一\n9月8日 – 11月24日'
         }),
         contactNames: [
           'danya',
@@ -180,14 +181,14 @@ export default {
         price: byLanguage({
           en: (
             <Fragment>
-              <p>$37 / drop-in</p>
-              <strong>$158 / 5 drop-in pass</strong>
+              <p> $308 per course (11 sessions)</p>
+              <p> Drop-in $38</p>
             </Fragment>
           ),
           ch: (
             <Fragment>
-              <p>$37 / 单次课</p>
-              <strong>$158 / 5 次drop-in</strong>
+              <p> $308 整个课程 (11节课)</p>
+              <p> 单次课 $38</p>
             </Fragment>
           )
         })
@@ -195,15 +196,15 @@ export default {
       {
         id: getUUID(),
         name: byLanguage({
-          en: 'Techniques & Combos',
-          ch: '技巧组合班'
+          en: 'Beginner Belly Dance',
+          ch: '肚皮舞初级班'
         }),
-        address: '5365 Lane St, Burnaby, BC ',
-        fullAddress: '5365 Lane St, Burnaby, BC',
-        time: '7:00 - 8:30PM',
+        address: '200 - 4789 Kingsway, Burnaby, BC',
+        fullAddress: '200 - 4789 Kingsway, Burnaby, BC',
+        time: '7:30 PM – 9:00 PM',
         date: byLanguage({
-          en: 'Every Thursday (April to July 31st, 2023)',
-          ch: '每周四 （2023年4月17日至7月31日）'
+          en: 'Tuesdays\nSept 9 - Nov 25',
+          ch: '周二\n9月9日 - 11月25日'
         }),
         contactNames: [
           'danya',
@@ -212,14 +213,44 @@ export default {
         price: byLanguage({
           en: (
             <Fragment>
-              <p>$37 / drop-in</p>
-              <strong>$158 / 5 drop-in pass</strong>
+              <p> $308 per course (11 sessions)</p>
+              <p> Drop-in $38</p>
             </Fragment>
           ),
           ch: (
             <Fragment>
-              <p>$37 / 单次课</p>
-              <strong>$158 / 5 次drop-in</strong>
+              <p> $308 整个课程 (11节课)</p>
+              <p> 单次课 $38</p>
+            </Fragment>
+          )
+        })
+      },
+      {
+        id: getUUID(),
+        name: byLanguage({
+          en: 'Performing Arts Class (Audition required)',
+          ch: '表演艺术班 (需试镜)'
+        }),
+        address: '4351 No. 3 Rd, Richmond, BC',
+        fullAddress: '4351 No. 3 Rd, Richmond, BC',
+        time: '3:30 PM - 5:30 PM',
+        date: byLanguage({
+          en: 'Sundays',
+          ch: '周日'
+        }),
+        contactNames: [
+          'danya',
+          'adalat_omar',
+        ],
+        price: byLanguage({
+          en: (
+            <Fragment>
+              <p>Contact for pricing</p>
+            </Fragment>
+          ),
+          ch: (
+            <Fragment>
+              <p>联系了解价格</p>
             </Fragment>
           )
         })
@@ -244,10 +275,49 @@ export default {
       en: 'Just like its people, Uyghur dance is graceful yet cheerful. It is weaved with cultures from along the silk road, yet preserves its unique heritage. It is usually performed with Uyghur singing and musical accompaniment.',
       ch: '维吾尔传统舞蹈，就和它的人民一样，既优美又令人欢快。它由丝绸之路上多国文化细细织成，又保持了自己独特的魅力。维吾尔舞蹈演出通常伴随着维吾尔歌曲和乐器。'
     }),
+    video: 'uyghur.mp4',
     button: byLanguage({
       en: 'Learn Uyghur Dance',
       ch: '学习维吾尔舞'
     }),
+    coursesNotes: byLanguage({
+      en: 'All classes are cancelled on statutory holidays. Please double check with class contact before joining a new class.',
+      ch: '加拿大法定节假日没有课程。请与课程联系确认后再加入新的课程。'
+    }),
+    courses: [
+      {
+        id: getUUID(),
+        name: byLanguage({
+          en: 'Uyghur Dance',
+          ch: '维吾尔舞'
+        }),
+        address: '5451 Minoru Blvd, Richmond, BC',
+        fullAddress: '5451 Minoru Blvd, Richmond, BC',
+        time: '7:00 PM – 8:30 PM',
+        date: byLanguage({
+          en: 'Wednesdays\nSep 10 – Nov 19',
+          ch: '周三\n9月10日 – 11月19日'
+        }),
+        contactNames: [
+          'danya',
+          'adalat_omar',
+        ],
+        price: byLanguage({
+          en: (
+            <Fragment>
+              <p> $308 per course (11 sessions)</p>
+              <p> Drop-in $38</p>
+            </Fragment>
+          ),
+          ch: (
+            <Fragment>
+              <p> $308 整个课程 (11节课)</p>
+              <p> 单次课 $38</p>
+            </Fragment>
+          )
+        })
+      },
+    ],
     imageNames: [
       {
         id: getUUID(),
@@ -293,8 +363,8 @@ export default {
     ch: '联系Adalat'
   }),
   contactCtaMessage: byLanguage({
-    en: "$110 per hour. 5 - 7PM on Thursdays at 5365 Lane St., Burnaby. Fully booked until July 15th. ",
-    ch: '找不到适合你的课程？向Adalat咨询一对一私人课程。'
+    en: "Thursdays only at Burnaby Private Studio. One-on-one: $110 per session. Package price available.",
+    ch: '私人课程 – 仅周四在Burnaby私人工作室。 一对一: $110 每节课。套餐价格可咨询。'
   }),
   servicesTitle: byLanguage({
     en: 'Services',

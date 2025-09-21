@@ -1,0 +1,36 @@
+@import '../../../scheme/config.scss';
+@import '../../../scheme/scheme.scss';
+
+.video-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 0;
+  
+  @media (max-width: $break-medium) {
+    padding: 20px 0;
+  }
+}
+
+.video-player {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  
+  @media (max-width: $break-medium) {
+    border-radius: 4px;
+  }
+}
+
+.video-title {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: var(--color-text-primary);
+  
+  @media (max-width: $break-medium) {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}

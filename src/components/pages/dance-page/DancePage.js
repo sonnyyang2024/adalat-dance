@@ -13,6 +13,7 @@ import dataByLanguage from './dataByLanguage';
 // components
 import Gallery from '../../common/gallery/Gallery';
 import ScheduleBanner from '../../common/schedule-banner/ScheduleBanner';
+import Video from '../../common/video/Video';
 
 // Styles
 import './DancePage.scss';
@@ -57,20 +58,9 @@ const DancePage = ({
         <div className="container">
           <h1 className="gallery__title">{dance.title}</h1>
           <p>{dance.description}</p>
-        </div>
-      </div>
-      <Gallery
-        title={dance.title}
-        description={dance.description}
-        imageNames={dance.imageNames}
-      />
-      <div className="contact__cta contact__cta--services">
-        <div className="contact__cta__container">
-          <h1 className="title">{data.servicesTitle}</h1>
-          <p className="subtitle">{data.servicesSubtitle}</p>
-          <p>{data.servicesDescription}</p>
-          <Button text={data.servicesCtaButton} link="#contact-form" />
-          <Button text={data.servicesCtaButtonAbout} link="/about" />
+          {dance.video && (
+            <Video key={dance.video} src={dance.video} />
+          )}
         </div>
       </div>
       { dance.courses && (
@@ -89,6 +79,15 @@ const DancePage = ({
           </div>
         </Fragment>
       )}
+      <div className="contact__cta contact__cta--services">
+        <div className="contact__cta__container">
+          <h1 className="title">{data.servicesTitle}</h1>
+          <p className="subtitle">{data.servicesSubtitle}</p>
+          <p>{data.servicesDescription}</p>
+          <Button text={data.servicesCtaButton} link="#contact-form" />
+          <Button text={data.servicesCtaButtonAbout} link="/about" />
+        </div>
+      </div>
 
       <div className="contact__cta">
           <div className="contact__cta__container">
@@ -97,6 +96,12 @@ const DancePage = ({
             <Button text={data.contactCtaButton} link="#contact-form" />
           </div>
         </div>
+
+      <Gallery
+        title={dance.title}
+        description={dance.description}
+        imageNames={dance.imageNames}
+      />
     </div>
   );
 };

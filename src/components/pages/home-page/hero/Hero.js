@@ -18,7 +18,28 @@ const Hero = ({
   information,
   callToAction,
   imageName
-}) => (
+}) => {
+  const scrollToSchedule = () => {
+    const scheduleElement = document.getElementById('schedule');
+    if (scheduleElement) {
+      scheduleElement.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
+  const scrollToContact = () => {
+    const contactElement = document.getElementById('contact-form');
+    if (contactElement) {
+      contactElement.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
+  return (
   <div className="hero">
     <div className="container">
       <div className="hero__left">
@@ -45,7 +66,35 @@ const Hero = ({
             {
               callToAction && (
                 <div className="hero__button-wrapper">
-                  <Button text={callToAction} link="/dance/bellydance#schedule" />
+                  {Array.isArray(callToAction) ? (
+                    callToAction.map((action, index) => {
+                      if (action.text === 'Class Schedule' || action.text === '课程表') {
+                        return (
+                          <button 
+                            key={index}
+                            className="button"
+                            onClick={scrollToSchedule}
+                          >
+                            {action.text}
+                          </button>
+                        );
+                      } else if (action.text === 'Contact' || action.text === '联系我们') {
+                        return (
+                          <button 
+                            key={index}
+                            className="button"
+                            onClick={scrollToContact}
+                          >
+                            {action.text}
+                          </button>
+                        );
+                      } else {
+                        return <Button key={index} text={action.text} link={action.link} />;
+                      }
+                    })
+                  ) : (
+                    <Button text={callToAction} link="/dance/bellydance#schedule" />
+                  )}
                 </div>
               )
             }
@@ -65,7 +114,8 @@ const Hero = ({
       </div>
     </div>
   </div>
-);
+  );
+};
 
 Hero.propTypes = {
   title: PropTypes.string.isRequired,

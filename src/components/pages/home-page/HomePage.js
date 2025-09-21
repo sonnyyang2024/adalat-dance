@@ -46,6 +46,13 @@ const HomePage = () => {
         callToAction={callToAction}
         imageName="adalat-white-cropped.png"
       />
+      <ScheduleBanner
+        title={publicShows.title}
+        notes={publicShows.subtitle}
+        columns={scheduleColumns}
+        rows={scheduleRows}
+        bottomNotes={publicShows.bottomNotes}
+      />
       {
         banners.map(((banner) => (
           <Banner
@@ -56,14 +63,6 @@ const HomePage = () => {
           />
         )))
       }
-
-      <ScheduleBanner
-        title={publicShows.title}
-        notes={publicShows.subtitle}
-        columns={scheduleColumns}
-        rows={scheduleRows}
-        bottomNotes={publicShows.bottomNotes}
-      />
 
     </div>
   );

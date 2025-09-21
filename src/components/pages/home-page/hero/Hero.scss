@@ -88,6 +88,9 @@
 }
 
 .hero__button-wrapper {
+  display: flex;
+  gap: 20px;
+  
   @media (max-width: $break-medium) {
     display: none;
   }
