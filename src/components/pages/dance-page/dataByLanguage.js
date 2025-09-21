@@ -344,10 +344,6 @@ export default {
       en: 'Classes for Uyghur Dance',
       ch: '维吾尔舞蹈课程'
     }),
-    coursesNotes: byLanguage({
-      en: 'All classes are cancelled on statutory holidays. Please double check with class contact before joining a new class.',
-      ch: '加拿大法定节假日没有课程。请与课程联系确认后再加入新的课程。'
-    }),
     otherClassCta: byLanguage({
       en: 'Check Out Bellydance Classes',
       ch: '查看肚皮舞课程'
