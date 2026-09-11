@@ -2,7 +2,7 @@ name: Deploy React App to Pages
 
 on:
   push:
-    branches: ["main", "master"] # 【核心】同时监听 main 和 master，确保百分之百能触发
+    branches: ["main", "master"] 
   workflow_dispatch:
 
 permissions:
@@ -35,7 +35,9 @@ jobs:
 
       - name: Build React App
         run: |
-          export PUBLIC_URL=https://github.io
+          # 【终极修正】改成缩写相对路径，彻底甩掉错误的官方文档域名！
+          export PUBLIC_URL=/adalat-dance
+          export CI=false
           npm run build
 
       - name: Setup Pages
@@ -49,3 +51,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
