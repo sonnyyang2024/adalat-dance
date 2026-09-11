@@ -21,7 +21,8 @@ import AboutPage from './components/pages/about-page/AboutPage';
 const App = () => (
   <div className="App">
     <LanguageSwitchingAnimation />
-    <Router>
+    {/* 【核心修改点】加入了 basename 配置，让路由自动去匹配 /adalat-dance/ 这个二级目录 */}
+    <Router basename={process.env.PUBLIC_URL}>
       <Header />
       <Switch>
         <Route
