@@ -5,7 +5,7 @@ import './App.scss';
 
 // components
 import {
-  BrowserRouter as Router,
+  HashRouter as Router, // 【核心修改点 1】改用 HashRouter，彻底解决 GitHub Pages 二级目录兼容问题
   Switch,
   Route
 } from 'react-router-dom';
@@ -21,8 +21,8 @@ import AboutPage from './components/pages/about-page/AboutPage';
 const App = () => (
   <div className="App">
     <LanguageSwitchingAnimation />
-    {/* 【核心修改点】加入了 basename 配置，让路由自动去匹配 /adalat-dance/ 这个二级目录 */}
-    <Router basename={process.env.PUBLIC_URL}>
+    {/* 【核心修改点 2】这里无需再写繁琐的 basename 网址，HashRouter 会自动完美兼容 */}
+    <Router>
       <Header />
       <Switch>
         <Route
