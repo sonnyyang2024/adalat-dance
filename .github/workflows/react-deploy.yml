@@ -2,8 +2,8 @@ name: Deploy React App to Pages
 
 on:
   push:
-    branches: ["main", "master", "development"] # 包含所有可能的分支名
-  workflow_dispatch: # 【核心新增】这允许我们在网页上点击按钮手动强制运转！
+    branches: ["main", "master"] # 【核心】同时监听 main 和 master，确保百分之百能触发
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -12,7 +12,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -27,16 +27,16 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 16
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm install --legacy-peer-deps --no-audit --no-fund
 
       - name: Build React App
         run: |
           export PUBLIC_URL=https://github.io
-          NODE_OPTIONS=--openssl-legacy-provider npm run build
+          npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
