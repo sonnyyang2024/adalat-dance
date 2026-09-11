@@ -2,7 +2,8 @@ name: Deploy React App to Pages
 
 on:
   push:
-    branches: ["main", "master"] # 兼容 main 或 master 分支
+    branches: ["main", "master", "development"] # 包含所有可能的分支名
+  workflow_dispatch: # 【核心新增】这允许我们在网页上点击按钮手动强制运转！
 
 permissions:
   contents: read
@@ -30,11 +31,12 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        # 使用 --legacy-peer-deps 强行解决老版本 React 项目的依赖冲突
         run: npm install --legacy-peer-deps
 
       - name: Build React App
-        run: NODE_OPTIONS=--openssl-legacy-provider npm run build
+        run: |
+          export PUBLIC_URL=https://github.io
+          NODE_OPTIONS=--openssl-legacy-provider npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
