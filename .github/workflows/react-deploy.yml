@@ -2,7 +2,7 @@ name: Deploy React App to Pages
 
 on:
   push:
-    branches: ["main", "master"] 
+    branches: ["main", "master"]
   workflow_dispatch:
 
 permissions:
@@ -34,9 +34,8 @@ jobs:
         run: npm install --legacy-peer-deps --no-audit --no-fund
 
       - name: Build React App
-        run:
-          export CI=false
-          npm run build
+        # 移除了所有多余的换行符和符号，采用最安全的单行模式强行忽略一切警告打包
+        run: CI=false npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -49,4 +48,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 
