@@ -34,9 +34,7 @@ jobs:
         run: npm install --legacy-peer-deps --no-audit --no-fund
 
       - name: Build React App
-        run: |
-          # 【终极修正】改成缩写相对路径，彻底甩掉错误的官方文档域名！
-          export PUBLIC_URL=/adalat-dance
+        run:
           export CI=false
           npm run build
 
