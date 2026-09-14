@@ -1,4 +1,4 @@
-/* eslint-disable max-len */
+/* eslint-disable */
 import React, { Fragment } from 'react';
 import {
   BELLYDANCE_ID,
@@ -35,7 +35,7 @@ export default {
             />
           </div>
 
-          {/* 纯享文本区：确保你的所有信息 100% 完整展示 */}
+          {/* 纯享文本区 */}
           <div style={{ textAlign: 'left', background: '#fff5f7', padding: '20px', borderRadius: '12px', lineHeight: '1.8', color: '#333' }}>
             
             <p style={{ margin: '0 0 15px 0', borderBottom: '1px dashed #e05275', paddingBottom: '10px' }}>
@@ -204,6 +204,7 @@ export default {
       },
       {
         id: getUUID(),
+
 
 
 
