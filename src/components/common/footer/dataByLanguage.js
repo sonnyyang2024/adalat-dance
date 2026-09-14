@@ -26,17 +26,17 @@ export default {
       {
         id: getUUID(),
         name: 'Facebook',
-        linkTo: 'https://facebook.com'
+        linkTo: 'https://www.facebook.com/adalatdance'
       },
       {
         id: getUUID(),
         name: 'Instagram',
-        linkTo: 'https://instagram.com'
+        linkTo: 'https://instagram.com/adalat_dance_academy'
       },
       {
         id: getUUID(),
         name: 'Youtube',
-        linkTo: 'https://youtube.com'
+        linkTo: 'https://www.youtube.com/user/adalatdance'
       }
     ]
   }
