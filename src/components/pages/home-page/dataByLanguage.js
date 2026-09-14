@@ -7,6 +7,9 @@ import {
 
 import { byLanguage, getUUID } from '../../../utility';
 
+// ==================== 🛠️ 终极云端路径：强行绕过打包工具的漏图缺陷 ====================
+const cloudPosterUrl = "https://githubusercontent.com";
+
 export default {
   title: 'Adalat Omar',
   subtitle: byLanguage({
@@ -20,10 +23,9 @@ export default {
         {/* Fall 2026 Poster English */}
         <div style={{ textAlign: 'center', margin: '30px auto', maxWidth: '800px' }}>
           <img 
-            src="images/fall-2026-schedule.png" 
+            src={cloudPosterUrl} 
             alt="Fall 2026 Registration" 
             style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.15)' }} 
-            onError={(e) => { e.target.src = './images/fall-2026-schedule.png'; }}
           />
         </div>
       </Fragment>
@@ -34,10 +36,9 @@ export default {
         {/* Fall 2026 海报中文 */}
         <div style={{ textAlign: 'center', margin: '30px auto', maxWidth: '800px' }}>
           <img 
-            src="images/fall-2026-schedule.png" 
+            src={cloudPosterUrl} 
             alt="2026秋季注册海报" 
             style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.15)' }} 
-            onError={(e) => { e.target.src = './images/fall-2026-schedule.png'; }}
           />
         </div>
       </Fragment>
@@ -136,7 +137,7 @@ export default {
         id: getUUID(),
         class: byLanguage({ en: 'Intermediate • Techniques & Choreography', ch: '编舞课' }),
         day: byLanguage({ en: 'MONDAYS\nSep 14 – Dec 6', ch: '周一\n9月14日 – 12月6日' }),
-        schedule: byLanguage({ en: '7:45 PM – 9:15 PM', vh: '晚上7:45 – 9:15' }),
+        schedule: byLanguage({ en: '7:45 PM – 9:15 PM', ch: '晚上7:45 – 9:15' }),
         location: byLanguage({ en: '#260–4351 No. 3 Rd, Richmond, BC', ch: '#260–4351 No. 3 Rd, Richmond, BC' }),
         price: byLanguage({ en: '$308 / 11 sessions\nDrop-in: $38', ch: '$308 (11节课)\n单次: $38' })
       },
@@ -179,11 +180,3 @@ export default {
     })
   }
 };
-
-
-
-
-
-
-
-
