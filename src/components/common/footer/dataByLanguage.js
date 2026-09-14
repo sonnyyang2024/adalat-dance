@@ -33,7 +33,7 @@ export default {
         id: getUUID(),
         name: 'Instagram',
         // 🛠️ 已经完美更新为 2026 最新 Instagram 链接
-        linkTo: 'https://instagram.com'
+        linkTo: 'https://www.instagram.com/adalat_dance_academy/'
       },
       {
         id: getUUID(),
