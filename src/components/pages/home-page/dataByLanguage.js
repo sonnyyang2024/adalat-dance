@@ -23,7 +23,7 @@ export default {
         {/* Fall 2026 Poster English */}
         <div style={{ textAlign: 'center', margin: '30px auto', maxWidth: '800px' }}>
           <img 
-            src={cloudPosterUrl}
+            src={require('adalat-dance/public/images/fall-2026-schedule.png').default}
             alt="Fall 2026 Registration" 
             style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.15)' }} 
           />
@@ -36,7 +36,7 @@ export default {
         {/* Fall 2026 海报中文 */}
         <div style={{ textAlign: 'center', margin: '30px auto', maxWidth: '800px' }}>
           <img 
-            src={cloudPosterUrl}
+            src={require('adalat-dance/public/images/fall-2026-schedule.png').default}
             alt="2026秋季注册海报" 
             style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.15)' }} 
           />
