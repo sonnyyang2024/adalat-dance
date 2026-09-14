@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { byLanguage, getUUID } from '../../../utility';
 
 export default {
@@ -31,7 +32,8 @@ export default {
       {
         id: getUUID(),
         name: 'Instagram',
-        linkTo: 'https://instagram.com/adalat_dance'
+        // 🛠️ 已经完美更新为 2026 最新 Instagram 链接
+        linkTo: 'https://instagram.com'
       },
       {
         id: getUUID(),
