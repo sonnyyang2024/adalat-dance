@@ -8,7 +8,7 @@ import {
 import { byLanguage, getUUID } from '../../../utility';
 
 // ==================== 🛠️ 终极云端路径：强行绕过打包工具的漏图缺陷 ====================
-const cloudPosterUrl = "fall-2026-schedule.png";
+const cloudPosterUrl = "https://githubusercontent.com";
 
 export default {
   title: 'Adalat Omar',
