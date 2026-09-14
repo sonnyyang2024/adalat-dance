@@ -17,11 +17,27 @@ export default {
     en: (
       <Fragment>
         <p>Performs, designs, and teaches Middle Eastern Bellydance, Traditional Uyghur Dance and else.</p>
+        {/* Fall 2026 Poster English */}
+        <div style={{ textAlign: 'center', margin: '30px auto', maxWidth: '800px' }}>
+          <img 
+            src="/images/fall-2026-schedule.png" 
+            alt="Fall 2026 Registration" 
+            style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.15)' }} 
+          />
+        </div>
       </Fragment>
     ),
     ch: (
       <Fragment>
         <p>中东肚皮舞、维吾尔舞、宝莱坞舞蹈编排、表演与培训。</p>
+        {/* Fall 2026 海报中文 */}
+        <div style={{ textAlign: 'center', margin: '30px auto', maxWidth: '800px' }}>
+          <img 
+            src="/images/fall-2026-schedule.png" 
+            alt="2026秋季注册海报" 
+            style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.15)' }} 
+          />
+        </div>
       </Fragment>
     )
   }),
@@ -121,11 +137,11 @@ export default {
   ],
   publicShows: {
     title: byLanguage({
-      en: '✨ Adalat Dance Academy ✨ 2025 Fall Semester',
-      ch: '✨ Adalat舞蹈学院 ✨ 2025秋季学期'
+      en: '✨ BELLY DANCE CLASSES ✨\n🌟 FALL 2026 DANCE CLASSES ARE NOW OPEN FOR REGISTRATION! 🌟',
+      ch: '✨ Adalat舞蹈学院 ✨ 2026秋季学期'
     }),
     subtitle: byLanguage({
-      en: 'Registration is open now - Belly Dance & Uyghur Dance',
+      en: '📅 September 14 – December 6, 2026\n🌸 New Student Trial Class: $15 (Trial fee waived when you register for the full semester.)\n📌 Note: No classes on public holidays.',
       ch: '现在开放注册 - 肚皮舞和维吾尔舞'
     }),
     showTableColumns: [
@@ -139,7 +155,7 @@ export default {
       {
         key: 'day',
         label: byLanguage({
-          en: 'Day',
+          en: 'Day & Date',
           ch: '日期'
         }),
       },
@@ -169,116 +185,47 @@ export default {
       {
         id: getUUID(),
         class: byLanguage({
-          en: 'Basic Techniques & Combos',
+          en: 'Beginner • Techniques & Combos',
           ch: '基础技巧组合'
         }),
         day: byLanguage({
-          en: 'Mondays\nSep 8 – Nov 24',
-          ch: '周一\n9月8日 – 11月24日'
+          en: 'MONDAYS\nSep 14 – Dec 6',
+          ch: '周一\n9月14日 – 12月6日'
         }),
         schedule: byLanguage({
-          en: ' 6:00 PM – 7:30 PM',
-          ch: ' 下午6:00 – 7:30'
+          en: '6:00 PM – 7:30 PM',
+          ch: '下午6:00 – 7:30'
         }),
         location: byLanguage({
-          en: ' 4351 No. 3 Rd, Richmond, BC',
-          ch: ' 4351 No. 3 Rd, Richmond, BC'
+          en: '#260–4351 No. 3 Rd, Richmond, BC',
+          ch: '#260–4351 No. 3 Rd, Richmond, BC'
         }),
         price: byLanguage({
-          en: ' $308 per course (11 sessions)',
-          ch: ' $308 整个课程 (11节课)'
+          en: '$308 / 11 sessions\nDrop-in: $38',
+          ch: '$308 整个课程 (11节课)'
         })
       },
       {
         id: getUUID(),
         class: byLanguage({
-          en: 'Choreography',
+          en: 'Intermediate • Techniques & Choreography',
           ch: '编舞课'
         }),
         day: byLanguage({
-          en: 'Mondays\nSep 8 – Nov 24',
-          ch: '周一\n9月8日 – 11月24日'
+          en: 'MONDAYS\nSep 14 – Dec 6',
+          ch: '周一\n9月14日 – 12月6日'
         }),
         schedule: byLanguage({
-          en: ' 7:45 PM – 9:15 PM',
-          ch: ' 晚上7:45 – 9:15'
+          en: '7:45 PM – 9:15 PM',
+          ch: '晚上7:45 – 9:15'
         }),
         location: byLanguage({
-          en: ' 4351 No. 3 Rd, Richmond, BC',
-          ch: ' 4351 No. 3 Rd, Richmond, BC'
+          en: '#260–4351 No. 3 Rd, Richmond, BC',
+          ch: '#260–4351 No. 3 Rd, Richmond, BC'
         }),
         price: byLanguage({
-          en: ' $308 per course (11 sessions)',
-          ch: ' $308 整个课程 (11节课)'
-        })
-      },
-      {
-        id: getUUID(),
-        class: byLanguage({
-          en: 'Performing Arts Class (Audition required)',
-          ch: '表演艺术班 (需试镜)'
-        }),
-        day: byLanguage({
-          en: 'Sundays\n',
-          ch: '周日\n'
-        }),
-        schedule: byLanguage({
-          en: ' 3:30 PM – 5:30 PM',
-          ch: ' 下午3:30 – 5:30'
-        }),
-        location: byLanguage({
-          en: ' 4351 No. 3 Rd, Richmond, BC',
-          ch: ' 4351 No. 3 Rd, Richmond, BC'
-        }),
-        price: byLanguage({
-          en: 'Contact for pricing',
-          ch: '联系了解价格'
-        })
-      },
-      {
-        id: getUUID(),
-        class: byLanguage({
-          en: 'Beginner Belly Dance',
-          ch: '肚皮舞初级班'
-        }),
-        day: byLanguage({
-          en: 'Tuesdays\nSept 9 - Nov 25',
-          ch: '周二\n9月9日 - 11月25日'
-        }),
-        schedule: byLanguage({
-          en: ' 7:30 PM – 9:00 PM',
-          ch: ' 晚上7:30 – 9:00'
-        }),
-        location: byLanguage({
-          en: ' 200 - 4789 Kingsway, Burnaby, BC',
-          ch: ' 200 - 4789 Kingsway, Burnaby, BC'
-        }),
-        price: byLanguage({
-          en: ' $308 per course (11 sessions)',
-          ch: ' $308 整个课程 (11节课)'
-        })
-      },
-      {
-        id: getUUID(),
-        class: byLanguage({
-          en: 'Uyghur Dance',
-          ch: '维吾尔舞'
-        }),
-        day: byLanguage({
-          en: 'Wednesdays\nSep 10 – Nov 19',
-          ch: '周三\n9月10日 – 11月19日'
-        }),
-        schedule: byLanguage({
-          en: ' 7:00 PM – 8:30 PM',
-          ch: ' 晚上7:00 – 8:30'
-        }),
-        location: byLanguage({
-          en: ' 5451 Minoru Blvd, Richmond, BC',
-          ch: ' 5451 Minoru Blvd, Richmond, BC'
-        }),
-        price: byLanguage({
-          en: ' $308 per course (11 sessions)',
-          ch: ' $308 整个课程 (11节课)'
+          en: '$308 / 11 sessions\nDrop-in: $38',
+          ch: '$308 整个课程 (11节课)'
         })
       },
       {
@@ -288,27 +235,97 @@ export default {
           ch: '私人课程'
         }),
         day: byLanguage({
-          en: 'Thursdays',
-          ch: '周四'
+          en: 'TUESDAYS',
+          ch: '周二'
         }),
         schedule: byLanguage({
           en: 'One-on-one sessions',
           ch: '一对一课程'
         }),
         location: byLanguage({
-          en: 'Burnaby Private Studio, BC',
+          en: '5365 Lane Street Studio, Burnaby',
           ch: '本拿比私人工作室, BC'
         }),
         price: byLanguage({
-          en: ' $110 per session',
-          ch: ' $110 每节课'
+          en: '$110/hour\nPackage rates available',
+          ch: '$110 每节课'
+        })
+      },
+      {
+        id: getUUID(),
+        class: byLanguage({
+          en: 'Uyghur Dance • All Levels',
+          ch: '维吾尔舞'
+        }),
+        day: byLanguage({
+          en: 'WEDNESDAYS\nSep 14 – Dec 6',
+          ch: '周三\n9月10日 – 11月19日'
+        }),
+        schedule: byLanguage({
+          en: '7:00 PM – 8:30 PM',
+          ch: '晚上7:00 – 8:30'
+        }),
+        location: byLanguage({
+          en: '5451 Minoru Blvd, Richmond, BC',
+          ch: '5451 Minoru Blvd, Richmond, BC'
+        }),
+        price: byLanguage({
+          en: '$280 / 10 sessions\nDrop-in: $38',
+          ch: '$308 整个课程 (11节课)'
+        })
+      },
+      {
+        id: getUUID(),
+        class: byLanguage({
+          en: 'Belly Dance with Danya • All Levels',
+          ch: '肚皮舞初级班'
+        }),
+        day: byLanguage({
+          en: 'THURSDAYS\nSep 14 – Dec 6',
+          ch: '周四'
+        }),
+        schedule: byLanguage({
+          en: '7:30 PM – 9:00 PM',
+          ch: '晚上7:30 – 9:00'
+        }),
+        location: byLanguage({
+          en: '#110–16825 104 Ave, Surrey, BC',
+          ch: '200 - 4789 Kingsway, Burnaby, BC'
+        }),
+        price: byLanguage({
+          en: '$280 / 10 sessions\nDrop-in: $38',
+          ch: '$308 整个课程 (11节课)'
+        })
+      },
+      {
+        id: getUUID(),
+        class: byLanguage({
+          en: 'Club • Advance (Performing Artists)',
+          ch: '表演艺术班 (需试镜)'
+        }),
+        day: byLanguage({
+          en: 'SUNDAYS\nSep 14 – Dec 6',
+          ch: '周日\n'
+        }),
+        schedule: byLanguage({
+          en: '3:00 PM – 5:00 PM',
+          ch: '下午3:30 – 5:30'
+        }),
+        location: byLanguage({
+          en: '250–12551 Vickers Way, Richmond, BC',
+          ch: '4351 No. 3 Rd, Richmond, BC'
+        }),
+        price: byLanguage({
+          en: '$250 / 5 sessions\n(Committed class - no drop-ins)',
+          ch: '联系了解价格'
         })
       }
     ],
     bottomNotes: byLanguage({
-      en: ' Drop-in $38 | 📞 Registration & Inquiries: 604-512-5617 | 📧 adalatdance@gmail.com',
-      ch: ' 单次课 $38 | 📞 注册咨询: 604-512-5617 | 📧 adalatdance@gmail.com'
+      en: '💃✨ Come dance, learn, and grow with us this Fall! | 📩 Register by e-transfer: adalatdancevancouver@gmail.com',
+      ch: '单次课 $38 | 📞 注册咨询: 604-512-5617 | 📧 adalatdance@gmail.com'
     })
   }
 };
+
 
