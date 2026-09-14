@@ -20,7 +20,7 @@ export default {
         {/* Fall 2026 Poster English */}
         <div style={{ textAlign: 'center', margin: '30px auto', maxWidth: '800px' }}>
           <img 
-            src="/images/fall-2026-schedule.png" 
+            src="images/fall-2026-schedule.png" 
             alt="Fall 2026 Registration" 
             style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px', boxShadow: '0 4px 15px rgba(0,0,0,0.15)' }} 
             onError={(e) => { e.target.src = '/images/fall-2026-schedule.png'; }}
