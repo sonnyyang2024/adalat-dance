@@ -46,6 +46,17 @@ const HomePage = () => {
         callToAction={callToAction}
         imageName="adalat-white-cropped.png"
       />
+
+      {/* ==================== Fall 2026 课表海报开始 ==================== */}
+      <div style={{ textAlign: 'center', margin: '40px auto', maxWidth: '800px', padding: '0 15px' }}>
+        <img 
+          src="/images/fall-2026-schedule.png" 
+          alt="Fall 2026 Registration - Belly Dance & Uyghur Dance" 
+          style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.15)' }}
+        />
+      </div>
+      {/* ==================== Fall 2026 课表海报结束 ==================== */}
+
       <ScheduleBanner
         title={publicShows.title}
         notes={publicShows.subtitle}
@@ -69,3 +80,4 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
