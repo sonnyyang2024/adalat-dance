@@ -5,7 +5,7 @@ export default {
     id: getUUID(),
     name: 'Adalat Omar',
     phoneNumber: '(604) 512-5617‬',
-    email: 'adalatdance@gmail.com'
+    email: 'adalat.dance@gmail.com'
   },
   "dancin_stars": {
       id: getUUID(),
