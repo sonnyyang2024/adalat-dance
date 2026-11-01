@@ -49,6 +49,14 @@ const HomePage = () => {
         imageName="adalat-white-cropped.png"
       />
 
+                {/* 1. 2027 Festival Video */}
+      <div style={{ width: '100%', maxWidth: '800px', margin: '40px auto', padding: '0 15px', boxSizing: 'border-box' }}>
+        <video autoPlay loop muted playsInline controls style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '12px', boxShadow: '0 4px 20px rgba(0,0,0,0.15)' }}>
+          <source src={`${process.env.PUBLIC_URL}/videos/Yalla_Dance_Vancouver_2027.mp4`} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
       {/* ==================== 🛠️ 2. 在大招牌正下方，精准插入的 2026 新海报（相对路径，多端同步自适应） ==================== */}
       <div style={{ textAlign: 'center', margin: '40px auto', maxWidth: '800px', padding: '0 15px' }}>
         <img 
