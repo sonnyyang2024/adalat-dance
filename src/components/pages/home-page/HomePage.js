@@ -48,18 +48,6 @@ const HomePage = () => {
         callToAction={callToAction}
         imageName="adalat-white-cropped.png"
       />
-      {/* ==================== 🎬 NEW 2027 YALLA FESTIVAL SECTION ==================== */}
-      <div className="festival-video-container">
-        <video autoPlay loop muted playsInline controls style={{ width: '100%' }}>
-          <source src="videos/Yalla Dance Vancouver 2027.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <div className="festival-info-section" style={{ maxWidth: '800px', margin: '30px auto', padding: '0 15px' }}>
-        <h2 style={{ textAlign: 'center', color: '#d9383a' }}>Yalla Dance Vancouver Festival 2027</h2>
-        <p style={{ textAlign: 'center', fontWeight: 'bold' }}>MAY 7–9, 2027</p>
-        <p><strong>Tito Seif & Kamelia Mourad</strong> are coming to Vancouver!</p>
-      </div>
-      {/* ============================================================================ */}
 
       {/* ==================== 🛠️ 2. 在大招牌正下方，精准插入的 2026 新海报（相对路径，多端同步自适应） ==================== */}
       <div style={{ textAlign: 'center', margin: '40px auto', maxWidth: '800px', padding: '0 15px' }}>
